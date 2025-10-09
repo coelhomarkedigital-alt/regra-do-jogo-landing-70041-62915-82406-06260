@@ -14,23 +14,23 @@ export const ProblemCards = () => {
     title: "Não sabe o que ler",
     description: "Tantas opções, mas qual livro vai realmente fazer diferença na sua vida agora?"
   }];
-  return <section className="py-16 bg-background">
+  return <section className="py-16 bg-paper">
       <div className="container px-4 mx-auto">
         <div className="max-w-5xl mx-auto space-y-10">
           <div className="text-center space-y-4 animate-fade-in">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">Você se reconhece em algum desses cenários?</h2>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-paper-foreground">Você se reconhece em algum desses cenários?</h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
-            {problems.map((problem, index) => <Card key={index} className="bg-card shadow-card hover:shadow-hover transition-all duration-300 hover:-translate-y-2 border-border/50">
+            {problems.map((problem, index) => <Card key={index} className="bg-white shadow-card hover:shadow-hover transition-all duration-300 hover:-translate-y-2 border-primary/20">
                 <CardContent className="pt-8 pb-6 px-6 space-y-4 text-center">
-                  <div className="w-16 h-16 mx-auto rounded-lg bg-[hsl(25,80%,95%)] flex items-center justify-center">
-                    <problem.icon className="w-8 h-8 text-[hsl(25,80%,55%)]" />
+                  <div className="w-16 h-16 mx-auto rounded-lg bg-primary/10 flex items-center justify-center">
+                    <problem.icon className="w-8 h-8 text-primary" />
                   </div>
-                  <h3 className="text-xl font-bold text-foreground">
+                  <h3 className="text-xl font-bold text-paper-foreground">
                     {problem.title}
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-paper-foreground/70 leading-relaxed">
                     {problem.description}
                   </p>
                 </CardContent>

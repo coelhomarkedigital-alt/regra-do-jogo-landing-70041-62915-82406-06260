@@ -47,6 +47,14 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        reading: {
+          DEFAULT: "hsl(var(--reading))",
+          foreground: "hsl(var(--reading-foreground))",
+        },
+        paper: {
+          DEFAULT: "hsl(var(--paper))",
+          foreground: "hsl(var(--paper-foreground))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -116,11 +124,15 @@ export default {
         'gradient-hero': 'var(--gradient-hero)',
         'gradient-card': 'var(--gradient-card)',
         'gradient-accent': 'var(--gradient-accent)',
+        'gradient-reading': 'var(--gradient-reading)',
+        'gradient-paper': 'var(--gradient-paper)',
       },
       boxShadow: {
         'card': 'var(--shadow-card)',
         'hover': 'var(--shadow-hover)',
         'cta': 'var(--shadow-cta)',
+        'glow': 'var(--shadow-glow)',
+        'success': 'var(--shadow-success)',
       },
     },
   },

@@ -30,7 +30,7 @@ export const HowItWorks = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-background bg-textured">
       <div className="container px-4 mx-auto">
         <div className="max-w-6xl mx-auto space-y-12">
           <div className="text-center space-y-4 animate-fade-in">
@@ -46,13 +46,13 @@ export const HowItWorks = () => {
             {steps.map((step, index) => (
               <Card 
                 key={index}
-                className="bg-gradient-card shadow-card hover:shadow-hover transition-all duration-300 hover:-translate-y-1 border-border/50 relative overflow-hidden group"
+                className="bg-gradient-card shadow-card hover:shadow-hover transition-all duration-300 hover:-translate-y-1 border-primary/20 relative overflow-hidden group"
               >
                 <div className="absolute top-4 right-4 text-6xl font-bold text-primary/10 group-hover:text-primary/20 transition-colors">
                   {step.step}
                 </div>
                 <CardContent className="pt-8 pb-6 px-6 space-y-4 relative z-10">
-                  <div className="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center">
+                  <div className="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                     <step.icon className="w-7 h-7 text-primary" />
                   </div>
                   <h3 className="text-2xl font-semibold text-foreground">
@@ -67,9 +67,9 @@ export const HowItWorks = () => {
           </div>
 
           <div className="text-center pt-8">
-            <div className="inline-block px-8 py-6 bg-muted rounded-lg">
+            <div className="inline-block px-8 py-6 bg-card rounded-lg border border-primary/20 shadow-card">
               <p className="text-lg text-foreground">
-                <span className="font-semibold">100% online.</span> Participe de onde estiver. As gravações ficam disponíveis até o fim do mês.
+                <span className="font-semibold text-primary">100% online.</span> Participe de onde estiver. As gravações ficam disponíveis até o fim do mês.
               </p>
             </div>
           </div>
