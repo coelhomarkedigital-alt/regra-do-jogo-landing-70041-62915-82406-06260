@@ -8,13 +8,12 @@ export const FinalCTA = () => {
     });
   };
   return <section className="py-20 bg-background relative overflow-hidden bg-textured">
-      <div className="absolute inset-0 z-0 opacity-15" style={{
+      <div className="absolute inset-0 z-0 opacity-30" style={{
       backgroundImage: `url(${readingGroup})`,
       backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      filter: 'blur(2px)'
+      backgroundPosition: 'center'
     }} />
-      <div className="absolute inset-0 z-0 bg-gradient-to-br from-background via-background/95 to-card" />
+      <div className="absolute inset-0 z-0 bg-gradient-to-br from-background/85 via-background/90 to-card/85" />
       
       <div className="container px-4 mx-auto relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8">
