@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Shield, CheckCircle, Mail } from "lucide-react";
 export const Guarantee = () => {
-  return <section className="py-20" style={{ backgroundColor: '#FFF8F0' }}>
+  return <section className="py-20 bg-paper">
       <div className="container px-4 mx-auto">
         <div className="max-w-4xl mx-auto">
           <Card className="bg-white shadow-success border-2 border-primary/30">

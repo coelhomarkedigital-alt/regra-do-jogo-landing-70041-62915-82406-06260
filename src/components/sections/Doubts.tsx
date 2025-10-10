@@ -30,7 +30,7 @@ export const Doubts = () => {
   ];
 
   return (
-    <section className="py-20" style={{ backgroundColor: '#1A1A1A', boxShadow: '0 -30px 60px 10px rgba(245, 192, 69, 0.12), 0 30px 60px 10px rgba(245, 192, 69, 0.12)' }}>
+    <section className="py-20 bg-muted/20">
       <div className="container px-4 mx-auto">
         <div className="max-w-5xl mx-auto space-y-12">
           <div className="text-center space-y-4 animate-fade-in">
