@@ -19,7 +19,7 @@ export const HowItWorksForWho = () => {
     description: "Metodologia focada em transformar conhecimento em ação real nas 5 dimensões da sua vida"
   }];
   const profiles = ["Profissionais que querem evoluir na carreira", "Pessoas que lutam para criar o hábito de ler", "Quem quer aprender com troca de experiências", "Aqueles que valorizam método e estrutura", "Quem quer aplicar conhecimento, não apenas acumular", "Profissionais que valorizam networking de qualidade"];
-  return <section className="py-16 bg-muted/20">
+  return <section className="py-16" style={{ backgroundColor: '#F4F4F4' }}>
       <div className="container px-4 mx-auto">
         <div className="max-w-5xl mx-auto space-y-12">
           <div className="text-center space-y-4 animate-fade-in">

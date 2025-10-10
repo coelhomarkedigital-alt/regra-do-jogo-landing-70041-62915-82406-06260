@@ -14,7 +14,7 @@ export const ProblemCards = () => {
     title: "Não sabe o que ler",
     description: "Tantas opções, mas qual livro vai realmente fazer diferença na sua vida agora?"
   }];
-  return <section className="py-16 bg-paper">
+  return <section className="py-16" style={{ backgroundColor: '#F4F4F4' }}>
       <div className="container px-4 mx-auto">
         <div className="max-w-5xl mx-auto space-y-10">
           <div className="text-center space-y-4 animate-fade-in">

@@ -41,7 +41,7 @@ export const GrowthDimensions = () => {
   ];
 
   return (
-    <section className="py-16 bg-background">
+    <section className="py-16" style={{ backgroundColor: '#F4F4F4' }}>
       <div className="container px-4 mx-auto">
         <div className="max-w-6xl mx-auto space-y-10">
           <div className="text-center space-y-4 animate-fade-in">

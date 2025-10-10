@@ -23,7 +23,7 @@ export const ResultsCondensed = () => {
     icon: Award,
     text: "Conhecimento transformado em ação e resultados reais"
   }];
-  return <section className="py-16 bg-paper relative overflow-hidden">
+  return <section className="py-16 relative overflow-hidden" style={{ backgroundColor: '#F4F4F4', boxShadow: '0 0 80px 20px rgba(245, 192, 69, 0.08)' }}>
       
       <div className="container px-4 mx-auto relative z-10">
         <div className="max-w-4xl mx-auto space-y-10 text-center">
