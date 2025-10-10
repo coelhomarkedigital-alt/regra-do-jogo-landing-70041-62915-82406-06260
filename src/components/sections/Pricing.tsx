@@ -7,7 +7,10 @@ export const Pricing = () => {
     // Lógica de redirecionamento para checkout
     console.log(`Assinando plano: ${plan}`);
   };
-  return <section id="pricing" className="py-20 relative" style={{ backgroundColor: '#FFF8F0', boxShadow: '0 0 100px 30px rgba(245, 192, 69, 0.25)' }}>
+  return <section id="pricing" className="py-20 relative" style={{
+    backgroundColor: '#FFF8F0',
+    boxShadow: '0 0 100px 30px rgba(245, 192, 69, 0.25)'
+  }}>
       <div className="container px-4 mx-auto">
         <div className="max-w-6xl mx-auto space-y-12">
           <div className="text-center space-y-4 animate-fade-in">
@@ -39,7 +42,7 @@ export const Pricing = () => {
                   </p>
                 </div>
               </CardHeader>
-              <CardContent className="px-6 pb-8 space-y-6">
+              <CardContent className="p-8 md:p-12">
                 <ul className="space-y-3">
                   {features.map((feature, index) => <li key={index} className="flex items-start gap-3">
                       <div className="w-5 h-5 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0 mt-0.5">
