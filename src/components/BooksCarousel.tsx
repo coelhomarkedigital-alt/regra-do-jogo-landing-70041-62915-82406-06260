@@ -90,9 +90,9 @@ export const BooksCarousel = () => {
                             <img 
                               src={book.cover} 
                               alt={`Capa do livro ${book.title}`}
-                              className="h-48 w-auto object-contain mix-blend-multiply dark:mix-blend-normal dark:brightness-110 shadow-glow"
+                              className="h-48 w-auto object-contain brightness-100 shadow-glow"
                               style={{
-                                filter: 'drop-shadow(0 4px 20px rgba(251, 191, 36, 0.3))'
+                                filter: 'drop-shadow(0 4px 20px rgba(251, 191, 36, 0.4)) brightness(1.05)'
                               }}
                             />
                           </div>
