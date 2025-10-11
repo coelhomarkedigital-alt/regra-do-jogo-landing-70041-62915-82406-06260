@@ -7,34 +7,34 @@ export const Pricing = () => {
     // Lógica de redirecionamento para checkout
     console.log(`Assinando plano: ${plan}`);
   };
-  return <section id="pricing" className="py-20 bg-background">
+  return <section id="pricing" className="py-20 bg-paper">
       <div className="container px-4 mx-auto">
         <div className="max-w-6xl mx-auto space-y-12">
           <div className="text-center space-y-4 animate-fade-in">
-            <div className="inline-flex items-center gap-2 bg-secondary/20 px-4 py-2 rounded-full mb-2">
-              <Check className="w-4 h-4 text-accent" />
-              <span className="text-sm font-medium text-foreground">Sem lista de espera • Entre quando quiser</span>
+            <div className="inline-flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full mb-2">
+              <Check className="w-4 h-4 text-primary" />
+              <span className="text-sm font-medium text-paper-foreground">Sem lista de espera • Entre quando quiser</span>
             </div>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-paper-foreground">
               Escolha seu plano
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-xl text-paper-foreground/70 max-w-2xl mx-auto">
               Invista em você. Menos que um café por dia para transformar sua vida.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {/* Plano Mensal */}
-            <Card className="bg-gradient-card shadow-card hover:shadow-hover transition-all duration-300 border-border/50">
+            <Card className="bg-white shadow-success hover:shadow-hover transition-all duration-300 border-primary/20">
               <CardHeader className="text-center pb-8 pt-8 px-6 space-y-4">
-                <h3 className="text-2xl font-bold text-foreground">
+                <h3 className="text-2xl font-bold text-paper-foreground">
                   Plano Mensal
                 </h3>
                 <div className="space-y-2">
-                  <p className="text-5xl font-bold text-accent">
+                  <p className="text-5xl font-bold text-primary">
                     R$ 39,90
                   </p>
-                  <p className="text-muted-foreground">
+                  <p className="text-paper-foreground/70">
                     por mês • cobrança recorrente
                   </p>
                 </div>
@@ -42,10 +42,10 @@ export const Pricing = () => {
               <CardContent className="px-6 pb-8 space-y-6">
                 <ul className="space-y-3">
                   {features.map((feature, index) => <li key={index} className="flex items-start gap-3">
-                      <div className="w-5 h-5 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <Check className="w-3 h-3 text-accent" />
+                      <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <Check className="w-3 h-3 text-primary" />
                       </div>
-                      <span className="text-sm text-slate-50">
+                      <span className="text-sm text-paper-foreground">
                         {feature}
                       </span>
                     </li>)}
@@ -53,7 +53,7 @@ export const Pricing = () => {
                     <div className="w-5 h-5 rounded-full bg-green-500/10 flex items-center justify-center flex-shrink-0 mt-0.5">
                       <Check className="w-3 h-3 text-green-600" />
                     </div>
-                    <span className="text-sm font-medium text-slate-50">
+                    <span className="text-sm font-medium text-paper-foreground">
                       Cancelamento livre e sem multa
                     </span>
                   </li>
@@ -63,14 +63,14 @@ export const Pricing = () => {
                   Começar com Plano Mensal
                 </Button>
 
-                <p className="text-xs text-muted-foreground text-center">
+                <p className="text-xs text-paper-foreground/60 text-center">
                   Garantia de 7 dias • Reembolso integral
                 </p>
               </CardContent>
             </Card>
 
             {/* Plano Anual */}
-            <Card className="bg-gradient-card shadow-hover border-2 border-accent relative overflow-hidden">
+            <Card className="bg-white shadow-success border-2 border-primary/30 relative overflow-hidden">
               <div className="absolute top-4 right-4 z-10">
                 <div className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1">
                   <Star className="w-3 h-3" />
@@ -79,17 +79,17 @@ export const Pricing = () => {
               </div>
 
               <CardHeader className="text-center pb-8 pt-8 px-6 space-y-4">
-                <h3 className="text-2xl font-bold text-foreground">
+                <h3 className="text-2xl font-bold text-paper-foreground">
                   Plano Anual
                 </h3>
                 <div className="space-y-2">
-                  <p className="text-5xl font-bold text-accent">
+                  <p className="text-5xl font-bold text-primary">
                     R$ 349,90
                   </p>
-                  <p className="text-muted-foreground">
+                  <p className="text-paper-foreground/70">
                     por ano • ~R$ 29,16/mês
                   </p>
-                  <div className="inline-block px-3 py-1 bg-[hsl(25,80%,95%)] text-[hsl(25,80%,45%)] text-sm font-medium rounded-full">
+                  <div className="inline-block px-3 py-1 bg-primary/10 text-primary text-sm font-medium rounded-full">
                     Economize R$ 129
                   </div>
                 </div>
@@ -97,10 +97,10 @@ export const Pricing = () => {
               <CardContent className="px-6 pb-8 space-y-6">
                 <ul className="space-y-3">
                   {features.map((feature, index) => <li key={index} className="flex items-start gap-3">
-                      <div className="w-5 h-5 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <Check className="w-3 h-3 text-accent" />
+                      <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <Check className="w-3 h-3 text-primary" />
                       </div>
-                      <span className="text-sm text-slate-50">
+                      <span className="text-sm text-paper-foreground">
                         {feature}
                       </span>
                     </li>)}
@@ -108,7 +108,7 @@ export const Pricing = () => {
                     <div className="w-5 h-5 rounded-full bg-green-500/10 flex items-center justify-center flex-shrink-0 mt-0.5">
                       <Check className="w-3 h-3 text-green-600" />
                     </div>
-                    <span className="text-sm font-medium text-slate-50">
+                    <span className="text-sm font-medium text-paper-foreground">
                       Melhor custo-benefício
                     </span>
                   </li>
@@ -118,7 +118,7 @@ export const Pricing = () => {
                   Garantir Plano Anual
                 </Button>
 
-                <p className="text-xs text-muted-foreground text-center">
+                <p className="text-xs text-paper-foreground/60 text-center">
                   Garantia de 7 dias • Reembolso integral
                 </p>
               </CardContent>
@@ -126,10 +126,10 @@ export const Pricing = () => {
           </div>
 
           <div className="text-center pt-8 space-y-4">
-            <p className="text-lg text-foreground font-medium">
+            <p className="text-lg text-paper-foreground font-medium">
               💳 Pagamento 100% seguro via cartão de crédito
             </p>
-            <p className="text-muted-foreground">
+            <p className="text-paper-foreground/70">
               Seus dados estão protegidos e criptografados
             </p>
           </div>

@@ -30,14 +30,14 @@ export const Doubts = () => {
   ];
 
   return (
-    <section className="py-20 bg-muted/20">
+    <section className="py-20 bg-paper">
       <div className="container px-4 mx-auto">
         <div className="max-w-5xl mx-auto space-y-12">
           <div className="text-center space-y-4 animate-fade-in">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-paper-foreground">
               Ainda está em dúvida?
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-xl text-paper-foreground/70 max-w-2xl mx-auto">
               A gente entende. Essas são as principais preocupações que ouvimos. Veja como resolvemos cada uma:
             </p>
           </div>
@@ -46,23 +46,23 @@ export const Doubts = () => {
             {doubts.map((doubt, index) => (
               <Card 
                 key={index}
-                className="bg-card border-border/50 shadow-card hover:shadow-hover transition-all duration-300 hover:-translate-y-1"
+                className="bg-white border-primary/20 shadow-success hover:shadow-hover transition-all duration-300 hover:-translate-y-1"
               >
                 <CardContent className="p-8 space-y-4">
                   <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center">
-                      <doubt.icon className="w-6 h-6 text-accent" />
+                    <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                      <doubt.icon className="w-6 h-6 text-primary" />
                     </div>
                     <div className="flex-1 space-y-3">
-                      <h3 className="text-xl font-bold text-foreground">
+                      <h3 className="text-xl font-bold text-paper-foreground">
                         {doubt.question}
                       </h3>
-                      <p className="text-muted-foreground leading-relaxed">
+                      <p className="text-paper-foreground/70 leading-relaxed">
                         {doubt.answer}
                       </p>
                       <div className="flex items-start gap-2 pt-2">
-                        <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                        <p className="text-sm font-semibold text-foreground">
+                        <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                        <p className="text-sm font-semibold text-paper-foreground">
                           {doubt.stat}
                         </p>
                       </div>
