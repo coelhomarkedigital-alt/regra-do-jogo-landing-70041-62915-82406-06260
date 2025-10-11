@@ -1,9 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Check, Star } from "lucide-react";
+import { useState } from "react";
+
 export const Pricing = () => {
+  const [selectedPlan, setSelectedPlan] = useState<string | null>(null);
   const features = ["Acesso imediato a todos os materiais", "Encontros mensais ao vivo", "Comunidade exclusiva no WhatsApp", "Esquema de leitura semanal", "Materiais complementares (resumos, exercícios)", "Gravações disponíveis"];
   const handleSubscribe = (plan: string) => {
+    setSelectedPlan(plan);
     // Lógica de redirecionamento para checkout
     console.log(`Assinando plano: ${plan}`);
   };
@@ -25,7 +29,7 @@ export const Pricing = () => {
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {/* Plano Mensal */}
-            <Card className="bg-white shadow-success hover:shadow-hover transition-all duration-300 border-primary/20">
+            <Card className={`bg-white shadow-success hover:shadow-hover transition-all duration-300 border-primary/20 ${selectedPlan === 'mensal' ? 'ring-4 ring-primary/50 shadow-hover' : ''}`}>
               <CardHeader className="text-center pb-8 pt-8 px-6 space-y-4">
                 <h3 className="text-2xl font-bold text-paper-foreground">
                   Plano Mensal
@@ -70,7 +74,7 @@ export const Pricing = () => {
             </Card>
 
             {/* Plano Anual */}
-            <Card className="bg-white shadow-success border-2 border-primary/30 relative overflow-hidden">
+            <Card className={`bg-white shadow-success border-2 border-primary/30 relative overflow-hidden transition-all duration-300 ${selectedPlan === 'anual' ? 'ring-4 ring-primary/50 shadow-hover' : ''}`}>
               <div className="absolute top-4 right-4 z-10">
                 <div className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1">
                   <Star className="w-3 h-3" />

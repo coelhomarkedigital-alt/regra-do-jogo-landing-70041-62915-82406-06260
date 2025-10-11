@@ -1,5 +1,5 @@
 import { Mail, Phone } from "lucide-react";
-import logoRegrasDoJogo from "@/assets/logo-regras-do-jogo.jpg";
+import logoRegrasDoJogo from "@/assets/logo-regras-transparente.png";
 
 export const Footer = () => {
   return <footer className="bg-background text-foreground py-12 border-t border-primary/20">
