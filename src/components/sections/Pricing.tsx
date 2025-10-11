@@ -7,7 +7,7 @@ export const Pricing = () => {
     // Lógica de redirecionamento para checkout
     console.log(`Assinando plano: ${plan}`);
   };
-  return <section id="pricing" className="py-20 bg-paper">
+  return <section id="pricing" className="py-20" style={{ backgroundColor: '#FAF2E1' }}>
       <div className="container px-4 mx-auto">
         <div className="max-w-6xl mx-auto space-y-12">
           <div className="text-center space-y-4 animate-fade-in">
@@ -59,7 +59,7 @@ export const Pricing = () => {
                   </li>
                 </ul>
 
-                <Button variant="outline" size="xl" className="w-full" onClick={() => handleSubscribe('mensal')}>
+                <Button variant="cta" size="xl" className="w-full" onClick={() => handleSubscribe('mensal')}>
                   Começar com Plano Mensal
                 </Button>
 
