@@ -74,7 +74,7 @@ export const Pricing = () => {
             </Card>
 
             {/* Plano Anual */}
-            <Card className={`bg-white shadow-success border-2 border-primary/30 relative overflow-hidden transition-all duration-300 ${selectedPlan === 'anual' ? 'ring-4 ring-primary/50 shadow-hover' : ''}`}>
+            <Card className={`bg-white shadow-success hover:shadow-hover transition-all duration-300 border-primary/20 relative overflow-hidden ${selectedPlan === 'anual' ? 'ring-4 ring-primary/50 shadow-hover' : ''}`}>
               <div className="absolute top-4 right-4 z-10">
                 <div className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1">
                   <Star className="w-3 h-3" />

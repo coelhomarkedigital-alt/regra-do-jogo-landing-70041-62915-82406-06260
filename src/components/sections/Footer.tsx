@@ -7,7 +7,7 @@ export const Footer = () => {
         <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
           <div className="space-y-4">
             <div className="flex items-center gap-3 mb-3">
-              <img src={logoRegrasDoJogo} alt="Projeto Regras do Jogo" className="h-12 w-auto" />
+              <img src={logoRegrasDoJogo} alt="Projeto Regras do Jogo" className="h-16 w-auto" />
             </div>
             <h3 className="text-2xl font-bold">Clube do Livro Regras do Jogo</h3>
             <p className="text-muted-foreground text-sm leading-relaxed">
