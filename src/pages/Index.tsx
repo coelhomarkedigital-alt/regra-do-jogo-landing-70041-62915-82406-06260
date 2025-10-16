@@ -1,4 +1,5 @@
 import { Hero } from "@/components/sections/Hero";
+import { VideoSection } from "@/components/sections/VideoSection";
 import { ProblemCards } from "@/components/sections/ProblemCards";
 import { SolutionIntegrated } from "@/components/sections/SolutionIntegrated";
 import { GrowthDimensions } from "@/components/sections/GrowthDimensions";
@@ -19,6 +20,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Hero />
+      <VideoSection />
       <ProblemCards />
       <SolutionIntegrated />
       <GrowthDimensions />
