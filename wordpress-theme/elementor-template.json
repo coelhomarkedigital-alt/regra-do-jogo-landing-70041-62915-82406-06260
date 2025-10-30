@@ -1,0 +1,795 @@
+{
+  "version": "0.4",
+  "title": "Clube do Livro - Regras do Jogo",
+  "type": "page",
+  "content": [
+    {
+      "id": "hero-section",
+      "elType": "section",
+      "settings": {
+        "background_background": "gradient",
+        "background_color": "#000000",
+        "background_color_b": "#1a1a1a",
+        "padding": {
+          "unit": "px",
+          "top": "120",
+          "right": "20",
+          "bottom": "120",
+          "left": "20"
+        }
+      },
+      "elements": [
+        {
+          "id": "hero-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "hero-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Transforme sua vida através da leitura",
+                "header_size": "h1",
+                "align": "center",
+                "title_color": "#ffffff",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 48
+                },
+                "typography_font_weight": "700"
+              }
+            },
+            {
+              "id": "hero-text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Junte-se ao clube exclusivo onde cada livro é uma nova conquista. Aprenda, evolua e conecte-se com pessoas que buscam crescimento real.</p>",
+                "align": "center",
+                "text_color": "#cccccc",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 20
+                }
+              }
+            },
+            {
+              "id": "hero-button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Começar minha jornada",
+                "align": "center",
+                "button_type": "primary",
+                "size": "lg",
+                "button_background_color": "#dc2626",
+                "button_text_color": "#ffffff",
+                "border_radius": {
+                  "unit": "px",
+                  "size": 8
+                },
+                "link": {
+                  "url": "#pricing"
+                }
+              }
+            },
+            {
+              "id": "hero-price",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center;'><strong style='color: #ffffff; font-size: 24px;'>Apenas R$ 59,90/mês</strong><br><span style='color: #cccccc;'>Acesso imediato • Cancele quando quiser</span></p>",
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "video-section",
+      "elType": "section",
+      "settings": {
+        "background_color": "#000000",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "20",
+          "bottom": "80",
+          "left": "20"
+        }
+      },
+      "elements": [
+        {
+          "id": "video-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "video-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Veja como funciona",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#ffffff",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 36
+                }
+              }
+            },
+            {
+              "id": "video-player",
+              "elType": "widget",
+              "widgetType": "video",
+              "settings": {
+                "video_type": "hosted",
+                "hosted_url": {
+                  "url": "/wp-content/uploads/video-apresentacao.mp4"
+                },
+                "aspect_ratio": "916",
+                "controls": "yes",
+                "download_button": "no"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "problem-section",
+      "elType": "section",
+      "settings": {
+        "background_color": "#0a0a0a",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "20",
+          "bottom": "80",
+          "left": "20"
+        }
+      },
+      "elements": [
+        {
+          "id": "problem-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "problem-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Você sente que está perdendo oportunidades?",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#ffffff"
+              }
+            },
+            {
+              "id": "problem-text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #cccccc;'>A maioria das pessoas enfrenta esses desafios:</p>",
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "solution-section",
+      "elType": "section",
+      "settings": {
+        "background_color": "#ffffff",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "20",
+          "bottom": "80",
+          "left": "20"
+        }
+      },
+      "elements": [
+        {
+          "id": "solution-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "solution-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "A solução está em sua rotina",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#000000"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "growth-section",
+      "elType": "section",
+      "settings": {
+        "background_color": "#f5f5f5",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "20",
+          "bottom": "80",
+          "left": "20"
+        }
+      },
+      "elements": [
+        {
+          "id": "growth-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "growth-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "5 Dimensões do Crescimento",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#000000"
+              }
+            },
+            {
+              "id": "growth-text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center;'>Cada livro escolhido desenvolve uma área essencial da sua vida</p>",
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "howitworks-section",
+      "elType": "section",
+      "settings": {
+        "background_color": "#ffffff",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "20",
+          "bottom": "80",
+          "left": "20"
+        }
+      },
+      "elements": [
+        {
+          "id": "howitworks-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "howitworks-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Tudo foi pensado para caber na sua rotina",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#000000"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "results-section",
+      "elType": "section",
+      "settings": {
+        "background_color": "#0a0a0a",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "20",
+          "bottom": "80",
+          "left": "20"
+        }
+      },
+      "elements": [
+        {
+          "id": "results-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "results-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Resultados reais de quem participa",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#ffffff"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mentor-section",
+      "elType": "section",
+      "settings": {
+        "background_color": "#ffffff",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "20",
+          "bottom": "80",
+          "left": "20"
+        }
+      },
+      "elements": [
+        {
+          "id": "mentor-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "mentor-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Quem lidera o clube",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#000000"
+              }
+            },
+            {
+              "id": "mentor-image",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "/wp-content/uploads/carlos-marden.jpg"
+                },
+                "align": "center",
+                "width": {
+                  "unit": "px",
+                  "size": 200
+                },
+                "border_radius": {
+                  "unit": "%",
+                  "size": 50
+                }
+              }
+            },
+            {
+              "id": "mentor-name",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Carlos Marden",
+                "header_size": "h3",
+                "align": "center",
+                "title_color": "#000000"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "social-section",
+      "elType": "section",
+      "settings": {
+        "background_color": "#f5f5f5",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "20",
+          "bottom": "80",
+          "left": "20"
+        }
+      },
+      "elements": [
+        {
+          "id": "social-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "social-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "O que os membros dizem",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#000000"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "books-section",
+      "elType": "section",
+      "settings": {
+        "background_color": "#ffffff",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "20",
+          "bottom": "80",
+          "left": "20"
+        }
+      },
+      "elements": [
+        {
+          "id": "books-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "books-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Livros selecionados com cuidado",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#000000"
+              }
+            },
+            {
+              "id": "books-text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center;'>Nossa curadoria prioriza conteúdo transformador e aplicável</p>",
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pricing-section",
+      "elType": "section",
+      "settings": {
+        "background_color": "#0a0a0a",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "20",
+          "bottom": "80",
+          "left": "20"
+        },
+        "html_tag": "div",
+        "html_id": "pricing"
+      },
+      "elements": [
+        {
+          "id": "pricing-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "pricing-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Invista no seu crescimento",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#ffffff"
+              }
+            },
+            {
+              "id": "pricing-text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #cccccc;'>Escolha o plano ideal para você</p>",
+                "align": "center"
+              }
+            },
+            {
+              "id": "pricing-card",
+              "elType": "widget",
+              "widgetType": "price-table",
+              "settings": {
+                "heading": "Plano Mensal",
+                "sub_heading": "Acesso completo",
+                "price": "59,90",
+                "currency_symbol": "R$",
+                "period": "mês",
+                "features_list": [
+                  {"text": "Encontros semanais ao vivo"},
+                  {"text": "Gravações disponíveis"},
+                  {"text": "Comunidade exclusiva"},
+                  {"text": "Curadoria de livros"},
+                  {"text": "Certificado de participação"}
+                ],
+                "button_text": "Começar agora",
+                "button_background_color": "#dc2626"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "guarantee-section",
+      "elType": "section",
+      "settings": {
+        "background_color": "#ffffff",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "20",
+          "bottom": "80",
+          "left": "20"
+        }
+      },
+      "elements": [
+        {
+          "id": "guarantee-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "guarantee-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Garantia de 7 dias",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#000000"
+              }
+            },
+            {
+              "id": "guarantee-text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center;'>Experimente sem riscos. Se não gostar, devolvemos 100% do seu dinheiro.</p>",
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "faq-section",
+      "elType": "section",
+      "settings": {
+        "background_color": "#f5f5f5",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "20",
+          "bottom": "80",
+          "left": "20"
+        }
+      },
+      "elements": [
+        {
+          "id": "faq-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "faq-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Perguntas Frequentes",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#000000"
+              }
+            },
+            {
+              "id": "faq-accordion",
+              "elType": "widget",
+              "widgetType": "accordion",
+              "settings": {
+                "tabs": [
+                  {
+                    "tab_title": "Como funcionam os encontros?",
+                    "tab_content": "Os encontros acontecem semanalmente, ao vivo, onde discutimos os capítulos lidos. Todas as sessões são gravadas para quem não puder participar ao vivo."
+                  },
+                  {
+                    "tab_title": "Preciso ler o livro antes?",
+                    "tab_content": "Sim, recomendamos a leitura prévia dos capítulos que serão discutidos. Enviamos o cronograma com antecedência."
+                  },
+                  {
+                    "tab_title": "Posso cancelar a qualquer momento?",
+                    "tab_content": "Sim, você pode cancelar sua assinatura a qualquer momento, sem multas ou taxas adicionais."
+                  },
+                  {
+                    "tab_title": "Como funciona a garantia?",
+                    "tab_content": "Você tem 7 dias para experimentar. Se não gostar, basta solicitar o reembolso total."
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "final-cta-section",
+      "elType": "section",
+      "settings": {
+        "background_background": "gradient",
+        "background_color": "#000000",
+        "background_color_b": "#1a1a1a",
+        "padding": {
+          "unit": "px",
+          "top": "120",
+          "right": "20",
+          "bottom": "120",
+          "left": "20"
+        }
+      },
+      "elements": [
+        {
+          "id": "final-cta-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "final-cta-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Pronto para transformar sua vida?",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#ffffff"
+              }
+            },
+            {
+              "id": "final-cta-text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #cccccc;'>Junte-se a centenas de pessoas que já estão evoluindo através da leitura</p>",
+                "align": "center"
+              }
+            },
+            {
+              "id": "final-cta-button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Quero fazer parte",
+                "align": "center",
+                "size": "lg",
+                "button_background_color": "#dc2626",
+                "button_text_color": "#ffffff",
+                "link": {
+                  "url": "#pricing"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "footer-section",
+      "elType": "section",
+      "settings": {
+        "background_color": "#000000",
+        "padding": {
+          "unit": "px",
+          "top": "60",
+          "right": "20",
+          "bottom": "60",
+          "left": "20"
+        }
+      },
+      "elements": [
+        {
+          "id": "footer-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "footer-logo",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "/wp-content/uploads/logo-regras-transparente.png"
+                },
+                "align": "center",
+                "width": {
+                  "unit": "px",
+                  "size": 150
+                }
+              }
+            },
+            {
+              "id": "footer-text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #cccccc;'>Clube do Livro Regras do Jogo<br>Transformando vidas através da leitura</p>",
+                "align": "center"
+              }
+            },
+            {
+              "id": "footer-contact",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #cccccc;'>📧 contato@regrasdojogo.com<br>📱 (85) 98765-4321</p>",
+                "align": "center"
+              }
+            },
+            {
+              "id": "footer-copyright",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='text-align: center; color: #888888; font-size: 14px;'>© 2024 Clube do Livro Regras do Jogo. Todos os direitos reservados.</p>",
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
