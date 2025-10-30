@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clube do Livro Regras do Jogo</title>
+    <style>
+        :root {
+            --primary: 291 100% 42%;
+            --primary-foreground: 0 0% 100%;
+            --secondary: 240 5% 96%;
+            --secondary-foreground: 240 6% 10%;
+            --accent: 291 100% 42%;
+            --accent-foreground: 0 0% 100%;
+            --background: 0 0% 100%;
+            --foreground: 240 10% 3.9%;
+            --card: 0 0% 100%;
+            --card-foreground: 240 10% 3.9%;
+            --border: 240 5.9% 90%;
+            --muted: 240 4.8% 95.9%;
+            --muted-foreground: 240 3.8% 46.1%;
+            --paper: 45 20% 96%;
+            --paper-foreground: 240 10% 3.9%;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: hsl(var(--foreground));
+            background-color: hsl(var(--background));
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .btn-primary {
+            background-color: hsl(var(--accent));
+            color: hsl(var(--accent-foreground));
+            padding: 16px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: 600;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px -10px hsl(var(--primary) / 0.3);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(260 100% 30%) 100%);
+            overflow: hidden;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 24px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 32px;
+            line-height: 1.6;
+        }
+
+        .hero-price {
+            color: white;
+            font-size: 18px;
+            margin-top: 16px;
+        }
+
+        /* Video Section */
+        .video-section {
+            padding: 64px 0;
+            background-color: #000;
+        }
+
+        .video-section h2 {
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 48px;
+        }
+
+        .video-container {
+            max-width: 400px;
+            margin: 0 auto;
+            position: relative;
+            padding-bottom: 177.78%;
+        }
+
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+        }
+
+        /* Problem Cards */
+        .problem-section {
+            padding: 64px 0;
+            background-color: hsl(var(--paper));
+        }
+
+        .problem-section h2 {
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+            color: hsl(var(--paper-foreground));
+            margin-bottom: 48px;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin-bottom: 48px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 32px 24px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            border: 1px solid hsl(var(--border));
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+        }
+
+        .card-icon {
+            width: 64px;
+            height: 64px;
+            margin: 0 auto 16px;
+            background-color: hsl(var(--primary) / 0.1);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: hsl(var(--primary));
+        }
+
+        .card h3 {
+            font-size: 22px;
+            font-weight: bold;
+            color: hsl(var(--paper-foreground));
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: hsl(var(--paper-foreground) / 0.7);
+            line-height: 1.6;
+        }
+
+        /* Solution Section */
+        .solution-section {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .solution-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .solution-content h2 {
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 24px;
+            color: hsl(var(--foreground));
+        }
+
+        .solution-content .subtitle {
+            font-size: 20px;
+            color: hsl(var(--muted-foreground));
+            margin-bottom: 48px;
+        }
+
+        /* Features List */
+        .features-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+            margin-top: 48px;
+        }
+
+        .feature-item {
+            text-align: left;
+        }
+
+        .feature-item h3 {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 12px;
+            color: hsl(var(--foreground));
+        }
+
+        /* Pricing Section */
+        .pricing-section {
+            padding: 80px 0;
+            background: hsl(var(--secondary));
+        }
+
+        .pricing-section h2 {
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 48px;
+        }
+
+        .pricing-card {
+            max-width: 500px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            padding: 48px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+
+        .price {
+            font-size: 48px;
+            font-weight: bold;
+            color: hsl(var(--primary));
+            text-align: center;
+            margin: 24px 0;
+        }
+
+        .price-period {
+            font-size: 20px;
+            color: hsl(var(--muted-foreground));
+        }
+
+        .benefits-list {
+            list-style: none;
+            margin: 32px 0;
+        }
+
+        .benefits-list li {
+            padding: 12px 0;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .benefits-list li::before {
+            content: "✓";
+            color: hsl(var(--primary));
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .faq-section h2 {
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 48px;
+        }
+
+        .faq-item {
+            background: white;
+            border: 1px solid hsl(var(--border));
+            border-radius: 8px;
+            margin-bottom: 16px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 20px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            padding: 0 20px 20px;
+            color: hsl(var(--muted-foreground));
+            display: none;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        /* Footer */
+        footer {
+            background-color: hsl(var(--muted));
+            padding: 60px 0 30px;
+            text-align: center;
+        }
+
+        footer .logo {
+            max-width: 150px;
+            margin: 0 auto 24px;
+        }
+
+        footer p {
+            color: hsl(var(--muted-foreground));
+            margin-bottom: 16px;
+        }
+
+        /* Floating CTA */
+        .floating-cta {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            display: none;
+        }
+
+        .floating-cta.visible {
+            display: block;
+            animation: slideUp 0.3s ease;
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(100px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+            .problem-section h2,
+            .solution-content h2,
+            .pricing-section h2,
+            .faq-section h2 {
+                font-size: 28px;
+            }
+
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .floating-cta {
+                bottom: 10px;
+                right: 10px;
+                left: 10px;
+            }
+
+            .floating-cta .btn-primary {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        .section {
+            scroll-margin-top: 20px;
+        }
+
+        /* Books Carousel */
+        .books-section {
+            padding: 80px 0;
+            background: hsl(var(--secondary));
+        }
+
+        .books-section h2 {
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 48px;
+        }
+
+        .books-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 24px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .book-item {
+            text-align: center;
+        }
+
+        .book-item img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            margin-bottom: 12px;
+        }
+
+        .book-title {
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 4px;
+        }
+
+        .book-author {
+            font-size: 12px;
+            color: hsl(var(--muted-foreground));
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Transforme sua vida através da leitura</h1>
+            <p>Faça parte do Clube do Livro Regras do Jogo e desenvolva o hábito da leitura com um método comprovado</p>
+            <button class="btn-primary" onclick="scrollToPricing()">Quero fazer parte</button>
+            <div class="hero-price">
+                <p>Apenas R$ 49,90/mês • Cancele quando quiser</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <div class="container">
+            <h2>Veja como funciona</h2>
+            <div class="video-container">
+                <video controls preload="metadata">
+                    <source src="<?php echo get_template_directory_uri(); ?>/assets/video-apresentacao.mp4" type="video/mp4">
+                    Seu navegador não suporta a reprodução de vídeo.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Cards -->
+    <section class="problem-section">
+        <div class="container">
+            <h2>Você se reconhece em algum desses cenários?</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">📚</div>
+                    <h3>Compra mas não lê</h3>
+                    <p>Você acumula livros na estante, mas sempre adia a leitura. A pilha só cresce.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">⏰</div>
+                    <h3>Falta tempo e consistência</h3>
+                    <p>Começa a ler, mas abandona no meio. Falta um método que torne a leitura parte da rotina.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">❓</div>
+                    <h3>Não sabe o que ler</h3>
+                    <p>Tantas opções, mas qual livro vai realmente fazer diferença na sua vida agora?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="solution-section">
+        <div class="container">
+            <div class="solution-content">
+                <h2>A solução completa para transformar sua vida através da leitura</h2>
+                <p class="subtitle">Um método estruturado que torna a leitura parte da sua rotina</p>
+                
+                <div class="features-list">
+                    <div class="feature-item">
+                        <h3>📖 Encontros Online Semanais</h3>
+                        <p>Toda semana, um encontro guiado para discutir e aprofundar os conceitos dos livros</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>🎯 Método Estruturado</h3>
+                        <p>Sistema comprovado que transforma leitura em hábito consistente</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>👥 Comunidade Ativa</h3>
+                        <p>Conecte-se com pessoas que compartilham os mesmos objetivos de crescimento</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>📚 Livros Selecionados</h3>
+                        <p>Curadoria especializada dos melhores livros para seu desenvolvimento</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Books Section -->
+    <section class="books-section">
+        <div class="container">
+            <h2>Alguns dos livros que já lemos</h2>
+            <div class="books-grid">
+                <div class="book-item">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/books/habitos-atomicos.webp" alt="Hábitos Atômicos">
+                    <div class="book-title">Hábitos Atômicos</div>
+                    <div class="book-author">James Clear</div>
+                </div>
+                <div class="book-item">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/books/7-habitos.webp" alt="7 Hábitos">
+                    <div class="book-title">7 Hábitos das Pessoas Altamente Eficazes</div>
+                    <div class="book-author">Stephen Covey</div>
+                </div>
+                <div class="book-item">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/books/armas-persuasao.webp" alt="Armas da Persuasão">
+                    <div class="book-title">As Armas da Persuasão</div>
+                    <div class="book-author">Robert Cialdini</div>
+                </div>
+                <div class="book-item">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/books/psicologia-financeira.jpg" alt="Psicologia Financeira">
+                    <div class="book-title">Psicologia Financeira</div>
+                    <div class="book-author">Morgan Housel</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section section">
+        <div class="container">
+            <h2>Comece sua transformação hoje</h2>
+            <div class="pricing-card">
+                <h3 style="text-align: center; margin-bottom: 16px;">Plano Mensal</h3>
+                <div class="price">
+                    R$ 49,90<span class="price-period">/mês</span>
+                </div>
+                <ul class="benefits-list">
+                    <li>Encontros online semanais ao vivo</li>
+                    <li>Acesso a todas as gravações</li>
+                    <li>Comunidade exclusiva no WhatsApp</li>
+                    <li>Curadoria mensal de livros</li>
+                    <li>Material de apoio para leitura</li>
+                    <li>Certificado de participação</li>
+                    <li>Cancele quando quiser</li>
+                </ul>
+                <button class="btn-primary" style="width: 100%;">Quero fazer parte</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Perguntas Frequentes</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Como funcionam os encontros?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Os encontros acontecem online, toda semana, com duração de aproximadamente 1 hora. São totalmente ao vivo e ficam gravados para você assistir quando quiser.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Preciso comprar os livros?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Sim, cada membro é responsável por adquirir os livros escolhidos. Fornecemos indicações de onde comprar com os melhores preços.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Posso cancelar quando quiser?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Sim! Não há período de fidelidade. Você pode cancelar sua assinatura a qualquer momento.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Quanto tempo preciso dedicar?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Recomendamos pelo menos 30 minutos por dia para leitura, mais 1 hora por semana para o encontro online.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Tem garantia?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Sim! Oferecemos 7 dias de garantia incondicional. Se não gostar, devolvemos 100% do seu dinheiro.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/logo-regras-transparente.png" alt="Regras do Jogo" class="logo">
+            <p>Clube do Livro Regras do Jogo</p>
+            <p>Email: contato@regrasdojogo.com</p>
+            <p>WhatsApp: (85) 99999-9999</p>
+            <p style="margin-top: 32px;">&copy; <?php echo date('Y'); ?> Regras do Jogo. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Floating CTA -->
+    <div class="floating-cta" id="floatingCta">
+        <button class="btn-primary" onclick="scrollToPricing()">Quero fazer parte - R$ 49,90/mês</button>
+    </div>
+
+    <script>
+        // Scroll to pricing
+        function scrollToPricing() {
+            document.getElementById('pricing').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Toggle FAQ
+        function toggleFaq(element) {
+            const faqItem = element.parentElement;
+            const isActive = faqItem.classList.contains('active');
+            
+            // Close all FAQ items
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('active');
+                item.querySelector('.faq-question span:last-child').textContent = '+';
+            });
+            
+            // Toggle current item
+            if (!isActive) {
+                faqItem.classList.add('active');
+                element.querySelector('span:last-child').textContent = '-';
+            }
+        }
+
+        // Show/hide floating CTA on scroll
+        window.addEventListener('scroll', function() {
+            const floatingCta = document.getElementById('floatingCta');
+            const scrollPosition = window.scrollY;
+            
+            if (scrollPosition > 800) {
+                floatingCta.classList.add('visible');
+            } else {
+                floatingCta.classList.remove('visible');
+            }
+        });
+    </script>
+</body>
+</html>
