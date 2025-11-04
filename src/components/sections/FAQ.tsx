@@ -29,7 +29,7 @@ export const FAQ = () => {
     },
     {
       question: "Funciona a garantia?",
-      answer: "Sim! Você tem 7 dias para experimentar. Se não gostar, devolvemos 100% do seu dinheiro sem perguntas. Basta enviar um e-mail para: relacionamento@projetoregrasdojogo.com",
+      answer: "Sim! Você tem 7 dias para experimentar. Se não gostar, devolvemos 100% do seu dinheiro sem perguntas. Basta enviar um e-mail para: relacionamento@projetoregrasdojogo.com.br",
     },
   ];
 

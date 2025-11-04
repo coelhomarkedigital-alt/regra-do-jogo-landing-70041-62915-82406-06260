@@ -47,7 +47,7 @@ export const Guarantee = () => {
                   <div className="flex items-center justify-center gap-2 text-reading-foreground">
                     <Mail className="w-5 h-5 text-primary" />
                     <p className="font-medium">
-                      📩 relacionamento@projetoregrasdojogo.com
+                      📩 relacionamento@projetoregrasdojogo.com.br
                     </p>
                   </div>
                 </div>

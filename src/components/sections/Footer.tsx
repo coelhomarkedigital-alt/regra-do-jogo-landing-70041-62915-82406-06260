@@ -18,9 +18,9 @@ export const Footer = () => {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">Contato</h4>
             <div className="space-y-2 text-sm">
-              <a href="mailto:relacionamento@projetoregrasdojogo.com" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
+              <a href="mailto:relacionamento@projetoregrasdojogo.com.br" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
                 <Mail className="w-4 h-4" />
-                relacionamento@projetoregrasdojogo.com
+                relacionamento@projetoregrasdojogo.com.br
               </a>
               <a href="https://wa.me/5585996648085" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
                 <Phone className="w-4 h-4" />
