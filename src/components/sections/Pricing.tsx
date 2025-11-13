@@ -29,7 +29,7 @@ export const Pricing = () => {
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {/* Plano Mensal */}
-            <Card className={`bg-white shadow-success hover:shadow-hover transition-all duration-300 border-primary/20 ${selectedPlan === 'mensal' ? 'ring-4 ring-primary/50 shadow-hover' : ''}`}>
+            <Card className={`bg-white shadow-success hover:shadow-hover transition-all duration-300 border-primary/20 opacity-0 animate-fade-in ${selectedPlan === 'mensal' ? 'ring-4 ring-primary/50 shadow-hover' : ''}`}>
               <CardHeader className="text-center pb-8 pt-8 px-6 space-y-4">
                 <h3 className="text-2xl font-bold text-paper-foreground">
                   Plano Mensal
@@ -74,9 +74,9 @@ export const Pricing = () => {
             </Card>
 
             {/* Plano Anual */}
-            <Card className={`bg-white shadow-success hover:shadow-hover transition-all duration-300 border-primary/20 relative overflow-hidden ${selectedPlan === 'anual' ? 'ring-4 ring-primary/50 shadow-hover' : ''}`}>
+            <Card className={`bg-white shadow-success hover:shadow-hover transition-all duration-300 border-primary/20 relative overflow-hidden opacity-0 animate-fade-in ${selectedPlan === 'anual' ? 'ring-4 ring-primary/50 shadow-hover' : ''}`} style={{ animationDelay: '0.15s' }}>
               <div className="absolute top-4 right-4 z-10">
-                <div className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1">
+                <div className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1 animate-pulse">
                   <Star className="w-3 h-3" />
                   Melhor Escolha
                 </div>

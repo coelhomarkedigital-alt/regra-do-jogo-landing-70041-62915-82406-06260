@@ -27,7 +27,7 @@ export const HowItWorksForWho = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
-            {steps.map((step, index) => <Card key={index} className="bg-card shadow-card hover:shadow-hover transition-all duration-300 border-border/50">
+            {steps.map((step, index) => <Card key={index} className="bg-card shadow-card hover:shadow-hover transition-all duration-300 border-border/50 opacity-0 animate-fade-in" style={{ animationDelay: `${index * 0.15}s` }}>
                 <CardContent className="pt-6 pb-6 px-6">
                   <div className="flex gap-4 items-start">
                     <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center">
@@ -46,15 +46,15 @@ export const HowItWorksForWho = () => {
               </Card>)}
           </div>
 
-          <div className="relative mt-16">
+          <div className="relative mt-16 opacity-0 animate-scale-in" style={{ animationDelay: '0.6s' }}>
             <div className="absolute inset-0 bg-gradient-to-r from-[hsl(45,98%,57%)] to-[hsl(38,92%,50%)] rounded-2xl blur-xl opacity-20"></div>
             <Card className="relative bg-gradient-to-r from-[hsl(45,98%,57%)] to-[hsl(38,92%,50%)] border-0 shadow-2xl">
               <CardContent className="pt-8 pb-8 px-8">
-                <h3 className="text-2xl md:text-3xl font-bold text-[#1a1a1a] text-center mb-6">
+                <h3 className="text-2xl md:text-3xl font-bold text-[#1a1a1a] text-center mb-6 animate-fade-in">
                   Para quem é o Clube?
                 </h3>
                 <div className="grid md:grid-cols-2 gap-4 max-w-3xl mx-auto">
-                  {profiles.map((profile, index) => <div key={index} className="bg-white rounded-lg p-4 shadow-md flex items-start gap-3">
+                  {profiles.map((profile, index) => <div key={index} className="bg-white rounded-lg p-4 shadow-md flex items-start gap-3 opacity-0 animate-fade-in" style={{ animationDelay: `${0.7 + index * 0.08}s` }}>
                       <div className="flex-shrink-0 w-6 h-6 rounded-full bg-[hsl(158,64%,52%)] flex items-center justify-center">
                         <Check className="w-4 h-4 text-white" />
                       </div>

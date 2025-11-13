@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Check, Target, Users, BookOpen, Calendar, TrendingUp, Zap } from "lucide-react";
 export const SolutionIntegrated = () => {
-  const whyDifficult = ["Ler sozinho exige disciplina que poucos têm naturalmente", "Sem método estruturado, é fácil perder o fio da meada", "Falta de accountability faz você desistir no primeiro obstáculo", "Você não sabe se está extraindo o melhor de cada livro", "Não há com quem discutir e aprofundar os insights"];
+  const whyDifficult = ["Ler sozinho exige disciplina que poucos têm naturalmente", "Sem método estruturado, é fácil perder o fio da meada", "A falta de acompanhamento faz você desistir no primeiro obstáculo", "Você não sabe se está extraindo o melhor de cada livro", "Não há com quem discutir e aprofundar os insights"];
   const differentials = [{
     icon: Target,
     text: "Método testado e validado"
@@ -33,20 +33,20 @@ manter o hábito de leitura?</h2>
           </div>
 
           <div className="space-y-4">
-            {whyDifficult.map((item, index) => <div key={index} className="flex gap-4 items-start p-5 bg-card rounded-lg border-l-4 border-primary backdrop-blur-sm hover:bg-card/80 transition-colors shadow-card">
+            {whyDifficult.map((item, index) => <div key={index} className="flex gap-4 items-start p-5 bg-card rounded-lg border-l-4 border-primary backdrop-blur-sm hover:bg-card/80 transition-colors shadow-card opacity-0 animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
                 <span className="text-primary text-2xl font-bold flex-shrink-0">•</span>
                 <p className="text-lg leading-relaxed">{item}</p>
               </div>)}
           </div>
 
-          <div className="relative">
+          <div className="relative opacity-0 animate-scale-in" style={{ animationDelay: '0.5s' }}>
             <div className="absolute inset-0 bg-gradient-accent rounded-2xl blur-xl opacity-20"></div>
             <Card className="relative bg-gradient-accent border-0 shadow-glow">
               <CardContent className="pt-10 pb-10 px-8">
-                <h3 className="text-2xl md:text-3xl font-bold text-accent-foreground text-center mb-8">O Clube do livro Regras do Jogo
+                <h3 className="text-2xl md:text-3xl font-bold text-accent-foreground text-center mb-8 animate-fade-in">O Clube do livro Regras do Jogo
 não é só mais um clube de leitura</h3>
                   <div className="grid md:grid-cols-3 gap-6">
-                  {differentials.map((diff, index) => <div key={index} className="bg-background rounded-xl p-5 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
+                  {differentials.map((diff, index) => <div key={index} className="bg-background rounded-xl p-5 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 opacity-0 animate-fade-in" style={{ animationDelay: `${0.6 + index * 0.1}s` }}>
                       <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-3">
                         <diff.icon className="w-6 h-6 text-primary" />
                       </div>

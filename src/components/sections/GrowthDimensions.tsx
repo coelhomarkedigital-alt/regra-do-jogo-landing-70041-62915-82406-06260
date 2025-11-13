@@ -57,7 +57,8 @@ export const GrowthDimensions = () => {
             {dimensions.map((dimension, index) => (
               <Card 
                 key={index}
-                className="bg-white shadow-success hover:shadow-hover transition-all duration-300 hover:-translate-y-2 border-primary/20"
+                className="bg-white shadow-success hover:shadow-hover transition-all duration-300 hover:-translate-y-2 border-primary/20 opacity-0 animate-fade-in"
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <CardContent className="pt-7 pb-5 px-5 text-center space-y-3">
                   <div className="w-14 h-14 mx-auto rounded-full bg-primary/10 flex items-center justify-center">
