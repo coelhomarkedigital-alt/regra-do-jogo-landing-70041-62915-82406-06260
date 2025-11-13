@@ -8,8 +8,8 @@ export const useScrollAnimation = () => {
   useEffect(() => {
     // Configuração do observer
     const observerOptions = {
-      threshold: 0.1, // Elemento precisa estar 10% visível
-      rootMargin: '0px 0px -80px 0px' // Margem para trigger mais natural
+      threshold: 0.05, // Reduzido para 5% para detectar melhor no desktop
+      rootMargin: '0px 0px -50px 0px' // Margem ajustada para desktop
     };
 
     // Callback quando elemento entra na viewport
@@ -33,9 +33,20 @@ export const useScrollAnimation = () => {
     // Seleciona todos os elementos com data-animate
     const animatedElements = document.querySelectorAll('[data-animate]');
     
-    // Começa a observar cada elemento
+    // Anima imediatamente elementos que já estão visíveis na viewport
     animatedElements.forEach(element => {
-      observer.observe(element);
+      const rect = element.getBoundingClientRect();
+      const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+      
+      if (isVisible) {
+        // Se já está visível, anima imediatamente
+        setTimeout(() => {
+          element.classList.add('animated');
+        }, 100);
+      } else {
+        // Se não está visível, observa para animar quando entrar
+        observer.observe(element);
+      }
     });
 
     // Cleanup ao desmontar
