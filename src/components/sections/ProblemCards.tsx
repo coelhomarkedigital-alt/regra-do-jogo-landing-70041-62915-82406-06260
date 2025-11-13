@@ -22,7 +22,7 @@ export const ProblemCards = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
-            {problems.map((problem, index) => <Card key={index} className="bg-white shadow-card hover:shadow-hover transition-all duration-300 hover:-translate-y-2 border-primary/20 opacity-0 animate-fade-in" style={{ animationDelay: `${index * 0.15}s` }}>
+            {problems.map((problem, index) => <Card key={index} className="bg-white shadow-card hover:shadow-hover transition-all duration-300 hover:-translate-y-2 border-primary/20" data-animate="scale" data-delay={String(index + 1)}>
                 <CardContent className="pt-8 pb-6 px-6 space-y-4 text-center">
                   <div className="w-16 h-16 mx-auto rounded-lg bg-primary/10 flex items-center justify-center">
                     <problem.icon className="w-8 h-8 text-primary" />
