@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
+import heroImage from "@/assets/hero-books.jpg";
 
 export const LampContainer = ({
   children,
@@ -18,6 +19,29 @@ export const LampContainer = ({
         className
       )}
     >
+      {/* Imagem de fundo */}
+      <div className="absolute inset-0 z-0 opacity-10" style={{
+        backgroundImage: `url(${heroImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+      }} />
+      
+      {/* Gradiente hero */}
+      <div className="absolute inset-0 z-0 bg-gradient-hero" />
+      
+      {/* Grid animado */}
+      <div className="absolute inset-0 z-0 opacity-10" style={{
+        backgroundImage: 'radial-gradient(circle, hsl(43 96% 56% / 0.3) 1px, transparent 1px)',
+        backgroundSize: '50px 50px',
+        animation: 'moveGrid 20s linear infinite'
+      }} />
+      
+      <style>{`
+        @keyframes moveGrid {
+          0% { transform: translate(0, 0); }
+          100% { transform: translate(50px, 50px); }
+        }
+      `}</style>
       <div className="relative flex w-full flex-1 scale-y-100 items-center justify-center isolate z-0">
         {/* Cone esquerdo */}
         <motion.div
