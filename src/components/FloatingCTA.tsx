@@ -32,7 +32,7 @@ export const FloatingCTA = () => {
         variant="cta"
         size="lg"
         onClick={scrollToPricing}
-        className="w-full shadow-cta"
+        className="w-full shadow-cta animate-[pulse_3s_ease-in-out_infinite]"
       >
         Quero evoluir com o Clube
         <ArrowUp className="w-5 h-5 ml-2 rotate-90" />
