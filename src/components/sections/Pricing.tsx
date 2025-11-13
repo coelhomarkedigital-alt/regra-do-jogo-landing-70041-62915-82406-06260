@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Check, Star } from "lucide-react";
 import { useState } from "react";
-
 export const Pricing = () => {
   const [selectedPlan, setSelectedPlan] = useState<string | null>(null);
   const features = ["Acesso imediato a todos os materiais", "Encontros mensais ao vivo", "Comunidade exclusiva no WhatsApp", "Esquema de leitura semanal", "Materiais complementares (resumos, exercícios)", "Gravações disponíveis"];
@@ -11,7 +10,9 @@ export const Pricing = () => {
     // Lógica de redirecionamento para checkout
     console.log(`Assinando plano: ${plan}`);
   };
-  return <section id="pricing" className="py-20" style={{ backgroundColor: '#FAF2E1' }}>
+  return <section id="pricing" className="py-20" style={{
+    backgroundColor: '#FAF2E1'
+  }}>
       <div className="container px-4 mx-auto">
         <div className="max-w-6xl mx-auto space-y-12">
           <div className="text-center space-y-4 animate-fade-in">
@@ -94,7 +95,7 @@ export const Pricing = () => {
                     por ano • ~R$ 29,16/mês
                   </p>
                   <div className="inline-block px-3 py-1 bg-primary/10 text-primary text-sm font-medium rounded-full">
-                    Economize R$ 129
+                    Economize R$ 128,90
                   </div>
                 </div>
               </CardHeader>
