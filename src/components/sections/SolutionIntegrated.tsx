@@ -1,7 +1,13 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Check, Target, Users, BookOpen, Calendar, TrendingUp, Zap } from "lucide-react";
 export const SolutionIntegrated = () => {
-  const whyDifficult = ["Ler sozinho exige disciplina que poucos têm naturalmente", "Sem método estruturado, é fácil perder o fio da meada", "A falta de acompanhamento faz você desistir no primeiro obstáculo", "Você não sabe se está extraindo o melhor de cada livro", "Não há com quem discutir e aprofundar os insights"];
+  const whyDifficult = [
+    "Ler sozinho exige disciplina que poucos têm naturalmente", 
+    "Sem método estruturado, é fácil perder o fio da meada", 
+    "A falta de acompanhamento faz você desistir no primeiro obstáculo", 
+    "Você não sabe se está extraindo o melhor de cada livro", 
+    "Não há com quem discutir e aprofundar os insights"
+  ];
   const differentials = [{
     icon: Target,
     text: "Método testado e validado"
@@ -25,18 +31,26 @@ export const SolutionIntegrated = () => {
       <div className="container px-4 mx-auto">
         <div className="max-w-5xl mx-auto space-y-12">
           <div className="text-center space-y-4 animate-fade-in">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">Por que é tão difícil criar e
-manter o hábito de leitura?</h2>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold" data-animate="fade-up">
+              Por que é tão difícil criar e manter o hábito de leitura?
+            </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               O problema não é você. É a <span className="text-primary font-semibold">falta de estrutura</span>. Ler sozinho, sem direcionamento, sem comunidade e sem compromisso é uma batalha perdida. <span className="text-primary font-semibold">Você precisa de método, não apenas de motivação.</span>
             </p>
           </div>
 
           <div className="space-y-4">
-            {whyDifficult.map((item, index) => <div key={index} className="flex gap-4 items-start p-5 bg-card rounded-lg border-l-4 border-primary backdrop-blur-sm hover:bg-card/80 transition-colors shadow-card opacity-0 animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
+            {whyDifficult.map((item, index) => (
+              <div 
+                key={index} 
+                className="flex gap-4 items-start p-5 bg-card rounded-lg border-l-4 border-primary backdrop-blur-sm hover:bg-card/80 transition-colors shadow-card" 
+                data-animate="slide-left" 
+                data-delay={String(index + 1)}
+              >
                 <span className="text-primary text-2xl font-bold flex-shrink-0">•</span>
                 <p className="text-lg leading-relaxed">{item}</p>
-              </div>)}
+              </div>
+            ))}
           </div>
 
           <div className="relative opacity-0 animate-scale-in" style={{ animationDelay: '0.5s' }}>

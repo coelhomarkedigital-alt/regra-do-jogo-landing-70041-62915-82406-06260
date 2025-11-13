@@ -19,7 +19,7 @@ export const Pricing = () => {
               <Check className="w-4 h-4 text-primary" />
               <span className="text-sm font-medium text-paper-foreground">Sem lista de espera • Entre quando quiser</span>
             </div>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-paper-foreground">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-paper-foreground" data-animate="fade-up">
               Escolha seu plano
             </h2>
             <p className="text-xl text-paper-foreground/70 max-w-2xl mx-auto">
@@ -29,7 +29,7 @@ export const Pricing = () => {
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {/* Plano Mensal */}
-            <Card className={`bg-white shadow-success hover:shadow-hover transition-all duration-300 border-primary/20 opacity-0 animate-fade-in ${selectedPlan === 'mensal' ? 'ring-4 ring-primary/50 shadow-hover' : ''}`}>
+            <Card className={`bg-white shadow-success hover:shadow-hover transition-all duration-300 border-primary/20 ${selectedPlan === 'mensal' ? 'ring-4 ring-primary/50 shadow-hover' : ''}`} data-animate="price-card" data-delay="1">
               <CardHeader className="text-center pb-8 pt-8 px-6 space-y-4">
                 <h3 className="text-2xl font-bold text-paper-foreground">
                   Plano Mensal
@@ -74,7 +74,7 @@ export const Pricing = () => {
             </Card>
 
             {/* Plano Anual */}
-            <Card className={`bg-white shadow-success hover:shadow-hover transition-all duration-300 border-primary/20 relative overflow-hidden opacity-0 animate-fade-in ${selectedPlan === 'anual' ? 'ring-4 ring-primary/50 shadow-hover' : ''}`} style={{ animationDelay: '0.15s' }}>
+            <Card className={`bg-white shadow-success hover:shadow-hover transition-all duration-300 border-primary/20 relative overflow-hidden ${selectedPlan === 'anual' ? 'ring-4 ring-primary/50 shadow-hover' : ''}`} data-animate="price-card" data-delay="2">
               <div className="absolute top-4 right-4 z-10">
                 <div className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1 animate-pulse">
                   <Star className="w-3 h-3" />

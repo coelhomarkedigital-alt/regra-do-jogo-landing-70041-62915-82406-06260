@@ -137,4 +137,158 @@ All colors MUST be HSL.
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
     pointer-events: none;
   }
+
+  /* ==========================================
+     ANIMAÇÕES DE SCROLL
+     ========================================== */
+
+  /* Base para todos os elementos animados */
+  [data-animate] {
+    opacity: 0;
+    transition: none;
+  }
+
+  [data-animate].animated {
+    opacity: 1;
+  }
+
+  /* Fade In Up (suave) - Textos principais, títulos */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  [data-animate="fade-up"].animated {
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+
+  /* Fade In (apenas opacidade) - Subtítulos, textos secundários */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  [data-animate="fade"].animated {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  /* Scale In (crescimento) - Cards, blocos de destaque */
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  [data-animate="scale"].animated {
+    animation: scaleIn 0.7s ease-out forwards;
+  }
+
+  /* Slide In Left - Elementos que vêm da esquerda */
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  [data-animate="slide-left"].animated {
+    animation: slideInLeft 0.8s ease-out forwards;
+  }
+
+  /* Slide In Right - Elementos que vêm da direita */
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  [data-animate="slide-right"].animated {
+    animation: slideInRight 0.8s ease-out forwards;
+  }
+
+  /* Bounce In (com ricochete suave) - CTAs, botões importantes */
+  @keyframes bounceIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  [data-animate="bounce"].animated {
+    animation: bounceIn 0.9s ease-out forwards;
+  }
+
+  /* Delays progressivos para efeito cascata */
+  [data-animate][data-delay="1"].animated { animation-delay: 0.1s; }
+  [data-animate][data-delay="2"].animated { animation-delay: 0.2s; }
+  [data-animate][data-delay="3"].animated { animation-delay: 0.3s; }
+  [data-animate][data-delay="4"].animated { animation-delay: 0.4s; }
+  [data-animate][data-delay="5"].animated { animation-delay: 0.5s; }
+  [data-animate][data-delay="6"].animated { animation-delay: 0.6s; }
+
+  /* Animação especial para cards de preço */
+  @keyframes priceCardIn {
+    0% {
+      opacity: 0;
+      transform: translateY(40px) scale(0.95);
+    }
+    60% {
+      transform: translateY(-5px) scale(1.02);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  [data-animate="price-card"].animated {
+    animation: priceCardIn 0.9s ease-out forwards;
+  }
+
+  /* Suavização para mobile */
+  @media (max-width: 768px) {
+    [data-animate].animated {
+      animation-duration: 0.6s !important;
+    }
+  }
+
+  /* Redução de movimento (acessibilidade) */
+  @media (prefers-reduced-motion: reduce) {
+    [data-animate] {
+      animation: none !important;
+      opacity: 1 !important;
+      transform: none !important;
+    }
+  }
 }

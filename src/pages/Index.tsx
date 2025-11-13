@@ -15,8 +15,11 @@ import { FAQ } from "@/components/sections/FAQ";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 import { Footer } from "@/components/sections/Footer";
 import { FloatingCTA } from "@/components/FloatingCTA";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const Index = () => {
+  useScrollAnimation();
+  
   return (
     <div className="min-h-screen bg-background">
       <Hero />
