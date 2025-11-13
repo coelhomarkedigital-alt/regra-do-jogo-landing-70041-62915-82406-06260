@@ -91,7 +91,7 @@ export default {
         "fade-in": {
           "0%": {
             opacity: "0",
-            transform: "translateY(20px)"
+            transform: "translateY(40px)"
           },
           "100%": {
             opacity: "1",
@@ -100,7 +100,7 @@ export default {
         },
         "scale-in": {
           "0%": {
-            transform: "scale(0.95)",
+            transform: "scale(0.9)",
             opacity: "0"
           },
           "100%": {
@@ -116,8 +116,8 @@ export default {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "fade-in": "fade-in 0.6s ease-out",
-        "scale-in": "scale-in 0.4s ease-out",
+        "fade-in": "fade-in 1s ease-out forwards",
+        "scale-in": "scale-in 0.8s ease-out forwards",
         "shine": "shine 3s linear infinite"
       },
       backgroundImage: {
