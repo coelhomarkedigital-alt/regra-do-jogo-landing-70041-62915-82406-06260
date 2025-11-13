@@ -56,7 +56,8 @@ export const SolutionIntegrated = () => {
 
           <div className="relative opacity-0 animate-scale-in" style={{ animationDelay: '0.5s' }}>
             <div className="absolute inset-0 bg-gradient-accent rounded-2xl blur-xl opacity-20"></div>
-            <Card className="relative bg-gradient-accent border-0 shadow-glow">
+            <div className="absolute -inset-1 bg-gradient-accent rounded-2xl opacity-50 blur-2xl"></div>
+            <Card className="relative bg-gradient-accent border-0 shadow-glow shadow-[0_0_60px_hsl(43_96%_56%/0.4)]">
               <CardContent className="pt-10 pb-10 px-8">
                 <h3 className="text-2xl md:text-3xl font-bold text-accent-foreground text-center mb-8 animate-fade-in">O Clube do livro Regras do Jogo
 não é só mais um clube de leitura</h3>
