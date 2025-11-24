@@ -46,8 +46,7 @@ export const FinalCTA = () => {
           </div>
 
           <div className="pt-12 border-t border-primary/20 mt-12">
-            <p className="text-foreground/60 italic text-lg">"A melhor hora para plantar uma árvore foi há 20 anos. A segunda melhor hora é agora."
-— Autor desconhecido</p>
+            <p className="text-foreground/60 italic text-lg">"A leitura é para a mente o que o exercício é para o corpo." - Joseph Addison</p>
           </div>
         </div>
       </div>
