@@ -2,52 +2,68 @@ import { Button } from "@/components/ui/button";
 import { Target, TrendingUp, Zap, Compass, Award } from "lucide-react";
 export const ResultsCondensed = () => {
   const scrollToPricing = () => {
-    const pricing = document.getElementById('pricing');
+    const pricing = document.getElementById("pricing");
     pricing?.scrollIntoView({
-      behavior: 'smooth'
+      behavior: "smooth",
     });
   };
-  const results = [{
-    icon: Target,
-    text: "Hábito de leitura consistente e prazeroso"
-  }, {
-    icon: TrendingUp,
-    text: "Insights práticos aplicados nas 5 dimensões da vida"
-  }, {
-    icon: Zap,
-    text: "Pensamento crítico através de discussões mediadas"
-  }, {
-    icon: Compass,
-    text: "Rede de contatos que compartilham valores e evolução"
-  }, {
-    icon: Award,
-    text: "Conhecimento transformado em ação e resultados reais"
-  }];
-  return <section className="py-16 bg-paper relative overflow-hidden">
-      
+  const results = [
+    {
+      icon: Target,
+      text: "Hábito de leitura consistente e prazeroso.",
+    },
+    {
+      icon: TrendingUp,
+      text: "Insights práticos aplicados nas 5 dimensões da vida.",
+    },
+    {
+      icon: Zap,
+      text: "Pensamento crítico através de discussões mediadas.",
+    },
+    {
+      icon: Compass,
+      text: "Rede de contatos que compartilham valores e evolução.",
+    },
+    {
+      icon: Award,
+      text: "Conhecimento transformado em ação e resultados reais.",
+    },
+  ];
+  return (
+    <section className="py-16 bg-paper relative overflow-hidden">
       <div className="container px-4 mx-auto relative z-10">
         <div className="max-w-4xl mx-auto space-y-10 text-center">
           <div className="space-y-4 animate-fade-in">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-paper-foreground">
               O que você vai conquistar
             </h2>
-            <p className="text-xl max-w-2xl mx-auto text-paper-foreground/70">Mais do que ler, você vai evoluir em todas as áreas da sua vida. Resultados reais através de método e consistência</p>
+            <p className="text-xl max-w-2xl mx-auto text-paper-foreground/70">
+              Mais do que ler, você vai evoluir em todas as áreas da sua vida. Resultados reais através de método e
+              consistência
+            </p>
           </div>
 
           <div className="space-y-4 max-w-3xl mx-auto">
-            {results.map((result, index) => <div key={index} className="bg-white p-5 rounded-xl border-l-4 border-primary hover:shadow-hover transition-all flex items-start gap-4 shadow-card">
+            {results.map((result, index) => (
+              <div
+                key={index}
+                className="bg-white p-5 rounded-xl border-l-4 border-primary hover:shadow-hover transition-all flex items-start gap-4 shadow-card"
+              >
                 <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
                   <result.icon className="w-5 h-5 text-primary" />
                 </div>
                 <p className="text-lg leading-relaxed text-left pt-1 font-medium text-paper-foreground">
                   {result.text}
                 </p>
-              </div>)}
+              </div>
+            ))}
           </div>
 
           <div className="pt-6">
             <div className="inline-block bg-white px-8 py-6 rounded-2xl border border-primary/20 shadow-hover">
-              <p className="text-xl font-bold mb-4 text-paper-foreground">O compromisso é seu. Os resultados, também.</p>
+              <p className="text-xl font-bold mb-4 text-paper-foreground">
+                O compromisso é seu. Os resultados, também.
+              </p>
               <Button variant="cta" size="xl" onClick={scrollToPricing} className="shadow-glow">
                 Começar minha transformação
               </Button>
@@ -55,5 +71,6 @@ export const ResultsCondensed = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
