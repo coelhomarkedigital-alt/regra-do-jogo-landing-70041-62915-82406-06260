@@ -28,7 +28,7 @@ export const HowItWorksForWho = () => {
   const profiles = [
     "Profissionais que querem evoluir na carreira.",
     "Pessoas que lutam para criar o hábito de ler.",
-    "Quem quer aprender com troca de experiências.",
+    "Quem quer aprender com troca de .",
     "Aqueles que valorizam método e estrutura.",
     "Quem quer aplicar conhecimento, não apenas acumular.",
     "Profissionais que valorizam networking de qualidade.",
