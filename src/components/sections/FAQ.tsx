@@ -13,7 +13,7 @@ export const FAQ = () => {
     },
     {
       question: "E se eu não puder participar ao vivo?",
-      answer: "Não se preocupe. Todas as sessões são gravadas e ficam disponíveis na área de vídeos do portal até o último dia do mês.",
+      answer: "Não se preocupe. Todas as sessões são gravadas e ficam disponíveis na área de vídeos do portal.",
     },
     {
       question: "Preciso comprar o livro?",
