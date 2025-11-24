@@ -3,14 +3,14 @@ import { Check } from "lucide-react";
 
 export const ForWho = () => {
   const profiles = [
-    "Profissionais que querem evoluir na carreira",
-    "Empreendedores buscando insights estratégicos",
-    "Pessoas que lutam para criar o hábito de ler",
-    "Quem quer aprender com troca de experiências",
-    "Aqueles que valorizam método e estrutura",
-    "Pessoas que buscam crescimento em múltiplas áreas",
-    "Quem quer aplicar conhecimento, não apenas acumular",
-    "Profissionais que valorizam networking de qualidade",
+    "Profissionais que querem evoluir na carreira.",
+    "Empreendedores buscando insights estratégicos.",
+    "Pessoas que lutam para criar o hábito de ler.",
+    "Quem quer aprender com troca de experiências.",
+    "Aqueles que valorizam método e estrutura.",
+    "Pessoas que buscam crescimento em múltiplas áreas.",
+    "Quem quer aplicar conhecimento, não apenas acumular.",
+    "Profissionais que valorizam networking de qualidade.",
   ];
 
   return (
