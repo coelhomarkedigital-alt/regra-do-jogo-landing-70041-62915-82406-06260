@@ -25,8 +25,8 @@ export const GrowthDimensions = () => {
     },
     {
       icon: DollarSign,
-      title: "Educação Financeira",
-      description: "Investimentos, mentalidade de abundância e construção de patrimônio.",
+      title: "Finanças Pessoais",
+      description: "Investimentos, mentalidade de abundância, organização financeira e construção de patrimônio.",
       color: "text-yellow-600",
       bg: "bg-yellow-500/10",
     },
