@@ -50,9 +50,7 @@ export const Mentor = () => {
 
                   <div className="pt-4 space-y-4 text-muted-foreground leading-relaxed">
                     <p>
-                      Com uma trajetória que une direito, investimentos e desenvolvimento humano, 
-                      Carlos Marden traz uma visão única sobre como o conhecimento pode ser 
-                      transformado em ação prática.
+                      Com uma trajetória que une Investimentos, Desenvolvimento Humano e Profissional, Carlos Marden traz uma visão única sobre como o conhecimento pode ser transformado em ação prática.
                     </p>
                     <p className="font-medium text-foreground">
                       "Minha missão é simples: ajudar pessoas a transformarem livros em resultados concretos."
