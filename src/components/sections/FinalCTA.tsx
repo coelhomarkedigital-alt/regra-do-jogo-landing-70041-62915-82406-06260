@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import readingGroup from "@/assets/reading-group.jpg";
+import readingWithBook from "@/assets/reading-with-book.jpg";
 export const FinalCTA = () => {
   const scrollToPricing = () => {
     const pricing = document.getElementById('pricing');
@@ -8,12 +8,12 @@ export const FinalCTA = () => {
     });
   };
   return <section className="py-20 bg-background relative overflow-hidden bg-textured">
-      <div className="absolute inset-0 z-0 opacity-30" style={{
-      backgroundImage: `url(${readingGroup})`,
+      <div className="absolute inset-0 z-0 opacity-60" style={{
+      backgroundImage: `url(${readingWithBook})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center'
     }} />
-      <div className="absolute inset-0 z-0 bg-gradient-to-br from-background/85 via-background/90 to-card/85" />
+      <div className="absolute inset-0 z-0 bg-gradient-to-br from-background/50 via-background/55 to-background/60" />
       
       <div className="container px-4 mx-auto relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8">
