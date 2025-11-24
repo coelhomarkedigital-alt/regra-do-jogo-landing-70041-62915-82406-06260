@@ -2,7 +2,8 @@ import { Mail, Phone } from "lucide-react";
 import logoRegrasDoJogo from "@/assets/logo-regras-transparente.png";
 
 export const Footer = () => {
-  return <footer className="bg-background text-foreground py-12 border-t border-primary/20">
+  return (
+    <footer className="bg-background text-foreground py-12 border-t border-primary/20">
       <div className="container px-4 mx-auto">
         <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
           <div className="space-y-4">
@@ -18,11 +19,19 @@ export const Footer = () => {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">Contato</h4>
             <div className="space-y-2 text-sm">
-              <a href="mailto:relacionamento@projetoregrasdojogo.com.br" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
+              <a
+                href="mailto:relacionamento@projetoregrasdojogo.com.br"
+                className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+              >
                 <Mail className="w-4 h-4" />
                 relacionamento@projetoregrasdojogo.com.br
               </a>
-              <a href="https://wa.me/5585996648085" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
+              <a
+                href="https://wa.me/5585996648085"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+              >
                 <Phone className="w-4 h-4" />
                 +55 85 9964-8085
               </a>
@@ -41,9 +50,10 @@ export const Footer = () => {
 
         <div className="border-t border-primary/20 mt-8 pt-8 text-center">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Clube do Livro Regras do Jogo. Todos os direitos reservados.
+            © {new Date().getFullYear()} Projeto Regras do Jogo. Todos os direitos reservados.
           </p>
         </div>
       </div>
-    </footer>;
+    </footer>
+  );
 };
