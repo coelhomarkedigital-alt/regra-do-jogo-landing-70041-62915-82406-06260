@@ -7,7 +7,7 @@ export const Doubts = () => {
       icon: Clock,
       question: '"Não tenho tempo"',
       answer: "Apenas 15 minutos por dia. Menos tempo do que você gasta nas redes sociais.",
-      stat: "87% dos membros encontram tempo facilmente",
+      stat: "87% dos membros encontram tempo facilmente.",
     },
     {
       icon: Video,
@@ -19,13 +19,13 @@ export const Doubts = () => {
       icon: Shield,
       question: '"Tenho medo de desperdiçar dinheiro"',
       answer: "7 dias de garantia integral. Não gostou? Devolvemos cada centavo, sem perguntas.",
-      stat: "Risco zero para você",
+      stat: "Risco zero para você.",
     },
     {
       icon: BookOpen,
       question: '"Não gosto de ler / não consigo terminar livros"',
       answer: "Você só não encontrou o método certo. Nossos membros tinham o mesmo bloqueio.",
-      stat: "84% criaram hábito de leitura em 30 dias",
+      stat: "84% criaram hábito de leitura em 30 dias.",
     },
   ];
 
