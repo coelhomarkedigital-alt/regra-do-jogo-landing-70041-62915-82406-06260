@@ -4,17 +4,17 @@ export const ProblemCards = () => {
   const problems = [
     {
       icon: BookOpen,
-      title: "Compra, mas não lê",
+      title: "Compra, mas não lê.",
       description: "Você acumula livros na estante, mas sempre adia a leitura. A pilha só cresce.",
     },
     {
       icon: Clock,
-      title: "Falta tempo e consistência",
+      title: "Falta tempo e consistência.",
       description: "Começa a ler, mas abandona no meio. Falta um método que torne a leitura parte da rotina.",
     },
     {
       icon: HelpCircle,
-      title: "Não sabe o que ler",
+      title: "Não sabe o que ler.",
       description: "Tantas opções, mas qual livro vai realmente fazer diferença na sua vida agora?",
     },
   ];
