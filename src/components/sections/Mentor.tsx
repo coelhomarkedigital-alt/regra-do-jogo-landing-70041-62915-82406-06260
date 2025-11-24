@@ -59,7 +59,7 @@ export const Mentor = () => {
                 </div>
 
                 <div className="relative h-full min-h-[400px] md:min-h-[500px] overflow-hidden rounded-r-lg">
-                  <img src={carlosMarden} alt="Carlos Marden - Mentor do Clube do Livro Regras do Jogo" className="absolute inset-0 w-full h-full object-cover" />
+                  <img src={carlosMarden} alt="Carlos Marden - Mentor do Clube do Livro Regras do Jogo" className="absolute inset-0 w-full h-full object-cover object-[center_20%] md:object-center" />
                 </div>
               </div>
             </CardContent>
