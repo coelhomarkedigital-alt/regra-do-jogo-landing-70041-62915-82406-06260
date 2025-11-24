@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "motion/react";
 import { LampContainer } from "@/components/ui/lamp-container";
-
 export const Hero = () => {
   const scrollToPricing = () => {
     const pricing = document.getElementById('pricing');
@@ -9,19 +8,18 @@ export const Hero = () => {
       behavior: 'smooth'
     });
   };
-  
-  return (
-    <LampContainer>
-      <motion.div
-        initial={{ opacity: 0.5, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{
-          delay: 0.3,
-          duration: 0.8,
-          ease: "easeInOut",
-        }}
-        className="container relative z-10 px-4 py-16 mx-auto text-center w-full"
-      >
+  return <LampContainer>
+      <motion.div initial={{
+      opacity: 0.5,
+      y: 100
+    }} whileInView={{
+      opacity: 1,
+      y: 0
+    }} transition={{
+      delay: 0.3,
+      duration: 0.8,
+      ease: "easeInOut"
+    }} className="container relative z-10 px-4 py-16 mx-auto text-center w-full">
         <div className="max-w-4xl mx-auto space-y-6">
           <div className="inline-block bg-primary/20 backdrop-blur-md px-3 sm:px-5 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium mb-4 text-primary border border-primary/30">Transforme sua vida através da leitura inteligente</div>
           
@@ -30,7 +28,7 @@ export const Hero = () => {
             Comece a <span className="text-primary">evoluir</span>.
           </h1>
           
-          <p className="text-xl md:text-2xl text-foreground max-w-2xl mx-auto leading-relaxed">Transforme leitura em hábito, hábito em conhecimento e conhecimento em resultado, através do nosso Clube do livro Regras do Jogo.</p>
+          <p className="text-xl md:text-2xl text-foreground max-w-2xl mx-auto leading-relaxed">Transforme leitura em hábito, hábito em conhecimento e conhecimento em resultado, por meio do nosso Clube do Livro Regras do Jogo.</p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
             <Button variant="hero" size="xl" onClick={scrollToPricing} className="w-full sm:w-auto shadow-glow">
@@ -44,6 +42,5 @@ export const Hero = () => {
           </div>
         </div>
       </motion.div>
-    </LampContainer>
-  );
+    </LampContainer>;
 };
