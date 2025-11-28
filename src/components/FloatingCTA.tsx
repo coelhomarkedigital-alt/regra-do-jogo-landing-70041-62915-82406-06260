@@ -31,11 +31,13 @@ export const FloatingCTA = () => {
       <Button 
         variant="cta"
         size="lg"
-        onClick={scrollToPricing}
+        asChild
         className="w-full shadow-cta animate-[pulse_3s_ease-in-out_infinite]"
       >
-        Quero evoluir com o Clube
-        <ArrowUp className="w-5 h-5 ml-2 rotate-90" />
+        <a href="https://pag.ae/81g7_gNNH" target="_blank" rel="noopener noreferrer">
+          Quero evoluir com o Clube
+          <ArrowUp className="w-5 h-5 ml-2 rotate-90" />
+        </a>
       </Button>
     </div>
   );

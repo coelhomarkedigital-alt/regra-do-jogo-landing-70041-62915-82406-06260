@@ -64,8 +64,10 @@ export const Pricing = () => {
                   </li>
                 </ul>
 
-                <Button variant="cta" size="xl" className="w-full" onClick={() => handleSubscribe('mensal')}>
-                  Começar com Plano Mensal
+                <Button variant="cta" size="xl" className="w-full" asChild>
+                  <a href="https://pag.ae/81g7_gNNH" target="_blank" rel="noopener noreferrer">
+                    Começar com Plano Mensal
+                  </a>
                 </Button>
 
                 <p className="text-xs text-paper-foreground/60 text-center">
@@ -119,8 +121,10 @@ export const Pricing = () => {
                   </li>
                 </ul>
 
-                <Button variant="cta" size="xl" className="w-full" onClick={() => handleSubscribe('anual')}>
-                  Garantir Plano Anual
+                <Button variant="cta" size="xl" className="w-full" asChild>
+                  <a href="https://pag.ae/81g81daep" target="_blank" rel="noopener noreferrer">
+                    Garantir Plano Anual
+                  </a>
                 </Button>
 
                 <p className="text-xs text-paper-foreground/60 text-center">
