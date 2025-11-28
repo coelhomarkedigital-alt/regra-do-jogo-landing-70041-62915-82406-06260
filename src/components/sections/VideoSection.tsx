@@ -38,7 +38,7 @@ export const VideoSection = () => {
   return (
     <section className="py-16 bg-black">
       <div className="container px-4 mx-auto">
-        <div className="max-w-md mx-auto space-y-8">
+        <div className="max-w-3xl mx-auto space-y-8">
           <div className="text-center space-y-4">
             <h2 className="text-3xl md:text-4xl font-bold text-white">
               Veja como funciona
@@ -46,15 +46,14 @@ export const VideoSection = () => {
           </div>
           
           <div 
-            className="relative w-full rounded-2xl overflow-hidden"
+            className="relative w-full rounded-2xl overflow-hidden aspect-video"
             style={{ 
-              paddingBottom: '177.78%',
               boxShadow: '0 0 30px rgba(251, 191, 36, 0.3), 0 0 60px rgba(245, 192, 69, 0.15), inset 0 0 0 2px rgba(251, 191, 36, 0.4)'
             }}
           >
             <video
               ref={videoRef}
-              className="absolute top-0 left-0 w-full h-full object-cover cursor-pointer"
+              className="absolute top-0 left-0 w-full h-full object-contain cursor-pointer"
               src="/video-apresentacao.mp4"
               playsInline
               preload="metadata"
