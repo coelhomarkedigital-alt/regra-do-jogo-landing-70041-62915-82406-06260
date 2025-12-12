@@ -2,14 +2,14 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import { useRef } from "react";
-import habitos7 from "@/assets/books/7-habitos.webp";
-import habitosAtomicos from "@/assets/books/habitos-atomicos.webp";
-import armasPersuasao from "@/assets/books/armas-persuasao.webp";
-import supercomunicadores from "@/assets/books/supercomunicadores.jpg";
-import psicologiaFinanceira from "@/assets/books/psicologia-financeira.jpg";
-import egoInimigo from "@/assets/books/ego-inimigo.jpg";
-import nacaoDopamina from "@/assets/books/nacao-dopamina.jpg";
-import geracaoAnsiosa from "@/assets/books/geracao-ansiosa.jpg";
+import obvioIgnoramos from "@/assets/books/obvio-ignoramos.webp";
+import darReceber from "@/assets/books/dar-receber.webp";
+import falarPublico from "@/assets/books/falar-publico.webp";
+import essencialismo from "@/assets/books/essencialismo.jpg";
+import decifrarMentes from "@/assets/books/decifrar-mentes.jpg";
+import potencialOculto from "@/assets/books/potencial-oculto.jpg";
+import buscaSentido from "@/assets/books/busca-sentido.jpg";
+import conversasDificeis from "@/assets/books/conversas-dificeis.webp";
 
 export const BooksCarousel = () => {
   const plugin = useRef(Autoplay({
@@ -19,55 +19,57 @@ export const BooksCarousel = () => {
   
   const books = [
     {
-      title: "Os 7 Hábitos das Pessoas Altamente Eficazes",
-      author: "Stephen R. Covey",
-      category: "Produtividade & Liderança",
-      cover: habitos7
+      title: "O Óbvio que Ignoramos",
+      author: "Jacob Petry",
+      category: "Sucesso & Atitudes",
+      cover: obvioIgnoramos
     },
     {
-      title: "Hábitos Atômicos",
-      author: "James Clear",
-      category: "Transformação & Hábitos",
-      cover: habitosAtomicos
+      title: "Dar e Receber",
+      author: "Adam Grant (com Marcella Mourão)",
+      category: "Sucesso & Generosidade",
+      cover: darReceber
     },
     {
-      title: "As Armas da Persuasão",
-      author: "Robert B. Cialdini",
-      category: "Comunicação & Influência",
-      cover: armasPersuasao
+      title: "Como Falar em Público e Encantar as Pessoas",
+      author: "Dale Carnegie",
+      category: "Comunicação & Oratória",
+      cover: falarPublico
     },
     {
-      title: "Supercomunicadores",
-      author: "Charles Duhigg",
-      category: "Comunicação & Conexão",
-      cover: supercomunicadores
+      title: "Essencialismo",
+      author: "Greg McKeown (com Konrad Mota)",
+      category: "Produtividade & Foco",
+      cover: essencialismo
     },
     {
-      title: "A Psicologia Financeira",
-      author: "Morgan Housel",
-      category: "Educação Financeira",
-      cover: psicologiaFinanceira
+      title: "Como Decifrar Mentes",
+      author: "David Lieberman",
+      category: "Psicologia & Comportamento",
+      cover: decifrarMentes
     },
     {
-      title: "O Ego é seu Inimigo",
-      author: "Ryan Holiday",
+      title: "Potencial Oculto",
+      author: "Adam Grant (com Paulo Verçosa)",
       category: "Desenvolvimento Pessoal",
-      cover: egoInimigo
+      cover: potencialOculto
     },
     {
-      title: "Nação Dopamina",
-      author: "Dra. Anna Lembke",
-      category: "Neurociência & Comportamento",
-      cover: nacaoDopamina
+      title: "Em Busca de Sentido",
+      author: "Viktor Frankl (com Konrad Mota)",
+      category: "Filosofia & Propósito",
+      cover: buscaSentido
     },
     {
-      title: "A Geração Ansiosa",
-      author: "Jonathan Haidt",
-      category: "Psicologia & Sociedade",
-      cover: geracaoAnsiosa
+      title: "Conversas Difíceis",
+      author: "Bruce Patton (com Nilton Medeiros)",
+      category: "Comunicação & Relacionamentos",
+      cover: conversasDificeis
     }
   ];
-  return <section className="py-16 bg-muted/20">
+
+  return (
+    <section className="py-16 bg-muted/20">
       <div className="container px-4 mx-auto">
         <div className="max-w-6xl mx-auto space-y-10">
           <div className="text-center space-y-4 animate-fade-in">
@@ -77,20 +79,20 @@ export const BooksCarousel = () => {
 
           <div className="relative px-12">
             <Carousel plugins={[plugin.current]} className="w-full" opts={{
-            align: "start",
-            loop: true
-          }} onMouseEnter={plugin.current.stop} onMouseLeave={plugin.current.reset}>
+              align: "start",
+              loop: true
+            }} onMouseEnter={plugin.current.stop} onMouseLeave={plugin.current.reset}>
               <CarouselContent>
                 {books.map((book, index) => (
                   <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                     <Card className="bg-card shadow-card hover:shadow-hover transition-all duration-300 hover:-translate-y-2 border-border/50 group h-full">
                       <CardContent className="pt-8 pb-6 px-6 space-y-4">
                         <div className="flex justify-center mb-4">
-                          <div className="relative group-hover:scale-105 transition-transform duration-300">
+                          <div className="relative group-hover:scale-105 transition-transform duration-300 bg-white p-2 rounded-lg">
                             <img 
                               src={book.cover} 
                               alt={`Capa do livro ${book.title}`}
-                              className="h-48 w-auto object-contain brightness-100 shadow-glow"
+                              className="h-48 w-auto object-contain"
                               style={{
                                 filter: 'drop-shadow(0 4px 20px rgba(251, 191, 36, 0.4)) brightness(1.05)'
                               }}
@@ -127,5 +129,6 @@ export const BooksCarousel = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
