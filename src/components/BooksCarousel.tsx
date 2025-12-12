@@ -2,14 +2,14 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import { useRef } from "react";
-import obvioIgnoramos from "@/assets/books/obvio-ignoramos.webp";
-import darReceber from "@/assets/books/dar-receber.webp";
-import falarPublico from "@/assets/books/falar-publico.webp";
-import essencialismo from "@/assets/books/essencialismo.jpg";
-import decifrarMentes from "@/assets/books/decifrar-mentes.jpg";
-import potencialOculto from "@/assets/books/potencial-oculto.jpg";
-import buscaSentido from "@/assets/books/busca-sentido.jpg";
-import conversasDificeis from "@/assets/books/conversas-dificeis.webp";
+import obvioIgnoramos from "@/assets/books/obvio-ignoramos.png";
+import darReceber from "@/assets/books/dar-receber.png";
+import falarPublico from "@/assets/books/falar-publico.png";
+import essencialismo from "@/assets/books/essencialismo.png";
+import decifrarMentes from "@/assets/books/decifrar-mentes.png";
+import potencialOculto from "@/assets/books/potencial-oculto.png";
+import buscaSentido from "@/assets/books/busca-sentido.png";
+import conversasDificeis from "@/assets/books/conversas-dificeis.png";
 
 export const BooksCarousel = () => {
   const plugin = useRef(Autoplay({
