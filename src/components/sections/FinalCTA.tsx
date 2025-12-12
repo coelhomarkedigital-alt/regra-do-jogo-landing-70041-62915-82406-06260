@@ -34,7 +34,7 @@ export const FinalCTA = () => {
               </a>
             </Button>
             <Button variant="outline" size="xl" asChild className="w-full sm:w-auto">
-              <a href="https://pag.ae/81g7_gNNH" target="_blank" rel="noopener noreferrer">
+              <a href="http://projetoregrasdojogo.rds.land/clube-do-livro-assinantes-mensais" target="_blank" rel="noopener noreferrer">
                 Começar com Plano Mensal
               </a>
             </Button>

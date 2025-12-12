@@ -65,7 +65,7 @@ export const Pricing = () => {
                 </ul>
 
                 <Button variant="cta" size="xl" className="w-full" asChild>
-                  <a href="https://pag.ae/81g7_gNNH" target="_blank" rel="noopener noreferrer">
+                  <a href="http://projetoregrasdojogo.rds.land/clube-do-livro-assinantes-mensais" target="_blank" rel="noopener noreferrer">
                     Começar com Plano Mensal
                   </a>
                 </Button>
