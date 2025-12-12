@@ -1,5 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Calendar } from "lucide-react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+
 const meetings = [{
   month: "Janeiro",
   number: "01",
@@ -85,9 +92,11 @@ const meetings = [{
   subtitle: null,
   guest: null
 }];
+
 export const Schedule = () => {
-  return <section className="py-16 md:py-24 bg-[#FAF2E1]">
-      <div className="container mx-auto px-4 max-w-5xl">
+  return (
+    <section className="py-16 md:py-24 bg-[#FAF2E1]">
+      <div className="container mx-auto px-4 max-w-3xl">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary-foreground">
             Cronograma dos Encontros do Clube do Livro 2026
@@ -98,37 +107,44 @@ export const Schedule = () => {
           </p>
         </div>
 
-        <div className="grid gap-4 md:gap-3">
-          {meetings.map((meeting, index) => <div key={index} className="bg-white rounded-xl p-4 md:p-5 border border-primary/20 shadow-sm hover:shadow-md transition-shadow duration-300 opacity-0 animate-fade-in" style={{
-          animationDelay: `${index * 0.05}s`,
-          animationFillMode: "forwards"
-        }}>
-              <div className="flex flex-col md:flex-row md:items-center gap-3 md:gap-6">
-                {/* Date badge */}
-                <div className="flex items-center gap-3 md:min-w-[180px]">
+        <Accordion type="single" collapsible className="space-y-3">
+          {meetings.map((meeting, index) => (
+            <AccordionItem
+              key={index}
+              value={`item-${index}`}
+              className="bg-white rounded-xl border border-primary/20 shadow-sm px-5 py-1 data-[state=open]:shadow-md transition-shadow duration-300"
+            >
+              <AccordionTrigger className="hover:no-underline py-4">
+                <div className="flex items-center gap-3">
                   <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10">
                     <Calendar className="w-5 h-5 text-primary" />
                   </div>
-                  <div>
-                    <span className="text-sm font-semibold text-primary">{meeting.month}</span>
-                    <span className="text-xs text-muted-foreground ml-2">({meeting.date})</span>
+                  <span className="text-lg font-semibold text-primary-foreground">
+                    {meeting.month} 2026
+                  </span>
+                </div>
+              </AccordionTrigger>
+              <AccordionContent className="pb-5 pt-2">
+                <div className="pl-13 space-y-2">
+                  <div className="flex items-center gap-2 text-primary font-medium">
+                    <span className="text-sm bg-primary/10 px-3 py-1 rounded-full">
+                      {meeting.date}/2026
+                    </span>
                   </div>
+                  <h3 className="font-semibold text-base md:text-lg text-primary-foreground">
+                    {meeting.title}
+                  </h3>
+                  {meeting.subtitle && (
+                    <p className="text-sm italic text-accent">{meeting.subtitle}</p>
+                  )}
+                  {meeting.guest && (
+                    <p className="text-sm text-primary font-medium">{meeting.guest}</p>
+                  )}
                 </div>
-
-                {/* Meeting number */}
-                <div className="hidden md:flex items-center justify-center w-8 h-8 rounded-full bg-primary text-primary-foreground text-sm font-bold">
-                  {meeting.number}
-                </div>
-
-                {/* Content */}
-                <div className="flex-1">
-                  <h3 className="font-semibold text-base md:text-lg text-primary-foreground">{meeting.title}</h3>
-                  {meeting.subtitle && <p className="text-sm mt-0.5 font-medium text-accent">{meeting.subtitle}</p>}
-                  {meeting.guest && <p className="text-sm text-primary font-medium mt-0.5">{meeting.guest}</p>}
-                </div>
-              </div>
-            </div>)}
-        </div>
+              </AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
 
         {/* Disclaimer */}
         <p className="text-center text-sm mt-8 text-muted">
@@ -145,5 +161,6 @@ export const Schedule = () => {
           <p className="text-sm mt-3 text-muted">Garanta sua vaga e acompanhe todos os encontros ao vivo</p>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
