@@ -114,14 +114,12 @@ export const Schedule = () => {
               value={`item-${index}`}
               className="bg-white rounded-lg border border-primary/20 px-6 shadow-success hover:shadow-hover transition-all"
             >
-              <AccordionTrigger className="hover:no-underline py-5 text-left">
+              <AccordionTrigger className="text-left text-primary-foreground font-semibold hover:text-primary py-5 hover:no-underline">
                 <div className="flex items-center gap-3">
-                  <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10">
+                  <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 shrink-0">
                     <Calendar className="w-5 h-5 text-primary" />
                   </div>
-                  <span className="text-lg font-semibold text-primary-foreground hover:text-primary transition-colors">
-                    {meeting.month} 2026
-                  </span>
+                  <span className="text-lg">{meeting.month} 2026</span>
                 </div>
               </AccordionTrigger>
               <AccordionContent className="pb-5 pt-2">
