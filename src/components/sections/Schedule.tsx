@@ -25,7 +25,7 @@ const meetings = [{
   month: "Abril",
   number: "04",
   date: "11/04",
-  title: "\"Dar e Receber\" - Adam Grant",
+  title: "\"Dar e Receber\" - Adam Grant (com Marcella Mourão)",
   subtitle: null,
   guest: "Com participação especial de Marcella Mourão"
 }, {
