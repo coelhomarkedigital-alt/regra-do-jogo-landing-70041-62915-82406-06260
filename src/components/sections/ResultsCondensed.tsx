@@ -30,9 +30,7 @@ export const ResultsCondensed = () => {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-paper-foreground">
               O que você vai conquistar?
             </h2>
-            <p className="text-xl max-w-2xl mx-auto text-paper-foreground/70">
-              Mais do que ler, você vai evoluir em todas as áreas da sua vida. Resultados reais por mei de método e consistência.
-            </p>
+            <p className="text-xl max-w-2xl mx-auto text-paper-foreground/70">Mais do que ler, você vai evoluir em todas as áreas da sua vida. Resultados reais por meio de método e consistência.</p>
           </div>
 
           <div className="space-y-4 max-w-3xl mx-auto">
