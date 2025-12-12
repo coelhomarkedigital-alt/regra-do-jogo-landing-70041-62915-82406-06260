@@ -54,7 +54,7 @@ const meetings = [{
   number: "07",
   date: "15/07",
   title: "Encontro de Leitores",
-  subtitle: "Trocas, reflexões e experiências",
+  subtitle: "Trocas, reflexões e experiências.",
   guest: null
 }, {
   month: "Agosto",
@@ -124,8 +124,8 @@ export const Schedule = () => {
               </AccordionTrigger>
               <AccordionContent className="pb-5 pt-2">
                 <div className="pl-13 space-y-2">
-                  <div className="flex items-center gap-2 text-primary font-medium">
-                    <span className="text-sm bg-primary/10 px-3 py-1 rounded-full">
+                  <div className="flex items-center gap-2">
+                    <span className="text-sm bg-primary/10 px-3 py-1 rounded-full text-amber-700 font-bold">
                       {meeting.date}/2026
                     </span>
                   </div>
