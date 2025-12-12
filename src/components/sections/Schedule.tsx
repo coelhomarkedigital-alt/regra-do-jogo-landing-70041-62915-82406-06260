@@ -121,7 +121,7 @@ export const Schedule = () => {
 
                 {/* Content */}
                 <div className="flex-1">
-                  <h3 className="font-semibold text-foreground text-base md:text-lg">
+                  <h3 className="font-semibold text-base md:text-lg text-primary-foreground">
                     {meeting.title}
                   </h3>
                   {meeting.subtitle && <p className="text-sm text-muted-foreground mt-0.5">{meeting.subtitle}</p>}
