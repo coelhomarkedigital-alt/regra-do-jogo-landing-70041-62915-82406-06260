@@ -100,7 +100,7 @@ const meetings = [
 ];
 export const Schedule = () => {
   return (
-    <section className="py-16 md:py-24 bg-[#F6F2E8]">
+    <section className="py-16 md:py-24 bg-[#FAF2E1]">
       <div className="container mx-auto px-4 max-w-5xl">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary-foreground">
@@ -116,7 +116,7 @@ export const Schedule = () => {
           {meetings.map((meeting, index) => (
             <div
               key={index}
-              className="bg-[#FAF2E1] rounded-xl p-4 md:p-5 border border-primary/20 shadow-sm hover:shadow-md transition-shadow duration-300 opacity-0 animate-fade-in"
+              className="bg-[#F6F2E8] rounded-xl p-4 md:p-5 border border-primary/20 shadow-sm hover:shadow-md transition-shadow duration-300 opacity-0 animate-fade-in"
               style={{
                 animationDelay: `${index * 0.05}s`,
                 animationFillMode: "forwards",
