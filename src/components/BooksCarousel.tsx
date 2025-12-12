@@ -2,18 +2,18 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import { useRef } from "react";
-import obvioIgnoramos from "@/assets/books/obvio-ignoramos.png";
-import darReceber from "@/assets/books/dar-receber.png";
-import falarPublico from "@/assets/books/falar-publico.png";
-import essencialismo from "@/assets/books/essencialismo.png";
-import decifrarMentes from "@/assets/books/decifrar-mentes.png";
-import potencialOculto from "@/assets/books/potencial-oculto.png";
-import buscaSentido from "@/assets/books/busca-sentido.png";
-import conversasDificeis from "@/assets/books/conversas-dificeis.png";
+import obvioIgnoramos from "@/assets/books/obvio-ignoramos.jpg";
+import darReceber from "@/assets/books/dar-receber.jpg";
+import falarPublico from "@/assets/books/falar-publico.jpg";
+import essencialismo from "@/assets/books/essencialismo.jpg";
+import decifrarMentes from "@/assets/books/decifrar-mentes.jpg";
+import potencialOculto from "@/assets/books/potencial-oculto.jpg";
+import buscaSentido from "@/assets/books/busca-sentido.jpg";
+import conversasDificeis from "@/assets/books/conversas-dificeis.jpg";
 
 export const BooksCarousel = () => {
   const plugin = useRef(Autoplay({
-    delay: 3000,
+    delay: 2500,
     stopOnInteraction: true
   }));
   
@@ -88,11 +88,11 @@ export const BooksCarousel = () => {
                     <Card className="bg-card shadow-card hover:shadow-hover transition-all duration-300 hover:-translate-y-2 border-border/50 group h-full">
                       <CardContent className="pt-8 pb-6 px-6 space-y-4">
                         <div className="flex justify-center mb-4">
-                          <div className="relative group-hover:scale-105 transition-transform duration-300 bg-white p-2 rounded-lg">
+                          <div className="relative group-hover:scale-105 transition-transform duration-300 bg-white p-2 rounded-lg overflow-hidden">
                             <img 
                               src={book.cover} 
                               alt={`Capa do livro ${book.title}`}
-                              className="h-48 w-auto object-contain"
+                              className="h-52 w-auto object-cover scale-110"
                               style={{
                                 filter: 'drop-shadow(0 4px 20px rgba(251, 191, 36, 0.4)) brightness(1.05)'
                               }}
