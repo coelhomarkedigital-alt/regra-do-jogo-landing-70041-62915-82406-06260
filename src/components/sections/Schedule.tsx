@@ -112,14 +112,14 @@ export const Schedule = () => {
             <AccordionItem
               key={index}
               value={`item-${index}`}
-              className="bg-white rounded-xl border border-primary/20 shadow-sm px-5 py-1 data-[state=open]:shadow-md transition-shadow duration-300"
+              className="bg-white rounded-lg border border-primary/20 px-6 shadow-success hover:shadow-hover transition-all"
             >
-              <AccordionTrigger className="hover:no-underline py-4">
+              <AccordionTrigger className="hover:no-underline py-5 text-left">
                 <div className="flex items-center gap-3">
                   <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10">
                     <Calendar className="w-5 h-5 text-primary" />
                   </div>
-                  <span className="text-lg font-semibold text-primary-foreground">
+                  <span className="text-lg font-semibold text-primary-foreground hover:text-primary transition-colors">
                     {meeting.month} 2026
                   </span>
                 </div>
