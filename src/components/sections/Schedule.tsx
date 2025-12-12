@@ -30,24 +30,24 @@ const meetings = [
     number: "04",
     date: "11/04",
     title: '"Dar e Receber" - Adam Grant (com Marcella Mourão)',
-    subtitle: null,
-    guest: "Uma abordagem revolucionária sobre sucesso, generosidade e influência.",
+    subtitle: "Uma abordagem revolucionária sobre sucesso, generosidade e influência.",
+    guest: null,
   },
   {
     month: "Maio",
     number: "05",
     date: "09/05",
     title: '"Como Falar em Público e Encantar as Pessoas" - Dale Carnegie',
-    subtitle: null,
+    subtitle: "Torne-se um comunicador e orador magistral.",
     guest: null,
   },
   {
     month: "Junho",
     number: "06",
     date: "20/06",
-    title: '"Essencialismo" - Greg McKeown',
-    subtitle: null,
-    guest: "Com Konrad Mota",
+    title: '"Essencialismo" - Greg McKeown (com Konrad Mota)',
+    subtitle: "A disciplinada busca por menos.",
+    guest: null,
   },
   {
     month: "Julho",
@@ -62,32 +62,32 @@ const meetings = [
     number: "08",
     date: "08/08",
     title: '"Como Decifrar Mentes" - David Lieberman',
-    subtitle: null,
+    subtitle: "A nova ciência para desvendar o que as pessoas pensam, querem e quem elas realmente são.",
     guest: null,
   },
   {
     month: "Setembro",
     number: "09",
     date: "12/09",
-    title: '"Potencial Oculto" - Adam Grant',
-    subtitle: null,
-    guest: "Com Paulo Verçosa",
+    title: '"Potencial Oculto" - Adam Grant (com Paulo Verçosa)',
+    subtitle: "Como extrair o melhor de você e dos outros.",
+    guest: null,
   },
   {
     month: "Outubro",
     number: "10",
     date: "17/10",
-    title: '"Em Busca de Sentido" - Viktor Frankl',
-    subtitle: null,
-    guest: "Com Konrad Mota",
+    title: '"Em Busca de Sentido" - Viktor Frankl (com Konrad Mota)',
+    subtitle: "Um psicólogo no campo de concentração.",
+    guest: null,
   },
   {
     month: "Novembro",
     number: "11",
     date: "14/11",
-    title: '"Conversas Difíceis" - Bruce Patton',
-    subtitle: null,
-    guest: "Com Nilton Medeiros",
+    title: '"Conversas Difíceis" - Bruce Patton (com Nilton Medeiros)',
+    subtitle: "Como discutir o que é mais importante.",
+    guest: null,
   },
   {
     month: "Dezembro",
@@ -100,7 +100,7 @@ const meetings = [
 ];
 export const Schedule = () => {
   return (
-    <section className="py-16 md:py-24 bg-[#FAF2E1]">
+    <section className="py-16 md:py-24 bg-[#F6F2E8]">
       <div className="container mx-auto px-4 max-w-5xl">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary-foreground">
@@ -116,7 +116,7 @@ export const Schedule = () => {
           {meetings.map((meeting, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl p-4 md:p-5 border border-primary/20 shadow-sm hover:shadow-md transition-shadow duration-300 opacity-0 animate-fade-in"
+              className="bg-[#FAF2E1] rounded-xl p-4 md:p-5 border border-primary/20 shadow-sm hover:shadow-md transition-shadow duration-300 opacity-0 animate-fade-in"
               style={{
                 animationDelay: `${index * 0.05}s`,
                 animationFillMode: "forwards",
@@ -157,13 +157,13 @@ export const Schedule = () => {
 
         {/* CTA */}
         <div className="text-center mt-10">
-          <Button variant="cta" size="xl" asChild className="shadow-glow">
+          <Button variant="cta" size="xl" asChild className="shadow-[0_0_20px_rgba(251,191,36,0.4),0_0_40px_rgba(245,192,69,0.2)]">
             <a
               href="http://projetoregrasdojogo.rds.land/clube-do-livro-assinantes-mensais"
               target="_blank"
               rel="noopener noreferrer"
             >
-              👉 Quero fazer parte do Clube do Livro
+              Quero fazer parte do Clube do Livro
             </a>
           </Button>
           <p className="text-sm text-muted-foreground mt-3">Garanta sua vaga e acompanhe todos os encontros ao vivo</p>
