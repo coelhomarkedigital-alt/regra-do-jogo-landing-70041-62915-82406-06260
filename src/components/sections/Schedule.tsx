@@ -27,7 +27,7 @@ const meetings = [{
   date: "11/04",
   title: "\"Dar e Receber\" - Adam Grant (com Marcella Mourão)",
   subtitle: null,
-  guest: "Com participação especial de Marcella Mourão"
+  guest: "Uma abordagem revolucionária sobre sucesso, generosidade e influência."
 }, {
   month: "Maio",
   number: "05",
