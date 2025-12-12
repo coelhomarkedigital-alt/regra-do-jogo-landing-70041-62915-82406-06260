@@ -92,7 +92,7 @@ export const Schedule = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary-foreground">
             Cronograma dos Encontros do Clube do Livro 2026
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg max-w-3xl mx-auto text-muted">
             Encontros ao vivo, organizados com antecedência, para você se planejar e participar de uma jornada de
             leitura e desenvolvimento ao longo de todo o ano.
           </p>
