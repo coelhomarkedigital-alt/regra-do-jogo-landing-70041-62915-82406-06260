@@ -1,111 +1,95 @@
 import { Button } from "@/components/ui/button";
 import { Calendar } from "lucide-react";
-
-const meetings = [
-  {
-    month: "Janeiro",
-    number: "01",
-    date: "10/01",
-    title: "MasterClass de Abertura",
-    subtitle: null,
-    guest: null
-  },
-  {
-    month: "Fevereiro",
-    number: "02",
-    date: "07/02",
-    title: "Evento Oficial de Abertura do Clube",
-    subtitle: null,
-    guest: null
-  },
-  {
-    month: "Março",
-    number: "03",
-    date: "14/03",
-    title: "\"O Óbvio que Ignoramos\" - Jacob Petry",
-    subtitle: "Como simples atitudes podem gerar sucesso consistente",
-    guest: null
-  },
-  {
-    month: "Abril",
-    number: "04",
-    date: "11/04",
-    title: "\"Dar e Receber\" - Adam Grant",
-    subtitle: null,
-    guest: "Com participação especial de Marcella Mourão"
-  },
-  {
-    month: "Maio",
-    number: "05",
-    date: "09/05",
-    title: "\"Como Falar em Público e Encantar as Pessoas\" - Dale Carnegie",
-    subtitle: null,
-    guest: null
-  },
-  {
-    month: "Junho",
-    number: "06",
-    date: "20/06",
-    title: "\"Essencialismo\" - Greg McKeown",
-    subtitle: null,
-    guest: "Com Konrad Mota"
-  },
-  {
-    month: "Julho",
-    number: "07",
-    date: "15/07",
-    title: "Encontro de Leitores",
-    subtitle: "Trocas, reflexões e experiências",
-    guest: null
-  },
-  {
-    month: "Agosto",
-    number: "08",
-    date: "08/08",
-    title: "\"Como Decifrar Mentes\" - David Lieberman",
-    subtitle: null,
-    guest: null
-  },
-  {
-    month: "Setembro",
-    number: "09",
-    date: "12/09",
-    title: "\"Potencial Oculto\" - Adam Grant",
-    subtitle: null,
-    guest: "Com Paulo Verçosa"
-  },
-  {
-    month: "Outubro",
-    number: "10",
-    date: "17/10",
-    title: "\"Em Busca de Sentido\" - Viktor Frankl",
-    subtitle: null,
-    guest: "Com Konrad Mota"
-  },
-  {
-    month: "Novembro",
-    number: "11",
-    date: "14/11",
-    title: "\"Conversas Difíceis\" - Bruce Patton",
-    subtitle: null,
-    guest: "Com Nilton Medeiros"
-  },
-  {
-    month: "Dezembro",
-    number: "12",
-    date: "12/12",
-    title: "Encerramento e Confraternização do Clube",
-    subtitle: null,
-    guest: null
-  }
-];
-
+const meetings = [{
+  month: "Janeiro",
+  number: "01",
+  date: "10/01",
+  title: "MasterClass de Abertura",
+  subtitle: null,
+  guest: null
+}, {
+  month: "Fevereiro",
+  number: "02",
+  date: "07/02",
+  title: "Evento Oficial de Abertura do Clube",
+  subtitle: null,
+  guest: null
+}, {
+  month: "Março",
+  number: "03",
+  date: "14/03",
+  title: "\"O Óbvio que Ignoramos\" - Jacob Petry",
+  subtitle: "Como simples atitudes podem gerar sucesso consistente",
+  guest: null
+}, {
+  month: "Abril",
+  number: "04",
+  date: "11/04",
+  title: "\"Dar e Receber\" - Adam Grant",
+  subtitle: null,
+  guest: "Com participação especial de Marcella Mourão"
+}, {
+  month: "Maio",
+  number: "05",
+  date: "09/05",
+  title: "\"Como Falar em Público e Encantar as Pessoas\" - Dale Carnegie",
+  subtitle: null,
+  guest: null
+}, {
+  month: "Junho",
+  number: "06",
+  date: "20/06",
+  title: "\"Essencialismo\" - Greg McKeown",
+  subtitle: null,
+  guest: "Com Konrad Mota"
+}, {
+  month: "Julho",
+  number: "07",
+  date: "15/07",
+  title: "Encontro de Leitores",
+  subtitle: "Trocas, reflexões e experiências",
+  guest: null
+}, {
+  month: "Agosto",
+  number: "08",
+  date: "08/08",
+  title: "\"Como Decifrar Mentes\" - David Lieberman",
+  subtitle: null,
+  guest: null
+}, {
+  month: "Setembro",
+  number: "09",
+  date: "12/09",
+  title: "\"Potencial Oculto\" - Adam Grant",
+  subtitle: null,
+  guest: "Com Paulo Verçosa"
+}, {
+  month: "Outubro",
+  number: "10",
+  date: "17/10",
+  title: "\"Em Busca de Sentido\" - Viktor Frankl",
+  subtitle: null,
+  guest: "Com Konrad Mota"
+}, {
+  month: "Novembro",
+  number: "11",
+  date: "14/11",
+  title: "\"Conversas Difíceis\" - Bruce Patton",
+  subtitle: null,
+  guest: "Com Nilton Medeiros"
+}, {
+  month: "Dezembro",
+  number: "12",
+  date: "12/12",
+  title: "Encerramento e Confraternização do Clube",
+  subtitle: null,
+  guest: null
+}];
 export const Schedule = () => {
-  return (
-    <section className="py-16 md:py-24 bg-[#FAF2E1]">
+  return <section className="py-16 md:py-24 bg-[#FAF2E1]">
       <div className="container mx-auto px-4 max-w-5xl">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary-foreground">
             Cronograma dos Encontros do Clube do Livro 2026
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
@@ -114,12 +98,10 @@ export const Schedule = () => {
         </div>
 
         <div className="grid gap-4 md:gap-3">
-          {meetings.map((meeting, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-xl p-4 md:p-5 border border-primary/20 shadow-sm hover:shadow-md transition-shadow duration-300 opacity-0 animate-fade-in"
-              style={{ animationDelay: `${index * 0.05}s`, animationFillMode: 'forwards' }}
-            >
+          {meetings.map((meeting, index) => <div key={index} className="bg-white rounded-xl p-4 md:p-5 border border-primary/20 shadow-sm hover:shadow-md transition-shadow duration-300 opacity-0 animate-fade-in" style={{
+          animationDelay: `${index * 0.05}s`,
+          animationFillMode: 'forwards'
+        }}>
               <div className="flex flex-col md:flex-row md:items-center gap-3 md:gap-6">
                 {/* Date badge */}
                 <div className="flex items-center gap-3 md:min-w-[180px]">
@@ -142,16 +124,11 @@ export const Schedule = () => {
                   <h3 className="font-semibold text-foreground text-base md:text-lg">
                     {meeting.title}
                   </h3>
-                  {meeting.subtitle && (
-                    <p className="text-sm text-muted-foreground mt-0.5">{meeting.subtitle}</p>
-                  )}
-                  {meeting.guest && (
-                    <p className="text-sm text-primary font-medium mt-0.5">{meeting.guest}</p>
-                  )}
+                  {meeting.subtitle && <p className="text-sm text-muted-foreground mt-0.5">{meeting.subtitle}</p>}
+                  {meeting.guest && <p className="text-sm text-primary font-medium mt-0.5">{meeting.guest}</p>}
                 </div>
               </div>
-            </div>
-          ))}
+            </div>)}
         </div>
 
         {/* Disclaimer */}
@@ -171,6 +148,5 @@ export const Schedule = () => {
           </p>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
