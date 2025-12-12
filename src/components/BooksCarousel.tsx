@@ -88,14 +88,16 @@ export const BooksCarousel = () => {
                     <Card className="bg-card shadow-card hover:shadow-hover transition-all duration-300 hover:-translate-y-2 border-border/50 group h-full">
                       <CardContent className="pt-8 pb-6 px-6 space-y-4">
                         <div className="flex justify-center mb-4">
-                          <div className="relative group-hover:scale-105 transition-transform duration-300 bg-white p-2 rounded-lg overflow-hidden">
+                          <div 
+                            className="relative group-hover:scale-105 transition-transform duration-300 bg-white p-2 rounded-lg overflow-hidden"
+                            style={{
+                              boxShadow: '0 0 25px rgba(251, 191, 36, 0.5), 0 0 50px rgba(245, 192, 69, 0.3)'
+                            }}
+                          >
                             <img 
                               src={book.cover} 
                               alt={`Capa do livro ${book.title}`}
                               className="h-52 w-auto object-cover scale-110"
-                              style={{
-                                filter: 'drop-shadow(0 4px 20px rgba(251, 191, 36, 0.4)) brightness(1.05)'
-                              }}
                             />
                           </div>
                         </div>
