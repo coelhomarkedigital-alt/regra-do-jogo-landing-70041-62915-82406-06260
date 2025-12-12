@@ -61,7 +61,7 @@ export const BooksCarousel = () => {
         <div className="max-w-6xl mx-auto space-y-10">
           <div className="text-center space-y-4 animate-fade-in">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">Obras transformadoras que abordaremos em 2026</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">Uma curadoria estratégica de livros que já geraram transformação</p>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">Uma curadoria estratégica de livros que já transformaram nossos membros e que, ao longo de 2026, irão impactar profundamente todas as dimensões da sua vida.</p>
           </div>
 
           <div className="relative px-12">
