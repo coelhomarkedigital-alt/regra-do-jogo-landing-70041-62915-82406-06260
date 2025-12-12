@@ -11,7 +11,7 @@ const meetings = [{
   month: "Fevereiro",
   number: "02",
   date: "07/02",
-  title: "Evento Oficial de Abertura do Clube",
+  title: "Evento Oficial de Abertura do Clube do Livro",
   subtitle: null,
   guest: null
 }, {
