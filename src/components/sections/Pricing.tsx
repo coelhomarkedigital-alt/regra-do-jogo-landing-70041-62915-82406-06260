@@ -23,7 +23,7 @@ export const Pricing = () => {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-paper-foreground" data-animate="fade-up">
               Escolha seu plano
             </h2>
-            <p className="text-xl text-paper-foreground/70 max-w-2xl mx-auto">
+            <p className="text-xl max-w-2xl mx-auto text-muted">
               Invista em você. Menos que um café por dia para transformar sua vida.
             </p>
           </div>
