@@ -29,7 +29,7 @@ export const FinalCTA = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6">
             <Button variant="hero" size="xl" asChild className="w-full sm:w-auto shadow-glow">
-              <a href="https://pag.ae/81g81daep" target="_blank" rel="noopener noreferrer">
+              <a href="http://projetoregrasdojogo.rds.land/clube-do-livro-assinantes-anuais" target="_blank" rel="noopener noreferrer">
                 Garantir Plano Anual
               </a>
             </Button>
