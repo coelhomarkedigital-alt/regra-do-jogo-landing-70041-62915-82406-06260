@@ -142,7 +142,7 @@ export const Schedule = () => {
               Quero fazer parte do Clube do Livro
             </a>
           </Button>
-          <p className="text-sm text-muted-foreground mt-3">Garanta sua vaga e acompanhe todos os encontros ao vivo</p>
+          <p className="text-sm mt-3 text-muted">Garanta sua vaga e acompanhe todos os encontros ao vivo</p>
         </div>
       </div>
     </section>;
