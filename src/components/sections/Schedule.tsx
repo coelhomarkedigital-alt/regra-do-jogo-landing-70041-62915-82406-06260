@@ -116,7 +116,7 @@ export const Schedule = () => {
           {meetings.map((meeting, index) => (
             <div
               key={index}
-              className="bg-[#F6F2E8] rounded-xl p-4 md:p-5 border border-primary/20 shadow-sm hover:shadow-md transition-shadow duration-300 opacity-0 animate-fade-in"
+              className="bg-white rounded-xl p-4 md:p-5 border border-primary/20 shadow-sm hover:shadow-md transition-shadow duration-300 opacity-0 animate-fade-in"
               style={{
                 animationDelay: `${index * 0.05}s`,
                 animationFillMode: "forwards",
