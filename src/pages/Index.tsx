@@ -8,6 +8,7 @@ import { ResultsCondensed } from "@/components/sections/ResultsCondensed";
 import { Mentor } from "@/components/sections/Mentor";
 import { SocialProof } from "@/components/sections/SocialProof";
 import { BooksCarousel } from "@/components/BooksCarousel";
+import { Schedule } from "@/components/sections/Schedule";
 import { Pricing } from "@/components/sections/Pricing";
 import { Guarantee } from "@/components/sections/Guarantee";
 import { Doubts } from "@/components/sections/Doubts";
@@ -32,6 +33,7 @@ const Index = () => {
       <Mentor />
       <SocialProof />
       <BooksCarousel />
+      <Schedule />
       <Pricing />
       <Guarantee />
       <Doubts />
