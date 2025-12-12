@@ -124,7 +124,7 @@ export const Schedule = () => {
                   <h3 className="font-semibold text-base md:text-lg text-primary-foreground">
                     {meeting.title}
                   </h3>
-                  {meeting.subtitle && <p className="text-sm text-muted-foreground mt-0.5">{meeting.subtitle}</p>}
+                  {meeting.subtitle && <p className="text-sm mt-0.5 font-medium text-accent">{meeting.subtitle}</p>}
                   {meeting.guest && <p className="text-sm text-primary font-medium mt-0.5">{meeting.guest}</p>}
                 </div>
               </div>
