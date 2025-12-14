@@ -14,7 +14,7 @@ export const BooksCarousel = () => {
   const plugin = useRef(
     Autoplay({
       delay: 2500,
-      stopOnInteraction: true,
+      stopOnInteraction: false,
     }),
   );
   const books = [
