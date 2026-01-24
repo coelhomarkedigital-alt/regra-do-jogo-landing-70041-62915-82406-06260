@@ -23,7 +23,7 @@ export const Hero = () => {
         <div className="max-w-4xl mx-auto space-y-6">
           <div className="inline-block bg-primary/20 backdrop-blur-md px-3 sm:px-5 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium mb-4 text-primary border border-primary/30">Regras do Jogo • Clube de Leitura Guiada</div>
           
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight drop-shadow-glow">
+          <h1 className="text-4xl lg:text-7xl font-extrabold text-white leading-tight drop-shadow-glow md:text-5xl">
             O problema não é você não ler.<br />
             ​ <span className="text-primary">É você ler sem saber o quê, quando e por quê.</span>​
           </h1>
