@@ -27,7 +27,8 @@ export const SolutionIntegrated = () => {
         <div className="max-w-5xl mx-auto space-y-12">
           <div className="text-center space-y-4 animate-fade-in">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold" data-animate="fade-up">
-              Por que é tão difícil criar e manter o hábito de leitura?
+              Ler sem critério é pior do que não ler.
+Porque gera a falsa sensação de que "ler não funciona pra mim".
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               O problema não é você. É a <span className="text-primary font-semibold">falta de estrutura</span>. Ler
