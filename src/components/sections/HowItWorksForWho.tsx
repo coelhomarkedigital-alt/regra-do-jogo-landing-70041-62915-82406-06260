@@ -18,13 +18,13 @@ export const HowItWorksForWho = () => {
     title: "Aplique na prática",
     description: "Metodologia focada em transformar conhecimento em ação real nas 5 dimensões da sua vida."
   }];
-  const profiles = ["Pra você que acumula livros, mas não aplica nada.", "Pra quem lê por impulso, não por hierarquia.", "Você que termina livros sem saber o que fazer com eles.", "Quem quer evolução real, não só Instagram com dicas de livros que você nunca vai ler.", "Você que sabe que ler importa, mas não sabe por onde começar.", "Pra você que começa livros, mas raramente termina."];
+  const profiles = ["Profissionais que querem evoluir na carreira.", "Pessoas que lutam para criar o hábito de ler.", "Quem quer aprender com troca de experiências.", "Aqueles que valorizam método e estrutura.", "Quem quer aplicar conhecimento, não apenas acumular.", "Profissionais que valorizam networking de qualidade."];
   return <section className="py-16 bg-muted/20">
       <div className="container px-4 mx-auto">
         <div className="max-w-5xl mx-auto space-y-12">
           <div className="text-center space-y-4 animate-fade-in">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground" data-animate="fade-up">
-              Tudo foi pensado para caber na sua rotina
+              Como funciona na prática?  
             </h2>
           </div>
 
