@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Target, TrendingUp, Zap, Compass, Award } from "lucide-react";
+import { BookCheck, Lightbulb, MessageSquareText, Filter, TrendingUp } from "lucide-react";
 export const ResultsCondensed = () => {
   const scrollToPricing = () => {
     const pricing = document.getElementById("pricing");
@@ -8,20 +8,20 @@ export const ResultsCondensed = () => {
     });
   };
   const results = [{
-    icon: Target,
-    text: "Hábito de leitura consistente e prazeroso."
+    icon: BookCheck,
+    text: "Ler 8 livros por ano do começo ao fim, não 20 pela metade."
+  }, {
+    icon: Lightbulb,
+    text: "Saber o que fazer com o que leu, não só marcar frases."
+  }, {
+    icon: MessageSquareText,
+    text: "Discussões que organizam seu pensamento, não curtida em resenha."
+  }, {
+    icon: Filter,
+    text: "Critério pra escolher o próximo livro, não impulso de algoritmo."
   }, {
     icon: TrendingUp,
-    text: "Insights práticos aplicados nas 5 dimensões da vida."
-  }, {
-    icon: Zap,
-    text: "Pensamento crítico através de discussões mediadas."
-  }, {
-    icon: Compass,
-    text: "Rede de contatos que compartilham valores e evolução."
-  }, {
-    icon: Award,
-    text: "Conhecimento transformado em ação e resultados reais."
+    text: "Evolução em 5 áreas específicas, não só produtividade."
   }];
   return <section className="py-16 bg-paper relative overflow-hidden">
       <div className="container px-4 mx-auto relative z-10">
@@ -30,7 +30,6 @@ export const ResultsCondensed = () => {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-paper-foreground">
               O que você vai conquistar?
             </h2>
-            <p className="text-xl max-w-2xl mx-auto text-paper-foreground/70">Mais do que ler, você vai evoluir em todas as áreas da sua vida. Resultados reais por meio de método e consistência.</p>
           </div>
 
           <div className="space-y-4 max-w-3xl mx-auto">
@@ -47,10 +46,10 @@ export const ResultsCondensed = () => {
           <div className="pt-6">
             <div className="inline-block bg-white px-8 py-6 rounded-2xl border border-primary/20 shadow-hover">
               <p className="text-xl font-bold mb-4 text-paper-foreground">
-                O compromisso é seu. Os resultados, também.
+                8 livros por ano. Do começo ao fim. Com propósito.
               </p>
               <Button variant="cta" size="xl" onClick={scrollToPricing} className="shadow-glow">
-                Começar minha transformação
+                Entrar no clube
               </Button>
             </div>
           </div>

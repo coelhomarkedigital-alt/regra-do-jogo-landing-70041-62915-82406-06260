@@ -3,33 +3,30 @@ import { Clock, Video, Shield, BookOpen, Check } from "lucide-react";
 export const Doubts = () => {
   const doubts = [{
     icon: Clock,
-    question: '"Não tenho tempo"',
-    answer: "Apenas 15 minutos por dia. Menos tempo do que você gasta nas redes sociais.",
-    stat: "87% dos membros encontram tempo facilmente."
+    question: 'Falta de tempo não é o problema',
+    answer: "15 minutos por dia. Você tem tempo. Você não tem método.",
+    stat: null
   }, {
     icon: Video,
-    question: '"E se eu não conseguir acompanhar?"',
-    answer: "Todas as sessões ficam gravadas. Assista quando e onde quiser.",
-    stat: "Acesso às gravações durante a assinatura."
+    question: 'Perdeu o encontro? Assiste depois',
+    answer: "Todas as sessões ficam gravadas. Sem desculpa.",
+    stat: null
   }, {
     icon: Shield,
-    question: '"Tenho medo de desperdiçar dinheiro"',
-    answer: "7 dias de garantia integral. Não gostou? Devolvemos cada centavo, sem perguntas.",
-    stat: "Risco zero para você."
+    question: 'Risco zero pra você',
+    answer: "7 dias pra testar. Não gostou? Devolvemos cada centavo.",
+    stat: null
   }, {
     icon: BookOpen,
-    question: '"Não gosto de ler / não consigo terminar livros"',
-    answer: "Você só não encontrou o método certo. Nossos membros tinham o mesmo bloqueio.",
-    stat: "84% criaram hábito de leitura em 30 dias."
+    question: 'Você não odeia ler. Você odeia começar e não terminar',
+    answer: "84% dos membros criaram hábito em 30 dias. O problema nunca foi você.",
+    stat: null
   }];
   return <section className="py-20 bg-paper">
       <div className="container px-4 mx-auto">
         <div className="max-w-5xl mx-auto space-y-12">
           <div className="text-center space-y-4 animate-fade-in">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-paper-foreground">Perguntas e objeções comuns:</h2>
-            <p className="text-xl text-paper-foreground/70 max-w-2xl mx-auto">
-              A gente entende. Essas são as principais preocupações que ouvimos. Veja como resolvemos cada uma:
-            </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
@@ -42,10 +39,6 @@ export const Doubts = () => {
                     <div className="flex-1 space-y-3">
                       <h3 className="text-xl font-bold text-paper-foreground">{doubt.question}</h3>
                       <p className="text-paper-foreground/70 leading-relaxed">{doubt.answer}</p>
-                      <div className="flex items-start gap-2 pt-2">
-                        <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                        <p className="text-sm font-semibold text-paper-foreground">{doubt.stat}</p>
-                      </div>
                     </div>
                   </div>
                 </CardContent>
