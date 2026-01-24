@@ -1,11 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { BookCheck, Lightbulb, MessageSquareText, Filter, TrendingUp } from "lucide-react";
 export const ResultsCondensed = () => {
-  const scrollToPricing = () => {
-    const pricing = document.getElementById("pricing");
-    pricing?.scrollIntoView({
-      behavior: "smooth"
-    });
+  const handleMonthlyPlan = () => {
+    window.open("http://projetoregrasdojogo.rds.land/clube-do-livro-assinantes-mensais", "_blank");
   };
   const results = [{
     icon: BookCheck,
@@ -48,7 +45,7 @@ export const ResultsCondensed = () => {
               <p className="text-xl font-bold mb-4 text-paper-foreground">
                 8 livros por ano. Do começo ao fim. Com propósito.
               </p>
-              <Button variant="cta" size="xl" onClick={scrollToPricing} className="shadow-glow">
+              <Button variant="cta" size="xl" onClick={handleMonthlyPlan} className="shadow-glow">
                 Entrar no clube
               </Button>
             </div>
