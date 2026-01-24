@@ -37,11 +37,10 @@ export const GrowthDimensions = () => {
         <div className="max-w-6xl mx-auto space-y-10">
           <div className="text-center space-y-4 animate-fade-in">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-paper-foreground" data-animate="fade-up">
-              Como funciona a curadoria?      
+              Como escolhemos os 8 livros do ano?      
             </h2>
             <p className="text-xl text-paper-foreground/70 max-w-3xl mx-auto">
-              Nossa curadoria abrange todas as áreas essenciais para uma vida plena e próspera. Cada livro trabalha pelo
-              menos uma dessas dimensões.
+              Todo ano, são 8 livros escolhidos por impacto em 5 áreas da sua vida. Não por popularidade. Cada livro cobre pelo menos uma delas. E você também indica, a curadoria é colaborativa.
             </p>
           </div>
 
