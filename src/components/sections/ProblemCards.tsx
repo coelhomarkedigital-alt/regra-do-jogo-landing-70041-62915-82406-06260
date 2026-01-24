@@ -5,7 +5,7 @@ export const ProblemCards = () => {
     {
       icon: BookOpen,
       title: "Compra, mas não lê.",
-      description: "Você acumula livros na estante, mas sempre adia a leitura. A pilha só cresce.",
+      description: "Você já comprou um livro porque todo mundo estava falando dele.",
     },
     {
       icon: Clock,
