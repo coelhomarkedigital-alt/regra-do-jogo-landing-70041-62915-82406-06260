@@ -4,31 +4,31 @@ export const GrowthDimensions = () => {
   const dimensions = [{
     icon: Heart,
     title: "Crescimento Pessoal",
-    description: "Autoconhecimento, inteligência emocional, hábitos, foco e disciplina.",
+    description: "Autoconhecimento, inteligência emocional e disciplina através de livros que te fazem questionar quem você é e quem você quer ser.",
     color: "text-red-500",
     bg: "bg-red-500/10"
   }, {
     icon: Users,
     title: "Relacionamentos",
-    description: "Comunicação eficaz, empatia, networking e construção de vínculos significativos.",
+    description: "Comunicação, empatia e construção de vínculos significativos. Livros que te ensinam a entender pessoas e criar conexões reais.",
     color: "text-blue-500",
     bg: "bg-blue-500/10"
   }, {
     icon: Briefcase,
     title: "Sucesso Profissional",
-    description: "Liderança, produtividade, estratégia e gestão de carreira.",
+    description: "Liderança, produtividade, estratégia e gestão de carreira. Livros que te ajudam a tomar decisões melhores e avançar com clareza.",
     color: "text-green-500",
     bg: "bg-green-500/10"
   }, {
     icon: DollarSign,
     title: "Finanças Pessoais",
-    description: "Investimentos, mentalidade de abundância, organização financeira e construção de patrimônio.",
+    description: "Investimentos, mentalidade de abundância e construção de patrimônio. Livros que te ensinam a pensar em longo prazo e construir segurança.",
     color: "text-yellow-600",
     bg: "bg-yellow-500/10"
   }, {
     icon: Sparkles,
     title: "Espiritualidade",
-    description: "Propósito, valores, filosofia de vida e conexão com algo maior.",
+    description: "Propósito, valores e conexão com algo maior. Livros que te ajudam a encontrar sentido e viver com mais presença.",
     color: "text-purple-500",
     bg: "bg-purple-500/10"
   }];
