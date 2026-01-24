@@ -28,7 +28,7 @@ export const Hero = () => {
             ​ <span className="text-primary">É você ler sem saber o quê, quando e por quê.</span>​
           </h1>
           
-          <p className="text-xl md:text-2xl text-foreground max-w-2xl mx-auto leading-relaxed">Transforme leitura em hábito, hábito em conhecimento e conhecimento em resultado, por meio do nosso Clube do Livro Regras do Jogo.</p>
+          <p className="text-xl md:text-2xl text-foreground max-w-2xl mx-auto leading-relaxed">A maioria das pessoas lê por impulso, por indicação aleatória ou porque "todo mundo está lendo". Resultado? Acúmulo, culpa e zero clareza. A leitura não gera transformação porque você está lendo sem hierarquia.   </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
             <Button variant="hero" size="xl" asChild className="w-full sm:w-auto shadow-glow">
