@@ -3,16 +3,16 @@ import { BookOpen, Clock, HelpCircle } from "lucide-react";
 export const ProblemCards = () => {
   const problems = [{
     icon: BookOpen,
-    title: "Compra, mas não lê.",
+    title: "Escolha influenciada sem critério.",
     description: "Você já comprou um livro porque todo mundo estava falando dele."
   }, {
     icon: Clock,
-    title: "Falta tempo e consistência.",
-    description: "Começa a ler, mas abandona no meio. Falta um método que torne a leitura parte da rotina."
+    title: "Leitura sem continuidade.",
+    description: "Começou a ler, achou interessante, mas na metade já estava pulando páginas."
   }, {
     icon: HelpCircle,
-    title: "Não sabe o que ler.",
-    description: "Tantas opções, mas qual livro vai realmente fazer diferença na sua vida agora?"
+    title: "Aprendizado sem aplicação.",
+    description: "Terminou (ou abandonou), e ficou pensando: \"ok, aprendi algo... mas e agora?\"."
   }];
   return <section className="py-16 bg-paper">
       <div className="container px-4 mx-auto">
@@ -34,6 +34,10 @@ export const ProblemCards = () => {
                 </CardContent>
               </Card>)}
           </div>
+
+          <p className="text-center text-xl md:text-2xl text-paper-foreground/80 font-medium mt-8" data-animate="fade-up">
+            Isso acontece porque você não sabia <span className="text-primary font-bold">PORQUÊ</span> estava lendo aquele livro <span className="text-primary font-bold">NAQUELE</span> momento.
+          </p>
         </div>
       </div>
     </section>;

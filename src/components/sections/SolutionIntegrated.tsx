@@ -31,9 +31,7 @@ export const SolutionIntegrated = () => {
 Porque gera a falsa sensação de que "ler não funciona pra mim".
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              O problema não é você. É a <span className="text-primary font-semibold">falta de estrutura</span>. Ler
-              sozinho, sem direcionamento, sem comunidade e sem compromisso é uma batalha perdida.{" "}
-              <span className="text-primary font-semibold">Você precisa de método, não apenas de motivação.</span>
+              Mas não é sobre ler mais. É sobre ler com <span className="text-primary font-bold">hierarquia</span>:
             </p>
           </div>
 
