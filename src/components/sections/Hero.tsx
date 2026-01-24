@@ -40,7 +40,7 @@ export const Hero = () => {
 
           <div className="pt-3 text-foreground text-lg font-bold">
             <p className="font-semibold text-primary drop-shadow-lg">R$ 1,33/dia – menos que um café ☕</p>
-            <p className="text-sm mt-1 text-foreground/70">Acesso imediato • Cancele quando quiser</p>
+            <p className="text-sm mt-1 text-foreground/70">Acesso imediato</p>
           </div>
         </div>
       </motion.div>
