@@ -23,12 +23,12 @@ export const Hero = () => {
         <div className="max-w-4xl mx-auto space-y-6">
           <div className="inline-block bg-primary/20 backdrop-blur-md px-3 sm:px-5 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium mb-4 text-primary border border-primary/30">Regras do Jogo • Clube de Leitura Guiada</div>
           
-          <h1 className="text-4xl lg:text-7xl font-extrabold text-white leading-tight drop-shadow-glow md:text-4xl">
+          <h1 className="text-3xl lg:text-5xl font-extrabold text-white leading-tight drop-shadow-glow md:text-4xl">
             O problema não é você não ler.<br />
             ​ <span className="text-primary">É você ler sem saber o quê, quando e por quê.</span>​
           </h1>
           
-          <p className="text-xl md:text-2xl text-foreground max-w-2xl mx-auto leading-relaxed">A maioria das pessoas lê livros por impulso, por indicação aleatória ou porque 'todo mundo está lendo'. Resultado? Acúmulo, culpa e zero clareza. Livros não geram transformação quando você lê sem hierarquia.   </p>
+          <p className="text-xl md:text-2xl text-foreground max-w-2xl mx-auto leading-relaxed">A maioria das pessoas lê livros por impulso, por indicação aleatória ou porque 'todo mundo está lendo'. Resultado? Acúmulo, culpa e zero clareza. Livros não geram transformação quando você lê sem hierarquia.</p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
             <Button variant="hero" size="xl" asChild className="w-full sm:w-auto shadow-glow">
@@ -42,6 +42,11 @@ export const Hero = () => {
             <p className="font-semibold text-primary drop-shadow-lg">R$ 1,33/dia – menos que um café ☕</p>
             <p className="text-sm mt-1 text-foreground/70">Acesso imediato</p>
           </div>
+
+          <p className="text-2xl lg:text-3xl font-bold text-white leading-snug mt-6">
+            Você não precisa do clube pra comprar mais livros.<br />
+            <span className="text-primary">Você precisa dele pra finalmente terminar algum.</span>
+          </p>
         </div>
       </motion.div>
     </LampContainer>;
