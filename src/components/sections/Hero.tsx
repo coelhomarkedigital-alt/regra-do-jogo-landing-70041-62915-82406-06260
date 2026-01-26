@@ -38,10 +38,12 @@ export const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
             <Button variant="hero" size="xl" asChild className="w-full sm:w-auto shadow-glow">
               <a href="http://projetoregrasdojogo.rds.land/clube-do-livro-assinantes-mensais" target="_blank" rel="noopener noreferrer">
-                Quero fazer parte do Clube
+                Quero ler com propósito
               </a>
             </Button>
           </div>
+
+          <p className="text-sm mt-2 text-foreground/70">Acesso imediato</p>
 
           
         </div>
