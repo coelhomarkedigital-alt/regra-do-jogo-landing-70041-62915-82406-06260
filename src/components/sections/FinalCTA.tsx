@@ -17,7 +17,7 @@ export const FinalCTA = () => {
       
       <div className="container px-4 mx-auto relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8">
-          <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground leading-tight">
             Você não precisa do clube <span className="text-primary drop-shadow-glow">pra comprar mais livros</span>.<br />
             Você precisa dele pra finalmente terminar algum.
           </h2>
