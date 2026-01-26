@@ -43,10 +43,7 @@ export const Hero = () => {
             <p className="text-sm mt-1 text-foreground/70">Acesso imediato</p>
           </div>
 
-          <p className="text-2xl lg:text-3xl font-bold text-white leading-snug mt-6">
-            Você não precisa do clube pra comprar mais livros.<br />
-            <span className="text-primary">Você precisa dele pra finalmente terminar algum.</span>
-          </p>
+          
         </div>
       </motion.div>
     </LampContainer>;
