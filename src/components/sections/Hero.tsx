@@ -43,7 +43,7 @@ export const Hero = () => {
             </Button>
           </div>
 
-          <p className="text-sm mt-2 text-foreground/70">Acesso imediato</p>
+          <p className="text-sm mt-2 text-foreground/70 font-bold">Acesso imediato</p>
 
           
         </div>
