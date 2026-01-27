@@ -51,7 +51,7 @@ export const GrowthDimensions = () => {
                     <dimension.icon className="w-7 h-7 text-primary" />
                   </div>
                   <h3 className="text-base font-semibold text-paper-foreground leading-tight">{dimension.title}</h3>
-                  <p className="text-xs text-paper-foreground/70 leading-relaxed">{dimension.description}</p>
+                  <p className="text-paper-foreground/70 leading-relaxed text-base">{dimension.description}</p>
                 </CardContent>
               </Card>)}
           </div>
