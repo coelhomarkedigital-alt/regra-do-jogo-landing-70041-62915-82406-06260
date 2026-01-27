@@ -28,22 +28,20 @@ export const Hero = () => {
             ​ <span className="text-primary">É você ler sem saber o quê, quando e por quê.</span>​
           </h1>
           
-          <p className="text-xl md:text-2xl text-foreground max-w-2xl mx-auto leading-relaxed text-center">​Você escolhe livros por impulso, por indicação aleatória ou porque todo mundo está lendo.
-Às vezes nem termina. Às vezes abandona no meio. E quando termina, sente que aprendeu algo , mas não sabe aplicar. Resultado: nada muda na prática.</p>
+          <p className="text-xl md:text-2xl text-foreground max-w-2xl mx-auto leading-relaxed text-center">​Você escolhe livros por impulso, por indicação aleatória ou porque todo mundo está lendo. Às vezes nem termina. Às vezes abandona no meio. E quando termina, sente que aprendeu algo, mas não sabe aplicar. Resultado: nada muda na prática.</p>
 
-          <p className="text-xl md:text-2xl font-semibold text-primary drop-shadow-glow pt-4">
-            É aí que nasce a crença errada. <span className="italic">"Ler não funciona pra mim".</span>
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
             <Button variant="hero" size="xl" asChild className="w-full sm:w-auto shadow-glow">
               <a href="http://projetoregrasdojogo.rds.land/clube-do-livro-assinantes-mensais" target="_blank" rel="noopener noreferrer">
-                Quero ler com propósito
+                Quero fazer parte do Clube
               </a>
             </Button>
           </div>
 
-          <p className="text-sm mt-2 text-foreground/70 font-bold">Acesso imediato</p>
+          <div className="pt-3 text-foreground text-lg font-bold">
+            <p className="font-semibold text-primary drop-shadow-lg">R$ 1,33/dia – menos que um café ☕</p>
+            <p className="text-sm mt-1 text-foreground/70">Acesso imediato</p>
+          </div>
 
           
         </div>
