@@ -30,9 +30,7 @@ export const Hero = () => {
           
           <p className="text-xl md:text-2xl text-foreground max-w-2xl mx-auto leading-relaxed text-center">Se a resposta não vem fácil, esse não é um problema de memória. É falta de método.</p>
 
-          <p className="text-xl md:text-2xl font-semibold text-primary drop-shadow-glow pt-4">
-            Esse problema não se resolve lendo mais. Se resolve aprendendo a ler de outro jeito.
-          </p>
+          
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
             <Button variant="hero" size="xl" asChild className="w-full sm:w-auto shadow-glow">
