@@ -1,91 +1,70 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { GlowingEffect } from "@/components/ui/glowing-effect";
+import { Clock, Brain, Lightbulb, Layers, BookX, HelpCircle } from "lucide-react";
 
 export const SolutionIntegrated = () => {
-  const whyDifficult = [
-    { highlight: "O que ler", rest: " (critério de escolha)." },
-    { highlight: "Quando ler", rest: " (momento certo)." },
-    { highlight: "Por que ler", rest: " (propósito claro)." },
-    { highlight: "O que fazer depois", rest: " (aplicação prática)." }
-  ];
-
-  const differentials = [
-    { highlight: "→ Curadoria mensal", rest: " (o livro certo, na hora certa)." },
-    { highlight: "→ Leitura guiada", rest: " (contexto + reflexões práticas)." },
-    { highlight: "→ Aplicação real", rest: " (como usar na vida, não só teoria)." }
+  const problems = [
+    { 
+      icon: Clock,
+      title: "Demora demais para terminar",
+      description: "Você começa um livro empolgado, mas semanas depois ainda está no mesmo lugar. O livro fica ali, te julgando da estante."
+    },
+    { 
+      icon: Brain,
+      title: "Quando termina, já esqueceu o começo",
+      description: "Leu 300 páginas, mas mal consegue lembrar o que estava nos primeiros capítulos. A sensação é de ter perdido metade do conteúdo."
+    },
+    { 
+      icon: Lightbulb,
+      title: "Aprende, mas não sabe aplicar",
+      description: "Você fecha o livro pensando \"isso foi interessante\", mas na hora de usar aquela ideia na vida real, ela simplesmente não vem."
+    },
+    { 
+      icon: Layers,
+      title: "Acumula leitura sem construir critério",
+      description: "Já leu dezenas de livros, mas não consegue articular claramente o que aprendeu ou como isso mudou suas decisões."
+    },
+    { 
+      icon: BookX,
+      title: "Não consegue lembrar livros antigos",
+      description: "Aquele livro que você leu há 6 meses? Você sabe que foi bom, mas não lembra quase nada do conteúdo quando precisa."
+    },
+    { 
+      icon: HelpCircle,
+      title: "Leitura sem propósito claro",
+      description: "Você lê porque \"é importante\", mas não sabe exatamente o que está buscando ou como aquele livro se conecta com sua vida."
+    }
   ];
 
   return (
-    <section className="py-16 bg-background bg-textured text-foreground">
+    <section className="py-16 bg-paper">
       <div className="container px-4 mx-auto">
-        <div className="max-w-5xl mx-auto space-y-12">
+        <div className="max-w-6xl mx-auto space-y-10">
           <div className="text-center space-y-4 animate-fade-in">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold" data-animate="fade-up">
-              Ler sem critério é pior do que não ler.
-              Porque gera a falsa sensação de que "ler não funciona pra mim".
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-paper-foreground" data-animate="fade-up">
+              Você Já Sabe Que Leitura É Importante
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Mas não é sobre ler mais. É sobre ler com <span className="text-primary font-bold">hierarquia</span>:
+            <p className="text-xl text-paper-foreground/70 max-w-3xl mx-auto">
+              Mas reconhece algum desses problemas?
             </p>
           </div>
 
-          <div className="space-y-4">
-            {whyDifficult.map((item, index) => (
-              <div
-                key={index}
-                className="flex gap-4 items-start p-5 bg-card rounded-lg border-l-4 border-primary backdrop-blur-sm hover:bg-card/80 transition-colors shadow-card"
-                data-animate="slide-left"
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {problems.map((problem, index) => (
+              <Card 
+                key={index} 
+                className="bg-white shadow-card hover:shadow-hover transition-all duration-300 hover:-translate-y-2 border-primary/20" 
+                data-animate="scale" 
                 data-delay={String(index + 1)}
               >
-                <span className="text-primary text-2xl font-bold flex-shrink-0">•</span>
-                <p className="text-lg leading-relaxed">
-                  <span className="text-primary font-bold">{item.highlight}</span>
-                  {item.rest}
-                </p>
-              </div>
+                <CardContent className="pt-7 pb-5 px-5 text-center space-y-3">
+                  <div className="w-14 h-14 mx-auto rounded-full bg-primary/10 flex items-center justify-center">
+                    <problem.icon className="w-7 h-7 text-primary" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-paper-foreground leading-tight">{problem.title}</h3>
+                  <p className="text-paper-foreground/70 leading-relaxed text-base">{problem.description}</p>
+                </CardContent>
+              </Card>
             ))}
-          </div>
-
-          <div
-            className="relative opacity-0 animate-scale-in"
-            style={{ animationDelay: "0.5s" }}
-          >
-            <div className="absolute inset-0 bg-gradient-accent rounded-2xl blur-xl opacity-10"></div>
-            <div className="absolute -inset-1 bg-gradient-accent rounded-2xl opacity-20 blur-lg"></div>
-            <Card className="relative bg-gradient-accent border-0 shadow-glow">
-              <CardContent className="pt-10 pb-10 px-8">
-                <h3 className="text-2xl md:text-3xl font-bold text-accent-foreground text-center mb-8 animate-fade-in">
-                  O clube do Livro resolve isso.
-                </h3>
-                <div className="grid md:grid-cols-3 gap-6">
-                  {differentials.map((diff, index) => (
-                    <div
-                      key={index}
-                      className="relative bg-background rounded-xl p-5 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 opacity-0 animate-fade-in overflow-hidden"
-                      style={{ animationDelay: `${0.6 + index * 0.1}s` }}
-                    >
-                      <GlowingEffect
-                        disabled={false}
-                        proximity={100}
-                        spread={30}
-                        blur={10}
-                        borderWidth={2}
-                        movementDuration={1.5}
-                      />
-                      <div className="relative z-10">
-                        <p className="text-foreground font-semibold leading-snug text-lg">
-                          <span className="text-primary font-bold">{diff.highlight}</span>
-                          {diff.rest}
-                        </p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-                <p className="text-center text-lg md:text-xl text-accent-foreground/90 font-medium mt-8">
-                  Para quem já lê, mas sente que a leitura não está gerando clareza, decisão e mudança real.
-                </p>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </div>

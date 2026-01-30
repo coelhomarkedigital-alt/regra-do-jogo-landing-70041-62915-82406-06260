@@ -1,7 +1,7 @@
 import { Hero } from "@/components/sections/Hero";
 import { VideoSection } from "@/components/sections/VideoSection";
-import { ProblemCards } from "@/components/sections/ProblemCards";
 import { SolutionIntegrated } from "@/components/sections/SolutionIntegrated";
+import { ClubDifference } from "@/components/sections/ClubDifference";
 import { GrowthDimensions } from "@/components/sections/GrowthDimensions";
 import { HowItWorksForWho } from "@/components/sections/HowItWorksForWho";
 import { ResultsCondensed } from "@/components/sections/ResultsCondensed";
@@ -25,8 +25,8 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Hero />
       <VideoSection />
-      <ProblemCards />
       <SolutionIntegrated />
+      <ClubDifference />
       <GrowthDimensions />
       <HowItWorksForWho />
       <ResultsCondensed />
