@@ -24,11 +24,11 @@ export const Hero = () => {
           <div className="inline-block bg-primary/20 backdrop-blur-md px-3 sm:px-5 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium mb-4 text-primary border border-primary/30">Regras do Jogo • Clube de Leitura Guiada</div>
           
           <h1 className="text-3xl lg:text-5xl font-extrabold text-white leading-tight drop-shadow-glow md:text-4xl">
-            Você lê, mas a leitura não muda<br />
-            <span className="text-primary">o rumo das suas decisões.</span>
+            Deixa eu te fazer uma pergunta simples:<br />
+            <span className="text-primary">Quando foi a última vez que um livro mudou uma decisão importante da sua vida?</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-foreground max-w-2xl mx-auto leading-relaxed text-center">Você começa livros, avança aos poucos, termina alguns. Aprende ideias interessantes. Mas quando precisa decidir, agir ou mudar algo de verdade na sua vida, percebe que não sabe como aplicar o que leu. Fecha o livro. Três semanas depois, não consegue nem explicar o que leu.</p>
+          <p className="text-xl md:text-2xl text-foreground max-w-2xl mx-auto leading-relaxed text-center">Se a resposta não vem fácil, esse não é um problema de memória. É falta de método.</p>
 
           <p className="text-xl md:text-2xl font-semibold text-primary drop-shadow-glow pt-4">
             Esse problema não se resolve lendo mais. Se resolve aprendendo a ler de outro jeito.
