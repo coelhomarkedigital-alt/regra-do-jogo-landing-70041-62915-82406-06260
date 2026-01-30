@@ -104,7 +104,8 @@ export const BooksCarousel = () => {
 
           <div className="text-center pt-2">
             <p className="text-muted-foreground">
-              8 obras cuidadosamente selecionadas para os encontros do Clube do Livro em 2026.
+              Os livros mudam todo ano.
+O método de leitura aplicada é o que você aprende de verdade.
             </p>
           </div>
         </div>
