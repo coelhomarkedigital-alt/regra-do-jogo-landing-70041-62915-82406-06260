@@ -24,20 +24,20 @@ export const Hero = () => {
           <div className="inline-block bg-primary/20 backdrop-blur-md px-3 sm:px-5 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium mb-4 text-primary border border-primary/30">Regras do Jogo • Clube de Leitura Guiada</div>
           
           <h1 className="text-3xl lg:text-5xl font-extrabold text-white leading-tight drop-shadow-glow md:text-4xl">
-            O problema não é você não ler.<br />
-            ​ <span className="text-primary">É você ler sem saber o quê, quando e por quê.</span>​
+            Você lê, mas a leitura não muda<br />
+            <span className="text-primary">o rumo das suas decisões.</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-foreground max-w-2xl mx-auto leading-relaxed text-center">​Você escolhe livros por impulso, por indicação aleatória ou porque todo mundo está lendo. Às vezes nem termina. Às vezes abandona no meio. E quando termina, sente que aprendeu algo, mas não sabe aplicar. Resultado: nada muda na prática.</p>
+          <p className="text-xl md:text-2xl text-foreground max-w-2xl mx-auto leading-relaxed text-center">Você começa livros, avança aos poucos, termina alguns. Aprende ideias interessantes. Mas quando precisa decidir, agir ou mudar algo de verdade na sua vida, percebe que não sabe como aplicar o que leu. Fecha o livro. Três semanas depois, não consegue nem explicar o que leu.</p>
 
           <p className="text-xl md:text-2xl font-semibold text-primary drop-shadow-glow pt-4">
-            É aí que nasce a crença errada. <span className="italic">"Ler não funciona pra mim"</span>.
+            Esse problema não se resolve lendo mais. Se resolve aprendendo a ler de outro jeito.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
             <Button variant="hero" size="xl" asChild className="w-full sm:w-auto shadow-glow">
               <a href="http://projetoregrasdojogo.rds.land/clube-do-livro-assinantes-mensais" target="_blank" rel="noopener noreferrer">
-                Quero ler com propósito
+                Quero Ler com Critério
               </a>
             </Button>
           </div>

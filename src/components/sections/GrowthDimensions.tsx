@@ -1,61 +1,87 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Heart, Users, Briefcase, DollarSign, Sparkles } from "lucide-react";
+import { X, Check } from "lucide-react";
+
 export const GrowthDimensions = () => {
-  const dimensions = [{
-    icon: Heart,
-    title: "Crescimento Pessoal",
-    description: "Autoconhecimento, inteligência emocional e disciplina através de livros que te fazem questionar quem você é e quem você quer ser.",
-    color: "text-red-500",
-    bg: "bg-red-500/10"
-  }, {
-    icon: Users,
-    title: "Relacionamentos",
-    description: "Comunicação, empatia e construção de vínculos significativos. Livros que te ensinam a entender pessoas e criar conexões reais.",
-    color: "text-blue-500",
-    bg: "bg-blue-500/10"
-  }, {
-    icon: Briefcase,
-    title: "Sucesso Profissional",
-    description: "Liderança, produtividade, estratégia e gestão de carreira. Livros que te ajudam a tomar decisões melhores e avançar com clareza.",
-    color: "text-green-500",
-    bg: "bg-green-500/10"
-  }, {
-    icon: DollarSign,
-    title: "Finanças Pessoais",
-    description: "Investimentos, mentalidade de abundância e construção de patrimônio. Livros que te ensinam a pensar em longo prazo e construir segurança.",
-    color: "text-yellow-600",
-    bg: "bg-yellow-500/10"
-  }, {
-    icon: Sparkles,
-    title: "Espiritualidade",
-    description: "Propósito, valores e conexão com algo maior. Livros que te ajudam a encontrar sentido e viver com mais presença.",
-    color: "text-purple-500",
-    bg: "bg-purple-500/10"
-  }];
-  return <section className="py-16 bg-paper">
+  const beforeItems = [
+    "Leitura sem direção clara",
+    "Abandona livros no meio",
+    "Esquece o que leu rapidamente",
+    "Não consegue aplicar ideias",
+    "Acúmulo sem critério",
+    "Frustração constante"
+  ];
+
+  const afterItems = [
+    "Ritmo e clareza no processo",
+    "Termina livros com consistência",
+    "Retém e conecta ideias",
+    "Traduz leitura em ação",
+    "Constrói repertório útil",
+    "Evolução mensurável"
+  ];
+
+  return (
+    <section className="py-16 bg-paper">
       <div className="container px-4 mx-auto">
-        <div className="max-w-6xl mx-auto space-y-10">
+        <div className="max-w-5xl mx-auto space-y-10">
           <div className="text-center space-y-4 animate-fade-in">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-paper-foreground" data-animate="fade-up">
-              Como escolhemos os 8 livros do ano?      
+              A Transformação
             </h2>
             <p className="text-xl text-paper-foreground/70 max-w-3xl mx-auto">
-              Todo ano, são 8 livros escolhidos por impacto em 5 áreas da sua vida. Não por popularidade. Cada livro cobre pelo menos uma delas. E você também indica, a curadoria é colaborativa.
+              De consumo de informação para ferramenta de vida
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-5">
-            {dimensions.map((dimension, index) => <Card key={index} className="bg-white shadow-success hover:shadow-hover transition-all duration-300 hover:-translate-y-2 border-primary/20" data-animate="scale" data-delay={String(index + 1)}>
-                <CardContent className="pt-7 pb-5 px-5 text-center space-y-3">
-                  <div className="w-14 h-14 mx-auto rounded-full bg-primary/10 flex items-center justify-center">
-                    <dimension.icon className="w-7 h-7 text-primary" />
-                  </div>
-                  <h3 className="text-base font-semibold text-paper-foreground leading-tight">{dimension.title}</h3>
-                  <p className="text-paper-foreground/70 leading-relaxed text-base">{dimension.description}</p>
-                </CardContent>
-              </Card>)}
+          <div className="grid md:grid-cols-2 gap-6">
+            {/* Antes */}
+            <Card 
+              className="bg-white shadow-card hover:shadow-hover transition-all duration-300 border-destructive/30" 
+              data-animate="slide-left"
+            >
+              <CardContent className="pt-8 pb-6 px-6">
+                <h3 className="text-2xl font-bold text-paper-foreground text-center mb-6">Antes</h3>
+                <div className="space-y-4">
+                  {beforeItems.map((item, index) => (
+                    <div 
+                      key={index} 
+                      className="flex items-center gap-3 p-3 bg-destructive/5 rounded-lg"
+                    >
+                      <div className="flex-shrink-0 w-6 h-6 rounded-full bg-destructive/20 flex items-center justify-center">
+                        <X className="w-4 h-4 text-destructive" />
+                      </div>
+                      <p className="text-paper-foreground/80">{item}</p>
+                    </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Depois */}
+            <Card 
+              className="bg-white shadow-card hover:shadow-hover transition-all duration-300 border-primary/30" 
+              data-animate="slide-right"
+            >
+              <CardContent className="pt-8 pb-6 px-6">
+                <h3 className="text-2xl font-bold text-paper-foreground text-center mb-6">Depois</h3>
+                <div className="space-y-4">
+                  {afterItems.map((item, index) => (
+                    <div 
+                      key={index} 
+                      className="flex items-center gap-3 p-3 bg-primary/5 rounded-lg"
+                    >
+                      <div className="flex-shrink-0 w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center">
+                        <Check className="w-4 h-4 text-primary" />
+                      </div>
+                      <p className="text-paper-foreground/80">{item}</p>
+                    </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
