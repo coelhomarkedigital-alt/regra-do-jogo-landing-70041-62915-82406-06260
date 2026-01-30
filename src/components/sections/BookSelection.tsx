@@ -1,65 +1,69 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { Heart, Users, Building, DollarSign, Sparkles } from "lucide-react";
+import { Brain, Heart, DollarSign, MessageSquare, TrendingUp } from "lucide-react";
 
 export const BookSelection = () => {
   const dimensions = [
     {
+      icon: Brain,
+      title: "Mentalidade",
+      description: "Como você pensa e toma decisões."
+    },
+    {
       icon: Heart,
-      title: "Crescimento Pessoal",
-      description: "Autoconhecimento, inteligência emocional e disciplina através de livros que te fazem questionar quem você é e quem você quer ser."
-    },
-    {
-      icon: Users,
-      title: "Relacionamentos",
-      description: "Comunicação, empatia e construção de vínculos significativos. Livros que te ensinam a entender pessoas e criar conexões reais."
-    },
-    {
-      icon: Building,
-      title: "Sucesso Profissional",
-      description: "Liderança, produtividade, estratégia e gestão de carreira. Livros que te ajudam a tomar decisões melhores e avançar com clareza."
+      title: "Emoções",
+      description: "Como você lida com o que sente."
     },
     {
       icon: DollarSign,
-      title: "Finanças Pessoais",
-      description: "Investimentos, mentalidade de abundância e construção de patrimônio. Livros que te ensinam a pensar em longo prazo e construir segurança."
+      title: "Finanças",
+      description: "Como você gera e usa seu dinheiro."
     },
     {
-      icon: Sparkles,
-      title: "Espiritualidade",
-      description: "Propósito, valores e conexão com algo maior. Livros que te ajudam a encontrar sentido e viver com mais presença."
+      icon: MessageSquare,
+      title: "Comunicação",
+      description: "Como você se expressa e se conecta."
+    },
+    {
+      icon: TrendingUp,
+      title: "Produtividade",
+      description: "Como você organiza seu tempo e energia."
     }
   ];
 
   return (
-    <section className="py-16 bg-muted/30">
-      <div className="container px-4 mx-auto">
-        <div className="max-w-6xl mx-auto space-y-10">
-          <div className="text-center space-y-4 animate-fade-in">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
+    <section className="py-16 bg-paper relative overflow-hidden">
+      <div className="container px-4 mx-auto relative z-10">
+        <div className="max-w-4xl mx-auto space-y-10 text-center">
+          <div className="space-y-4 animate-fade-in">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-paper-foreground">
               Como escolhemos os 8 livros do ano?
             </h2>
-            <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
-              Todo ano, são 8 livros escolhidos por impacto em 5 áreas da sua vida. Não por popularidade. Cada livro cobre pelo menos uma delas. E você também indica, a curadoria é colaborativa.
+            <p className="text-xl text-paper-foreground/70 max-w-3xl mx-auto">
+              Cada livro é escolhido para desenvolver uma dimensão específica da sua vida:
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+          <div className="space-y-4 max-w-3xl mx-auto">
             {dimensions.map((dimension, index) => (
-              <Card 
+              <div 
                 key={index} 
-                className="bg-white shadow-card hover:shadow-hover transition-all duration-300 hover:-translate-y-2 border-primary/20"
-                data-animate="scale"
-                data-delay={String(index + 1)}
+                className="bg-white p-5 rounded-xl border-l-4 border-primary hover:shadow-hover transition-all flex items-start gap-4 shadow-card"
               >
-                <CardContent className="pt-8 pb-6 px-5 text-center space-y-4">
-                  <div className="w-14 h-14 mx-auto rounded-full bg-primary/10 flex items-center justify-center">
-                    <dimension.icon className="w-7 h-7 text-primary" />
-                  </div>
-                  <h3 className="text-lg font-semibold text-foreground leading-tight">{dimension.title}</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">{dimension.description}</p>
-                </CardContent>
-              </Card>
+                <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                  <dimension.icon className="w-5 h-5 text-primary" />
+                </div>
+                <div className="text-left pt-1">
+                  <p className="text-lg leading-relaxed font-medium text-paper-foreground">
+                    <span className="font-bold">{dimension.title}:</span> {dimension.description}
+                  </p>
+                </div>
+              </div>
             ))}
+          </div>
+
+          <div className="pt-6">
+            <p className="text-lg text-paper-foreground/70 max-w-2xl mx-auto">
+              Não escolhemos por hype. Escolhemos por impacto em áreas que importam.
+            </p>
           </div>
         </div>
       </div>
