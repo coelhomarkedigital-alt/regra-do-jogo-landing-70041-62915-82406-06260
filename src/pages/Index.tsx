@@ -4,7 +4,7 @@ import { SolutionIntegrated } from "@/components/sections/SolutionIntegrated";
 import { ClubDifference } from "@/components/sections/ClubDifference";
 import { GrowthDimensions } from "@/components/sections/GrowthDimensions";
 import { HowItWorksForWho } from "@/components/sections/HowItWorksForWho";
-import { ResultsCondensed } from "@/components/sections/ResultsCondensed";
+import { BookSelection } from "@/components/sections/BookSelection";
 import { Mentor } from "@/components/sections/Mentor";
 import { SocialProof } from "@/components/sections/SocialProof";
 import { BooksCarousel } from "@/components/BooksCarousel";
@@ -29,7 +29,7 @@ const Index = () => {
       <ClubDifference />
       <GrowthDimensions />
       <HowItWorksForWho />
-      <ResultsCondensed />
+      <BookSelection />
       <Mentor />
       <SocialProof />
       <BooksCarousel />

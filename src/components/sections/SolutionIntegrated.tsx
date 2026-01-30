@@ -1,4 +1,3 @@
-import { Card, CardContent } from "@/components/ui/card";
 import { Clock, Brain, Lightbulb, Layers, BookX, HelpCircle } from "lucide-react";
 
 export const SolutionIntegrated = () => {
@@ -38,7 +37,7 @@ export const SolutionIntegrated = () => {
   return (
     <section className="py-16 bg-paper">
       <div className="container px-4 mx-auto">
-        <div className="max-w-6xl mx-auto space-y-10">
+        <div className="max-w-4xl mx-auto space-y-10">
           <div className="text-center space-y-4 animate-fade-in">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-paper-foreground" data-animate="fade-up">
               Você Já Sabe Que Leitura É Importante
@@ -48,22 +47,23 @@ export const SolutionIntegrated = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="space-y-4 max-w-3xl mx-auto">
             {problems.map((problem, index) => (
-              <Card 
+              <div 
                 key={index} 
-                className="bg-white shadow-card hover:shadow-hover transition-all duration-300 hover:-translate-y-2 border-primary/20" 
+                className="bg-white p-5 rounded-xl border-l-4 border-primary hover:shadow-hover transition-all flex items-start gap-4 shadow-card"
                 data-animate="scale" 
                 data-delay={String(index + 1)}
               >
-                <CardContent className="pt-7 pb-5 px-5 text-center space-y-3">
-                  <div className="w-14 h-14 mx-auto rounded-full bg-primary/10 flex items-center justify-center">
-                    <problem.icon className="w-7 h-7 text-primary" />
-                  </div>
-                  <h3 className="text-lg font-semibold text-paper-foreground leading-tight">{problem.title}</h3>
-                  <p className="text-paper-foreground/70 leading-relaxed text-base">{problem.description}</p>
-                </CardContent>
-              </Card>
+                <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                  <problem.icon className="w-5 h-5 text-primary" />
+                </div>
+                <div className="text-left pt-1">
+                  <p className="text-lg leading-relaxed font-medium text-paper-foreground">
+                    <span className="font-bold">{problem.title}:</span> {problem.description}
+                  </p>
+                </div>
+              </div>
             ))}
           </div>
         </div>
