@@ -18,12 +18,12 @@ export const FinalCTA = () => {
       <div className="container px-4 mx-auto relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground leading-tight">
-            Você não precisa do clube <span className="text-primary drop-shadow-glow">pra comprar mais livros</span>.<br />
-            Você precisa dele pra finalmente terminar algum.
+            Você não precisa do clube <span className="text-primary drop-shadow-glow">pra ler mais</span>.<br />
+            Você precisa dele pra finalmente aplicar o que lê.
           </h2>
 
           <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed max-w-2xl mx-auto">
-            A escolha é simples: Ler com método ou continuar acumulando livros pela metade.
+            A escolha é sua: ler com um sistema que transforma conhecimento em ação, ou continuar acumulando livros que não mudam nada na sua vida.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6">
