@@ -1,22 +1,27 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { GlowingEffect } from "@/components/ui/glowing-effect";
-import { Calendar, Target, Brain } from "lucide-react";
+import { Calendar, Compass, Target, Brain } from "lucide-react";
 export const ClubDifference = () => {
   const differentials = [{
     icon: Calendar,
     number: "1",
-    title: "Direcionamento com Ritmo",
-    description: "Calendário claro de leitura. Você sabe exatamente onde deveria estar hoje no livro. A leitura deixa de ser abstrata e vira um processo objetivo. Sem mais abandono ou leitura picada."
+    title: "Ritmo e critério de leitura",
+    description: "Dentro do Clube, você recebe uma estrutura clara de leitura: qual livro ler, por que ele foi escolhido e como distribuir a leitura ao longo do mês. O critério começa na curadoria dos livros e o ritmo é definido para evitar abandono e leitura sem continuidade."
+  }, {
+    icon: Compass,
+    number: "2",
+    title: "Clareza de onde você está na leitura",
+    description: "Além do ritmo, você sabe exatamente em que ponto do livro deveria estar e o que faz sentido observar naquele momento da leitura. Isso evita recomeços constantes e transforma a leitura em um processo contínuo, não solto."
   }, {
     icon: Target,
-    number: "2",
-    title: "Aplicação por Área da Vida",
-    description: "O livro não é discutido genericamente. Cada obra é aplicada a uma área específica da sua vida. O encontro existe para traduzir leitura em decisão, ação e ajuste real."
+    number: "3",
+    title: "Aplicação orientada à sua vida real",
+    description: "Nos encontros, a leitura é discutida a partir de uma área concreta da sua vida. Você espelha decisões, situações e desafios reais no conteúdo do livro. Ao final da discussão, você sai com clareza de como aplicar aquelas ideias agora ou nos próximos passos da sua vida."
   }, {
     icon: Brain,
-    number: "3",
-    title: "Retenção e Memória",
-    description: "Você aprende como lembrar de livros antigos, como associar ideias e criar um repertório reutilizável. Resolve o problema: \"Li muita coisa, mas não consigo usar nada quando preciso.\""
+    number: "4",
+    title: "Retenção e Repertório",
+    description: "Em cada leitura, você aprende a criar conexões próprias com o conteúdo do livro. Não para decorar, mas para lembrar e reutilizar quando precisar. Dentro do Clube, você aprende formas práticas de ancorar as ideias para conseguir acessá-las meses ou anos depois, no momento em que uma decisão aparece. Resolve o problema: \"Li muita coisa, mas não consigo usar nada quando preciso.\""
   }];
   return <section className="py-16 bg-background bg-textured text-foreground">
       <div className="container px-4 mx-auto">
@@ -36,7 +41,7 @@ export const ClubDifference = () => {
                     Sem direcionamento, essas condições se perdem. No Clube, elas acontecem juntas.
                   </p>
                 </div>
-                <div className="grid md:grid-cols-3 gap-6">
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                   {differentials.map((diff, index) => <div key={index} className="relative bg-background rounded-xl p-6 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 opacity-0 animate-fade-in overflow-hidden" style={{
                   animationDelay: `${0.4 + index * 0.1}s`
                 }}>

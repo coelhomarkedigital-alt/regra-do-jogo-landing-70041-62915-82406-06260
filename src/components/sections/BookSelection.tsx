@@ -1,25 +1,25 @@
-import { Brain, Heart, DollarSign, MessageSquare, TrendingUp } from "lucide-react";
+import { Heart, Users, Building, DollarSign, Sparkles } from "lucide-react";
 export const BookSelection = () => {
   const dimensions = [{
-    icon: Brain,
-    title: "Mentalidade",
-    description: "Como você pensa e toma decisões."
-  }, {
     icon: Heart,
-    title: "Emoções",
-    description: "Como você lida com o que sente."
+    title: "Crescimento Pessoal",
+    description: "Clareza de valores, identidade e decisões"
+  }, {
+    icon: Users,
+    title: "Relacionamentos",
+    description: "Comunicação, empatia e vínculos reais"
+  }, {
+    icon: Building,
+    title: "Sucesso Profissional",
+    description: "Estratégia, liderança e produtividade"
   }, {
     icon: DollarSign,
-    title: "Finanças",
-    description: "Como você gera e usa seu dinheiro."
+    title: "Finanças Pessoais",
+    description: "Mentalidade, uso do dinheiro e decisões financeiras"
   }, {
-    icon: MessageSquare,
-    title: "Comunicação",
-    description: "Como você se expressa e se conecta."
-  }, {
-    icon: TrendingUp,
-    title: "Produtividade",
-    description: "Como você organiza seu tempo e energia."
+    icon: Sparkles,
+    title: "Espiritualidade",
+    description: "Propósito, sentido e presença"
   }];
   return <section className="py-16 bg-paper relative overflow-hidden">
       <div className="container px-4 mx-auto relative z-10">
