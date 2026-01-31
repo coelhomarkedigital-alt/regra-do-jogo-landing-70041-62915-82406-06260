@@ -25,7 +25,7 @@ export const FAQ = () => {
     },
     {
       question: "Quem escolhe os livros?",
-      answer: "Eu faço a curadoria pensando em variar entre as 5 dimensões e em livros que geram discussões ricas e aplicáveis.",
+      answer: "Eu faço a curadoria pensando em variar entre as 5 dimensões e em livros que geram discussões ricas e aplicáveis. E você também pode indicar leituras.",
     },
     {
       question: "Funciona a garantia?",

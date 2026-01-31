@@ -1,10 +1,10 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Clock, Video, Shield, BookOpen, Check } from "lucide-react";
+import { Clock, Video, Shield, BookOpen, Target } from "lucide-react";
 export const Doubts = () => {
   const doubts = [{
     icon: Clock,
     question: 'Falta de tempo não é o problema',
-    answer: "15 minutos por dia. Você tem tempo. Você não tem método.",
+    answer: "A leitura acontece em pequenos blocos, integrados à sua rotina. O foco é consistência e aplicação, não volume.",
     stat: null
   }, {
     icon: Video,
@@ -14,12 +14,17 @@ export const Doubts = () => {
   }, {
     icon: Shield,
     question: 'Risco zero pra você',
-    answer: "7 dias pra testar. Não gostou? Devolvemos cada centavo.",
+    answer: "Você tem 7 dias para testar o Clube com tranquilidade. Se não fizer sentido, é só cancelar.",
     stat: null
   }, {
     icon: BookOpen,
     question: 'Você não odeia ler. Você odeia começar e não terminar',
-    answer: "84% dos membros criaram hábito em 30 dias. O problema nunca foi você.",
+    answer: "O problema nunca foi gostar de ler. Foi começar sem critério e abandonar no meio.",
+    stat: null
+  }, {
+    icon: Target,
+    question: 'Preciso ser leitor disciplinado?',
+    answer: "Não. O Clube existe justamente para criar ritmo, critério e continuidade na leitura.",
     stat: null
   }];
   return <section className="py-20 bg-paper">
