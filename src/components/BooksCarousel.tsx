@@ -64,7 +64,7 @@ export const BooksCarousel = () => {
               Os 8 livros de 2026
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Escolhidos por impacto em 5 áreas da sua vida. Não por popularidade.
+              Escolhidos para desenvolver áreas específicas da sua vida. 
             </p>
           </div>
 
