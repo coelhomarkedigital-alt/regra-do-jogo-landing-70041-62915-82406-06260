@@ -50,7 +50,7 @@ A curadoria é colaborativa, e você também pode indicar leituras.
 
           <div className="pt-6">
             <p className="text-lg text-paper-foreground/70 max-w-2xl mx-auto">
-              Não escolhemos por hype. Escolhemos por impacto em áreas que importam.
+              Cada livro existe para desenvolver uma dimensão específica da sua vida.
             </p>
           </div>
         </div>
