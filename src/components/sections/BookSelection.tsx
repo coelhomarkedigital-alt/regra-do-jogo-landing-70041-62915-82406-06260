@@ -1,36 +1,27 @@
 import { Brain, Heart, DollarSign, MessageSquare, TrendingUp } from "lucide-react";
-
 export const BookSelection = () => {
-  const dimensions = [
-    {
-      icon: Brain,
-      title: "Mentalidade",
-      description: "Como você pensa e toma decisões."
-    },
-    {
-      icon: Heart,
-      title: "Emoções",
-      description: "Como você lida com o que sente."
-    },
-    {
-      icon: DollarSign,
-      title: "Finanças",
-      description: "Como você gera e usa seu dinheiro."
-    },
-    {
-      icon: MessageSquare,
-      title: "Comunicação",
-      description: "Como você se expressa e se conecta."
-    },
-    {
-      icon: TrendingUp,
-      title: "Produtividade",
-      description: "Como você organiza seu tempo e energia."
-    }
-  ];
-
-  return (
-    <section className="py-16 bg-paper relative overflow-hidden">
+  const dimensions = [{
+    icon: Brain,
+    title: "Mentalidade",
+    description: "Como você pensa e toma decisões."
+  }, {
+    icon: Heart,
+    title: "Emoções",
+    description: "Como você lida com o que sente."
+  }, {
+    icon: DollarSign,
+    title: "Finanças",
+    description: "Como você gera e usa seu dinheiro."
+  }, {
+    icon: MessageSquare,
+    title: "Comunicação",
+    description: "Como você se expressa e se conecta."
+  }, {
+    icon: TrendingUp,
+    title: "Produtividade",
+    description: "Como você organiza seu tempo e energia."
+  }];
+  return <section className="py-16 bg-paper relative overflow-hidden">
       <div className="container px-4 mx-auto relative z-10">
         <div className="max-w-4xl mx-auto space-y-10 text-center">
           <div className="space-y-4 animate-fade-in">
@@ -38,16 +29,14 @@ export const BookSelection = () => {
               Como escolhemos os 8 livros do ano?
             </h2>
             <p className="text-xl text-paper-foreground/70 max-w-3xl mx-auto">
-              Cada livro é escolhido para desenvolver uma dimensão específica da sua vida:
+              Cada livro é escolhido para desenvolver uma dimensão específica da sua vida.
+A curadoria é colaborativa, e você também pode indicar leituras.
+
             </p>
           </div>
 
           <div className="space-y-4 max-w-3xl mx-auto">
-            {dimensions.map((dimension, index) => (
-              <div 
-                key={index} 
-                className="bg-white p-5 rounded-xl border-l-4 border-primary hover:shadow-hover transition-all flex items-start gap-4 shadow-card"
-              >
+            {dimensions.map((dimension, index) => <div key={index} className="bg-white p-5 rounded-xl border-l-4 border-primary hover:shadow-hover transition-all flex items-start gap-4 shadow-card">
                 <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
                   <dimension.icon className="w-5 h-5 text-primary" />
                 </div>
@@ -56,8 +45,7 @@ export const BookSelection = () => {
                     <span className="font-bold">{dimension.title}:</span> {dimension.description}
                   </p>
                 </div>
-              </div>
-            ))}
+              </div>)}
           </div>
 
           <div className="pt-6">
@@ -67,6 +55,5 @@ export const BookSelection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
