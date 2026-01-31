@@ -2,9 +2,9 @@ import { Button } from "@/components/ui/button";
 import { motion } from "motion/react";
 import { LampContainer } from "@/components/ui/lamp-container";
 export const Hero = () => {
-  const scrollToPricing = () => {
-    const pricing = document.getElementById('pricing');
-    pricing?.scrollIntoView({
+  const scrollToVideo = () => {
+    const videoSection = document.getElementById('video-section');
+    videoSection?.scrollIntoView({
       behavior: 'smooth'
     });
   };
@@ -34,10 +34,8 @@ export const Hero = () => {
           
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
-            <Button variant="hero" size="xl" asChild className="w-full sm:w-auto shadow-glow">
-              <a href="http://projetoregrasdojogo.rds.land/clube-do-livro-assinantes-mensais" target="_blank" rel="noopener noreferrer">
-                Quero Ler com Critério
-              </a>
+            <Button variant="hero" size="xl" onClick={scrollToVideo} className="w-full sm:w-auto shadow-glow cursor-pointer">
+              Quero entender isso melhor
             </Button>
           </div>
 
