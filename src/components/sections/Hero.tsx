@@ -2,9 +2,9 @@ import { Button } from "@/components/ui/button";
 import { motion } from "motion/react";
 import { LampContainer } from "@/components/ui/lamp-container";
 export const Hero = () => {
-  const scrollToVideo = () => {
-    const video = document.getElementById('video-section');
-    video?.scrollIntoView({
+  const scrollToPricing = () => {
+    const pricing = document.getElementById('pricing');
+    pricing?.scrollIntoView({
       behavior: 'smooth'
     });
   };
@@ -28,13 +28,16 @@ export const Hero = () => {
             <span className="text-primary">Quando foi a última vez que um livro mudou uma decisão importante da sua vida?</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-foreground max-w-2xl mx-auto leading-relaxed text-center">Se a resposta não vem fácil, esse não é um problema de memória. É falta de método.</p>
+          <p className="text-xl md:text-2xl text-foreground max-w-2xl mx-auto leading-relaxed text-center">Se a resposta não vem fácil, o problema não é memória.
+É a falta de um método para reter e aplicar o que você lê quando isso realmente importa.</p>
 
           
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
-            <Button variant="hero" size="xl" onClick={scrollToVideo} className="w-full sm:w-auto shadow-glow cursor-pointer">
-              Quero entender isso melhor
+            <Button variant="hero" size="xl" asChild className="w-full sm:w-auto shadow-glow">
+              <a href="http://projetoregrasdojogo.rds.land/clube-do-livro-assinantes-mensais" target="_blank" rel="noopener noreferrer">
+                Quero Ler com Critério
+              </a>
             </Button>
           </div>
 
