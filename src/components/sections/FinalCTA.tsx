@@ -18,7 +18,7 @@ export const FinalCTA = () => {
       <div className="container px-4 mx-auto relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground leading-tight">
-            ​ <span className="text-primary drop-shadow-glow">O Clube não existe para você ler mais.</span>​<br />
+            ​ <span className="text-primary drop-shadow-glow">O Clube não existe só para você ler mais.</span>​<br />
             Ele existe para transformar leitura em ação.
           </h2>
 

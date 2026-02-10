@@ -4,16 +4,16 @@ import carlosMarden from "@/assets/carlos-marden.jpg";
 export const Mentor = () => {
   const credentials = [{
     icon: Award,
-    text: "Procurador Federal"
+    text: "Investidor"
   }, {
     icon: Briefcase,
-    text: "Investidor e Empreendedor"
+    text: "Empreendedor"
   }, {
     icon: BookOpen,
-    text: "Leitor voraz e curador estratégico"
+    text: "Curador estratégico com mais de 700 livros lidos"
   }, {
     icon: Target,
-    text: "Mentor de desenvolvimento pessoal e profissional"
+    text: "Mentor de desenvolvimento pessoal, sucesso profissional e investimentos"
   }];
   return <section className="py-20 bg-background bg-textured relative">
       <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-transparent to-background/50"></div>
@@ -49,11 +49,8 @@ export const Mentor = () => {
                   </div>
 
                   <div className="pt-4 space-y-4 text-muted-foreground leading-relaxed">
-                    <p>
-                      Com uma trajetória que une Investimentos, Desenvolvimento Humano e Profissional, Carlos Marden traz uma visão única sobre como o conhecimento pode ser transformado em ação prática.
-                    </p>
                     <p className="font-medium text-foreground">
-                      "Minha missão é simples: ajudar pessoas a transformarem livros em resultados concretos."
+                      "Minha missão é simples: ajudar as pessoas a usar o conhecimento dos livros para obter resultados concretos."
                     </p>
                   </div>
                 </div>

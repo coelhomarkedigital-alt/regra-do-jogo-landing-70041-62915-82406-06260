@@ -3,11 +3,11 @@ export const BookSelection = () => {
   const dimensions = [{
     icon: Heart,
     title: "Crescimento Pessoal",
-    description: "Clareza de valores, identidade e decisões"
+    description: "Disciplina, foco e inteligência emocional"
   }, {
     icon: Users,
-    title: "Relacionamentos",
-    description: "Comunicação, empatia e vínculos reais"
+    title: "Super Relacionamentos",
+    description: "Comunicação, empatia e técnica de convencimento"
   }, {
     icon: Building,
     title: "Sucesso Profissional",
@@ -15,11 +15,11 @@ export const BookSelection = () => {
   }, {
     icon: DollarSign,
     title: "Finanças Pessoais",
-    description: "Mentalidade, uso do dinheiro e decisões financeiras"
+    description: "Organização financeira e investimentos"
   }, {
     icon: Sparkles,
     title: "Espiritualidade",
-    description: "Propósito, sentido e presença"
+    description: "Felicidade, propósito e sentido"
   }];
   return <section className="py-16 bg-paper relative overflow-hidden">
       <div className="container px-4 mx-auto relative z-10">

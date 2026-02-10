@@ -19,8 +19,8 @@ export const SolutionIntegrated = () => {
     },
     { 
       icon: Layers,
-      title: "Acumula leitura sem construir critério",
-      description: "Já leu dezenas de livros, mas não consegue articular claramente o que aprendeu ou como isso mudou suas decisões."
+      title: "Acumula leitura sem critério de escolha",
+      description: "Já leu dezenas de livros, mas metade não tinha nada a ver com o que você realmente precisava. Escolhe livros sem saber se aquilo vai te servir de verdade. Resultado? Tempo investido, pouco retorno."
     },
     { 
       icon: BookX,

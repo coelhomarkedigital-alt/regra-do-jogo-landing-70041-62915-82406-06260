@@ -6,7 +6,7 @@ export const HowItWorksForWho = () => {
     {
       icon: Calendar,
       title: "Receba a curadoria mensal",
-      description: "Todo mês você descobre o livro escolhido + esquema de leitura semanal. Você adquire o livro (formato de sua preferência) e recebe toda estrutura para maximizar seu aprendizado."
+      description: "Todo mês você recebe o cronograma semanal do livro atual: o que ler, quando ler, e o que observar em cada trecho. Você adquire o livro (formato de sua preferência) e aplica a estrutura para extrair o máximo daquele conteúdo."
     },
     {
       icon: Users,
