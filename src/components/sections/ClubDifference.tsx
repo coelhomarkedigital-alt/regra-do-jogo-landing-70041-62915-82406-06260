@@ -12,7 +12,7 @@ export const ClubDifference = () => {
       icon: Calendar,
       number: "1",
       title: "Ritmo e critério de leitura",
-      shortText: "A estrutura certa para não abandonar nem ler sem propósito.",
+      shortText: "A estrutura certa para não abandonar leitura nem ler sem propósito.",
       fullDescription: "Dentro do Clube, você recebe uma estrutura clara de leitura: qual livro ler, por que ele foi escolhido e como distribuir a leitura ao longo do mês. O critério começa na curadoria dos livros e o ritmo é definido para evitar abandono e leitura sem continuidade."
     },
     {
@@ -20,7 +20,7 @@ export const ClubDifference = () => {
       number: "2",
       title: "Clareza de onde você está na leitura",
       shortText: "Você sabe exatamente em que ponto está e o que observar agora.",
-      fullDescription: "Além do ritmo, você sabe exatamente em que ponto do livro deveria estar e o que faz sentido observar naquele momento da leitura. Isso evita recomeços constantes e transforma a leitura em um processo contínuo, não solto."
+      fullDescription: "Além do ritmo, você tem um cronograma semanal: sabe exatamente onde deveria estar no livro e o que observar em cada momento. Sem recomeços constantes. Sem aquela sensação de estar perdido. A leitura vira um processo contínuo."
     },
     {
       icon: Target,
