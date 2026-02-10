@@ -34,7 +34,7 @@ export const Mentor = () => {
                     <p className="text-foreground font-semibold text-sm">
                       Facilitação dos Encontros:
                     </p>
-                    <p className="text-foreground/80 text-sm mt-1">Encontros conduzidos por Carlos Marden: Procurador Federal, investidor, especialista em transformação através da leitura e criador do Projeto Regras do Jogo.</p>
+                    <p className="text-foreground/80 text-sm mt-1">Fundador do Projeto Regras do Jogo. Conduz os encontros mensais focando em discussões profundas e aplicação prática do conteúdo.</p>
                   </div>
 
                   <div className="space-y-4">
