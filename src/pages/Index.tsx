@@ -27,8 +27,8 @@ const Index = () => {
       <VideoSection />
       <SolutionIntegrated />
       <ClubDifference />
-      <GrowthDimensions />
       <HowItWorksForWho />
+      <GrowthDimensions />
       <BookSelection />
       <Mentor />
       <SocialProof />

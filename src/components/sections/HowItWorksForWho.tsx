@@ -26,11 +26,11 @@ export const HowItWorksForWho = () => {
   ];
 
   return (
-    <section className="py-16 bg-muted/20">
+    <section className="py-16 md:py-24 bg-[#FAF2E1]">
       <div className="container px-4 mx-auto">
-        <div className="max-w-5xl mx-auto space-y-12">
-          <div className="text-center space-y-4 animate-fade-in">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground" data-animate="fade-up">
+        <div className="max-w-3xl mx-auto space-y-12">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary-foreground">
               Como funciona na prática?  
             </h2>
           </div>
@@ -39,18 +39,18 @@ export const HowItWorksForWho = () => {
             {steps.map((step, index) => (
               <Card 
                 key={index} 
-                className="bg-card shadow-card hover:shadow-hover transition-all duration-300 border-border/50" 
+                className="bg-white rounded-lg border border-primary/20 shadow-success hover:shadow-hover transition-all duration-300" 
                 data-animate={index % 2 === 0 ? "slide-left" : "slide-right"} 
                 data-delay={String(index + 1)}
               >
                 <CardContent className="pt-6 pb-6 px-6">
                   <div className="flex gap-4 items-start">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center">
-                      <step.icon className="w-6 h-6 text-accent" />
+                    <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 shrink-0">
+                      <step.icon className="w-5 h-5 text-primary" />
                     </div>
                     <div className="space-y-1">
-                      <h3 className="text-lg font-semibold text-foreground">{step.title}</h3>
-                      <p className="text-muted-foreground">{step.description}</p>
+                      <h3 className="text-lg font-semibold text-primary-foreground">{step.title}</h3>
+                      <p className="text-amber-700">{step.description}</p>
                     </div>
                   </div>
                 </CardContent>
