@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Calendar, Users, MessageCircle, Trophy } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export const HowItWorksForWho = () => {
   const steps = [
