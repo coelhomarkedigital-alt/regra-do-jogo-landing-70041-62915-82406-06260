@@ -8,35 +8,35 @@ export const ClubDifference = () => {
   const [openCard, setOpenCard] = useState<number | null>(null);
 
   const differentials = [
-    {
-      icon: Calendar,
-      number: "1",
-      title: "Ritmo e critério de leitura",
-      shortText: "A estrutura certa para não abandonar leitura nem ler sem propósito.",
-      fullDescription: "Dentro do Clube, você recebe uma estrutura clara de leitura: qual livro ler, por que ele foi escolhido e como distribuir a leitura ao longo do mês. O critério começa na curadoria dos livros e o ritmo é definido para evitar abandono e leitura sem continuidade."
-    },
-    {
-      icon: Compass,
-      number: "2",
-      title: "Clareza de onde você está na leitura",
-      shortText: "Você sabe exatamente em que ponto está e o que observar agora.",
-      fullDescription: "Além do ritmo, você tem um cronograma semanal: sabe exatamente onde deveria estar no livro e o que observar em cada momento. Sem recomeços constantes. Sem aquela sensação de estar perdido. A leitura vira um processo contínuo."
-    },
-    {
-      icon: Target,
-      number: "3",
-      title: "Aplicação orientada à sua vida real",
-      shortText: "A leitura é espelhada em decisões e situações reais da sua vida.",
-      fullDescription: "Nos encontros, a leitura é discutida a partir de uma área concreta da sua vida. Você espelha decisões, situações e desafios reais no conteúdo do livro. Ao final da discussão, você sai com clareza de como aplicar aquelas ideias agora ou nos próximos passos da sua vida."
-    },
-    {
-      icon: Brain,
-      number: "4",
-      title: "Retenção e repertório",
-      shortText: "Você aprende a lembrar e reutilizar o que leu quando precisa.",
-      fullDescription: "Em cada leitura, você aprende a criar conexões próprias com o conteúdo do livro. Não para decorar, mas para lembrar e reutilizar quando precisar. Dentro do Clube, você aprende formas práticas de ancorar as ideias para conseguir acessá-las meses ou anos depois, no momento em que uma decisão aparece. Resolve o problema: \"Li muita coisa, mas não consigo usar nada quando preciso.\""
-    }
-  ];
+  {
+    icon: Calendar,
+    number: "1",
+    title: "Ritmo e critério de leitura",
+    shortText: "A estrutura certa para não abandonar leitura nem ler sem propósito.",
+    fullDescription: "Dentro do Clube, você recebe uma estrutura clara de leitura: qual livro ler, por que ele foi escolhido e como distribuir a leitura ao longo do mês. O critério começa na curadoria dos livros e o ritmo é definido para evitar abandono e leitura sem continuidade."
+  },
+  {
+    icon: Compass,
+    number: "2",
+    title: "Clareza de onde você está na leitura",
+    shortText: "Você sabe exatamente em que ponto está e o que observar agora.",
+    fullDescription: "Além do ritmo, você tem um cronograma semanal: sabe exatamente onde deveria estar no livro e o que observar em cada momento. Sem recomeços constantes. Sem aquela sensação de estar perdido. A leitura vira um processo contínuo."
+  },
+  {
+    icon: Target,
+    number: "3",
+    title: "Aplicação orientada à sua vida real",
+    shortText: "A leitura é espelhada em decisões e situações reais da sua vida.",
+    fullDescription: "Nos encontros, a leitura é discutida a partir de uma área concreta da sua vida. Você espelha decisões, situações e desafios reais no conteúdo do livro. Ao final da discussão, você sai com clareza de como aplicar aquelas ideias agora ou nos próximos passos da sua vida."
+  },
+  {
+    icon: Brain,
+    number: "4",
+    title: "Retenção e repertório",
+    shortText: "Você aprende a lembrar e reutilizar o que leu quando precisa.",
+    fullDescription: "Em cada leitura, você aprende a criar conexões próprias com o conteúdo do livro. Não para decorar, mas para lembrar e reutilizar quando precisar. Dentro do Clube, você aprende formas práticas de ancorar as ideias para conseguir acessá-las meses ou anos depois, no momento em que uma decisão aparece. Resolve o problema: \"Li muita coisa, mas não consigo usar nada quando preciso.\""
+  }];
+
 
   const toggleCard = (index: number) => {
     setOpenCard(openCard === index ? null : index);
@@ -53,7 +53,7 @@ export const ClubDifference = () => {
               <CardContent className="pt-10 pb-10 px-8">
                 <div className="text-center mb-8 animate-fade-in">
                   <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-accent-foreground mb-3">
-                    Como o método de leitura do Clube funciona na prática
+                    O Método de Leitura Aplicada
                   </h2>
                   <p className="text-lg md:text-xl text-accent-foreground/80">
                     Sem direcionamento, essas condições se perdem. No Clube, elas acontecem juntas.
@@ -61,23 +61,23 @@ export const ClubDifference = () => {
                 </div>
                 
                 <div className="grid md:grid-cols-2 gap-6">
-                  {differentials.map((diff, index) => (
-                    <motion.div
-                      key={index}
-                      layout
-                      className="relative bg-background rounded-xl shadow-lg overflow-hidden opacity-0 animate-fade-in"
-                      style={{ animationDelay: `${0.4 + index * 0.1}s` }}
-                    >
+                  {differentials.map((diff, index) =>
+                  <motion.div
+                    key={index}
+                    layout
+                    className="relative bg-background rounded-xl shadow-lg overflow-hidden opacity-0 animate-fade-in"
+                    style={{ animationDelay: `${0.4 + index * 0.1}s` }}>
+                    
                       <AnimatePresence mode="wait">
-                        {openCard === index ? (
-                          <motion.div
-                            key="open"
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            exit={{ opacity: 0 }}
-                            transition={{ duration: 0.2 }}
-                            className="p-6"
-                          >
+                        {openCard === index ?
+                      <motion.div
+                        key="open"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.2 }}
+                        className="p-6">
+                        
                             <div className="space-y-4">
                               <div className="flex items-center gap-3">
                                 <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
@@ -90,24 +90,24 @@ export const ClubDifference = () => {
                                 {diff.fullDescription}
                               </p>
                               <Button
-                                variant="ghost"
-                                onClick={() => toggleCard(index)}
-                                className="text-primary hover:text-primary/80 p-0 h-auto font-semibold"
-                              >
+                            variant="ghost"
+                            onClick={() => toggleCard(index)}
+                            className="text-primary hover:text-primary/80 p-0 h-auto font-semibold">
+                            
                                 ← Voltar
                               </Button>
                             </div>
-                          </motion.div>
-                        ) : (
-                          <motion.div
-                            key="closed"
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            exit={{ opacity: 0 }}
-                            transition={{ duration: 0.2 }}
-                            onClick={() => toggleCard(index)}
-                            className="cursor-pointer group h-full"
-                          >
+                          </motion.div> :
+
+                      <motion.div
+                        key="closed"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.2 }}
+                        onClick={() => toggleCard(index)}
+                        className="cursor-pointer group h-full">
+                        
                             <div className="relative bg-gradient-to-br from-primary/5 via-background to-accent/10 p-6 h-full border-2 border-transparent hover:border-primary/30 transition-all duration-300">
                               {/* Number badge */}
                               <div className="absolute top-4 right-4 w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center">
@@ -138,16 +138,16 @@ export const ClubDifference = () => {
                               </div>
                             </div>
                           </motion.div>
-                        )}
+                      }
                       </AnimatePresence>
                     </motion.div>
-                  ))}
+                  )}
                 </div>
               </CardContent>
             </Card>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
