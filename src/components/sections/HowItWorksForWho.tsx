@@ -51,7 +51,7 @@ export const HowItWorksForWho = () => {
                     </div>
                     <div className="space-y-1">
                       <h3 className="text-lg font-semibold text-primary-foreground">{step.title}</h3>
-                      <p className="text-amber-700">{step.description}</p>
+                      <p className="text-paper-foreground">{step.description}</p>
                     </div>
                   </div>
                 </CardContent>
