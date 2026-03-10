@@ -32,6 +32,13 @@ const Index = () => {
       <GrowthDimensions />
       <BookSelection />
       <Mentor />
+      <section className="py-12 bg-background">
+        <div className="text-center">
+          <Button variant="hero" size="xl" onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })} className="shadow-glow cursor-pointer">
+            Quero aprender a ler melhor
+          </Button>
+        </div>
+      </section>
       <SocialProof />
       <BooksCarousel />
       <Schedule />
