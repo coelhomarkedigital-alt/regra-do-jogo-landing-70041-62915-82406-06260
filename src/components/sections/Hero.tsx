@@ -23,7 +23,7 @@ export const Hero = () => {
         <div className="max-w-4xl mx-auto space-y-6">
           <div className="inline-block bg-primary/20 backdrop-blur-md px-3 sm:px-5 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium mb-4 text-primary border border-primary/30">Regras do Jogo • Clube de Leitura Guiada</div>
           
-          <p className="text-lg md:text-xl lg:text-2xl text-white leading-relaxed mb-2">Você já leu. Talvez até bastante.</p>
+          <p className="text-lg lg:text-2xl text-white leading-relaxed mb-2 md:text-2xl">Você já leu. Talvez até bastante.</p>
           <h1 className="text-2xl md:text-3xl lg:text-5xl font-extrabold text-white leading-tight drop-shadow-glow">
             Mas seja honesto: <span className="text-primary">o que realmente mudou na sua vida por causa disso?</span>
           </h1>
