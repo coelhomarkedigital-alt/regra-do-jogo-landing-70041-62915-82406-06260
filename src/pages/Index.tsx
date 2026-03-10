@@ -1,5 +1,6 @@
 import { Hero } from "@/components/sections/Hero";
 import { VideoSection } from "@/components/sections/VideoSection";
+import { Button } from "@/components/ui/button";
 import { SolutionIntegrated } from "@/components/sections/SolutionIntegrated";
 import { ClubDifference } from "@/components/sections/ClubDifference";
 import { GrowthDimensions } from "@/components/sections/GrowthDimensions";
