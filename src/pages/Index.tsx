@@ -1,5 +1,6 @@
 import { Hero } from "@/components/sections/Hero";
 import { VideoSection } from "@/components/sections/VideoSection";
+import { Button } from "@/components/ui/button";
 import { SolutionIntegrated } from "@/components/sections/SolutionIntegrated";
 import { ClubDifference } from "@/components/sections/ClubDifference";
 import { GrowthDimensions } from "@/components/sections/GrowthDimensions";
@@ -31,6 +32,13 @@ const Index = () => {
       <GrowthDimensions />
       <BookSelection />
       <Mentor />
+      <section className="py-12 bg-background">
+        <div className="text-center">
+          <Button variant="hero" size="xl" onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })} className="shadow-glow cursor-pointer">
+            Quero aprender a ler melhor
+          </Button>
+        </div>
+      </section>
       <SocialProof />
       <BooksCarousel />
       <Schedule />

@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Calendar, Users, MessageCircle, Trophy } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export const HowItWorksForWho = () => {
   const steps = [
@@ -56,6 +57,12 @@ export const HowItWorksForWho = () => {
                 </CardContent>
               </Card>
             ))}
+          </div>
+
+          <div className="text-center pt-8">
+            <Button variant="hero" size="xl" onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })} className="shadow-glow cursor-pointer">
+              Quero fazer parte do Clube
+            </Button>
           </div>
         </div>
       </div>
