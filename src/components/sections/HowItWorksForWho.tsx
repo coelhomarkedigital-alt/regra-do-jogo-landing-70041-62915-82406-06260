@@ -57,6 +57,12 @@ export const HowItWorksForWho = () => {
               </Card>
             ))}
           </div>
+
+          <div className="text-center pt-8">
+            <Button variant="hero" size="xl" onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })} className="shadow-glow cursor-pointer">
+              Quero fazer parte do Clube
+            </Button>
+          </div>
         </div>
       </div>
     </section>
