@@ -56,7 +56,7 @@ export const ClubDifference = () => {
                     O Método de Leitura Aplicada
                   </h2>
                   <p className="text-lg md:text-xl text-accent-foreground/80">
-                    Sem direcionamento, essas condições se perdem. No Clube, elas acontecem juntas.
+                    4 pilares que transformam qualquer leitura em mudança real de vida.
                   </p>
                 </div>
                 
