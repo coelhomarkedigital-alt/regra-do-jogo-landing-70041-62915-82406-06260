@@ -152,7 +152,7 @@ export const Schedule = () => {
         {/* CTA */}
         <div className="text-center mt-10">
           <Button variant="cta" size="xl" asChild className="shadow-[0_0_20px_rgba(251,191,36,0.4),0_0_40px_rgba(245,192,69,0.2)]">
-            <a href="http://projetoregrasdojogo.rds.land/clube-do-livro-assinantes-mensais" target="_blank" rel="noopener noreferrer">
+            <a href="https://projetoregrasdojogo.com.br/finalizar-compra/?add-to-cart=1550" target="_blank" rel="noopener noreferrer">
               Quero fazer parte do Clube do Livro
             </a>
           </Button>
