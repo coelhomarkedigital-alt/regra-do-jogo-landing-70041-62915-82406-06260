@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { BookCheck, Lightbulb, MessageSquareText, Filter, TrendingUp } from "lucide-react";
 export const ResultsCondensed = () => {
   const handleMonthlyPlan = () => {
-    window.open("http://projetoregrasdojogo.rds.land/clube-do-livro-assinantes-mensais", "_blank");
+    window.open("https://projetoregrasdojogo.com.br/finalizar-compra/?add-to-cart=1550", "_blank");
   };
   const results = [{
     icon: BookCheck,

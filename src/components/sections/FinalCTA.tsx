@@ -33,7 +33,7 @@ export const FinalCTA = () => {
               </a>
             </Button>
             <Button variant="outline" size="xl" asChild className="w-full sm:w-auto">
-              <a href="http://projetoregrasdojogo.rds.land/clube-do-livro-assinantes-anuais" target="_blank" rel="noopener noreferrer">
+              <a href="https://projetoregrasdojogo.com.br/finalizar-compra/?add-to-cart=1724" target="_blank" rel="noopener noreferrer">
                 Garantir Plano Anual
               </a>
             </Button>

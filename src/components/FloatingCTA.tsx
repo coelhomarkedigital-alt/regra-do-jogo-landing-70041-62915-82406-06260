@@ -34,7 +34,7 @@ export const FloatingCTA = () => {
         asChild
         className="w-full shadow-cta animate-[pulse_3s_ease-in-out_infinite]"
       >
-        <a href="http://projetoregrasdojogo.rds.land/clube-do-livro-assinantes-mensais" target="_blank" rel="noopener noreferrer">
+        <a href="https://projetoregrasdojogo.com.br/finalizar-compra/?add-to-cart=1550" target="_blank" rel="noopener noreferrer">
           Quero evoluir com o Clube
           <ArrowUp className="w-5 h-5 ml-2 rotate-90" />
         </a>
