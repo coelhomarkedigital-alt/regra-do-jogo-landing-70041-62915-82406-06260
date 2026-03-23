@@ -1,4 +1,5 @@
 import { Heart, Users, Building, DollarSign, Sparkles } from "lucide-react";
+import { Button } from "@/components/ui/button";
 export const BookSelection = () => {
   const dimensions = [{
     icon: Heart,
