@@ -48,9 +48,9 @@ export const BookSelection = () => {
           </div>
 
           <div className="pt-6">
-            <p className="text-lg text-paper-foreground/70 max-w-2xl mx-auto">
-              Cada livro existe para desenvolver uma dimensão específica da sua vida.
-            </p>
+            <Button variant="hero" size="xl" onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })} className="shadow-glow cursor-pointer">
+              Quero entrar agora para o Clube
+            </Button>
           </div>
         </div>
       </div>

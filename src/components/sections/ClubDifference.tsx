@@ -32,8 +32,8 @@ export const ClubDifference = () => {
   {
     icon: Brain,
     number: "4",
-    title: "Retenção e repertório",
-    shortText: "Você aprende a lembrar e reutilizar o que leu quando precisa.",
+    title: "Nunca mais esqueça o que leu",
+    shortText: "Você aprende a reter e reutilizar o conhecimento dos livros meses ou anos depois, quando mais precisar.",
     fullDescription: "Em cada leitura, você aprende a criar conexões próprias com o conteúdo do livro. Não para decorar, mas para lembrar e reutilizar quando precisar. Dentro do Clube, você aprende formas práticas de ancorar as ideias para conseguir acessá-las meses ou anos depois, no momento em que uma decisão aparece. Resolve o problema: \"Li muita coisa, mas não consigo usar nada quando preciso.\""
   }];
 
