@@ -25,8 +25,8 @@ export const ClubDifference = () => {
   {
     icon: Target,
     number: "3",
-    title: "Aplicação orientada à sua vida real",
-    shortText: "A leitura é espelhada em decisões e situações reais da sua vida.",
+    title: "Transforme o que leu em ação real",
+    shortText: "Cada livro é conectado a uma área real da sua vida para você sair da leitura com uma decisão ou mudança concreta.",
     fullDescription: "Nos encontros, a leitura é discutida a partir de uma área concreta da sua vida. Você espelha decisões, situações e desafios reais no conteúdo do livro. Ao final da discussão, você sai com clareza de como aplicar aquelas ideias agora ou nos próximos passos da sua vida."
   },
   {
