@@ -11,8 +11,8 @@ export const ClubDifference = () => {
   {
     icon: Calendar,
     number: "1",
-    title: "Ritmo e critério de leitura",
-    shortText: "A estrutura certa para não abandonar leitura nem ler sem propósito.",
+    title: "Nunca mais abandone um livro no meio",
+    shortText: "O cronograma diário cria o ritmo certo para você terminar todo livro que começa, sem culpa e sem pressão.",
     fullDescription: "Dentro do Clube, você recebe uma estrutura clara de leitura: qual livro ler, por que ele foi escolhido e como distribuir a leitura ao longo do mês. O critério começa na curadoria dos livros e o ritmo é definido para evitar abandono e leitura sem continuidade."
   },
   {
