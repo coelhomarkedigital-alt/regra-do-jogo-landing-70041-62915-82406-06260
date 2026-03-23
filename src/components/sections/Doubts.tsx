@@ -28,7 +28,7 @@ export const Doubts = () => {
     {
       icon: Shield,
       question: 'Risco zero pra você',
-      answer: "Você tem 7 dias para testar o Clube com tranquilidade. Se não fizer sentido, é só cancelar.",
+      answer: "Você tem 7 dias para testar o Clube com total tranquilidade. Se por qualquer motivo não gostar, é só pedir o reembolso. Sem burocracia, sem perguntas.",
     },
     {
       icon: BookOpen,
