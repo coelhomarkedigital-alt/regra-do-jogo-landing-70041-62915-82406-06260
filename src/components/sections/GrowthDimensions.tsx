@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { X, Check } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export const GrowthDimensions = () => {
   const beforeItems = [
@@ -12,12 +13,12 @@ export const GrowthDimensions = () => {
   ];
 
   const afterItems = [
-    "Ritmo e clareza no processo",
-    "Termina livros com consistência",
-    "Retém e conecta ideias",
-    "Traduz leitura em ação",
-    "Constrói repertório útil",
-    "Evolução mensurável"
+    "Sabe exatamente o que ler e por quê",
+    "Termina 1 livro por mês com consistência",
+    "Lembra e usa o que leu meses depois",
+    "Transforma leitura em decisão e ação real",
+    "Lê com propósito e critério claro",
+    "Sensação real de evolução todo mês"
   ];
 
   return (
@@ -79,6 +80,12 @@ export const GrowthDimensions = () => {
                 </div>
               </CardContent>
             </Card>
+          </div>
+
+          <div className="text-center pt-8">
+            <Button variant="hero" size="xl" onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })} className="shadow-glow cursor-pointer">
+              Quero fazer parte da tribo de leitores
+            </Button>
           </div>
         </div>
       </div>

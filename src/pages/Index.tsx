@@ -16,6 +16,7 @@ import { FAQ } from "@/components/sections/FAQ";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 import { Footer } from "@/components/sections/Footer";
 import { FloatingCTA } from "@/components/FloatingCTA";
+import { PriceCTA } from "@/components/sections/PriceCTA";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const Index = () => {
@@ -25,9 +26,10 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Hero />
       <SolutionIntegrated />
-      <ClubDifference />
       <HowItWorksForWho />
+      <ClubDifference />
       <GrowthDimensions />
+      <PriceCTA />
       <BookSelection />
       <Mentor />
       <SocialProof />

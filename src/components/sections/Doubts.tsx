@@ -28,7 +28,7 @@ export const Doubts = () => {
     {
       icon: Shield,
       question: 'Risco zero pra você',
-      answer: "Você tem 7 dias para testar o Clube com tranquilidade. Se não fizer sentido, é só cancelar.",
+      answer: "Você tem 7 dias para testar o Clube com total tranquilidade. Se por qualquer motivo não gostar, é só pedir o reembolso. Sem burocracia, sem perguntas.",
     },
     {
       icon: BookOpen,
@@ -58,7 +58,7 @@ export const Doubts = () => {
       <div className="container px-4 mx-auto">
         <div className="max-w-5xl mx-auto space-y-12">
           <div className="text-center space-y-4 animate-fade-in">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-paper-foreground">Perguntas e objeções comuns:</h2>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-paper-foreground">Ainda com dúvidas? A gente responde.</h2>
           </div>
 
           {/* Layout Desktop: Diamante */}

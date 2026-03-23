@@ -2,17 +2,20 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Check, Star } from "lucide-react";
 import { useState } from "react";
+
 export const Pricing = () => {
   const [selectedPlan, setSelectedPlan] = useState<string | null>(null);
-  const features = ["Acesso imediato a todos os materiais", "Encontros mensais ao vivo", "Comunidade exclusiva no WhatsApp", "Esquema de leitura semanal", "Materiais complementares (resumos, exercícios)", "Gravações disponíveis"];
-  const handleSubscribe = (plan: string) => {
-    setSelectedPlan(plan);
-    // Lógica de redirecionamento para checkout
-    console.log(`Assinando plano: ${plan}`);
-  };
-  return <section id="pricing" className="py-20" style={{
-    backgroundColor: '#FAF2E1'
-  }}>
+  const features = [
+    "Encontros mensais ao vivo com o especialista",
+    "Cronograma diário de leitura todo mês",
+    "Mais de 20 horas de gravações disponíveis",
+    "Comunidade ativa no WhatsApp",
+    "Curadoria mensal do livro",
+    "Cancelamento livre e sem multa"
+  ];
+
+  return (
+    <section id="pricing" className="py-20" style={{ backgroundColor: '#FAF2E1' }}>
       <div className="container px-4 mx-auto">
         <div className="max-w-6xl mx-auto space-y-12">
           <div className="text-center space-y-4 animate-fade-in">
@@ -21,7 +24,7 @@ export const Pricing = () => {
               <span className="text-sm font-medium text-paper-foreground">Sem lista de espera • Entre quando quiser</span>
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-paper-foreground" data-animate="fade-up">
-              Escolha seu plano
+              Escolha sua assinatura
             </h2>
             <p className="text-xl max-w-2xl mx-auto text-muted">
               Invista em você. Menos que um café por dia para transformar sua vida.
@@ -29,44 +32,38 @@ export const Pricing = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {/* Plano Mensal */}
+            {/* Assinatura Mensal */}
             <Card className={`bg-white shadow-success hover:shadow-hover transition-all duration-300 border-primary/20 ${selectedPlan === 'mensal' ? 'ring-4 ring-primary/50 shadow-hover' : ''}`} data-animate="price-card" data-delay="1">
               <CardHeader className="text-center pb-8 pt-8 px-6 space-y-4">
                 <h3 className="text-2xl font-bold text-paper-foreground">
-                  Plano Mensal
+                  Assinatura Mensal
                 </h3>
                 <div className="space-y-2">
                   <p className="text-5xl font-bold text-primary">
                     R$ 39,90
                   </p>
                   <p className="text-paper-foreground/70">
-                    por mês • cobrança recorrente
+                    por mês • renovação automática • cancele quando quiser
                   </p>
                 </div>
               </CardHeader>
               <CardContent className="px-6 pb-8 space-y-6">
                 <ul className="space-y-3">
-                  {features.map((feature, index) => <li key={index} className="flex items-start gap-3">
+                  {features.map((feature, index) => (
+                    <li key={index} className="flex items-start gap-3">
                       <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
                         <Check className="w-3 h-3 text-primary" />
                       </div>
                       <span className="text-sm text-paper-foreground">
                         {feature}
                       </span>
-                    </li>)}
-                  <li className="flex items-start gap-3 pt-2">
-                    <div className="w-5 h-5 rounded-full bg-green-500/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <Check className="w-3 h-3 text-green-600" />
-                    </div>
-                    <span className="text-sm font-medium text-paper-foreground">
-                      Cancelamento livre e sem multa
-                    </span>
-                  </li>
+                    </li>
+                  ))}
                 </ul>
 
                 <Button variant="cta" size="xl" className="w-full" asChild>
                   <a href="https://projetoregrasdojogo.com.br/finalizar-compra/?add-to-cart=1550" target="_blank" rel="noopener noreferrer">
-                    Começar com Plano Mensal
+                    Começar com Assinatura Mensal
                   </a>
                 </Button>
 
@@ -76,7 +73,7 @@ export const Pricing = () => {
               </CardContent>
             </Card>
 
-            {/* Plano Anual */}
+            {/* Assinatura Anual */}
             <Card className={`bg-white shadow-success hover:shadow-hover transition-all duration-300 border-primary/20 relative overflow-hidden ${selectedPlan === 'anual' ? 'ring-4 ring-primary/50 shadow-hover' : ''}`} data-animate="price-card" data-delay="2">
               <div className="absolute top-4 right-4 z-10">
                 <div className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1 animate-pulse">
@@ -87,7 +84,7 @@ export const Pricing = () => {
 
               <CardHeader className="text-center pb-8 pt-8 px-6 space-y-4">
                 <h3 className="text-2xl font-bold text-paper-foreground">
-                  Plano Anual
+                  Assinatura Anual
                 </h3>
                 <div className="space-y-2">
                   <p className="text-5xl font-bold text-primary">
@@ -103,27 +100,21 @@ export const Pricing = () => {
               </CardHeader>
               <CardContent className="px-6 pb-8 space-y-6">
                 <ul className="space-y-3">
-                  {features.map((feature, index) => <li key={index} className="flex items-start gap-3">
+                  {features.map((feature, index) => (
+                    <li key={index} className="flex items-start gap-3">
                       <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
                         <Check className="w-3 h-3 text-primary" />
                       </div>
                       <span className="text-sm text-paper-foreground">
                         {feature}
                       </span>
-                    </li>)}
-                  <li className="flex items-start gap-3 pt-2">
-                    <div className="w-5 h-5 rounded-full bg-green-500/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <Check className="w-3 h-3 text-green-600" />
-                    </div>
-                    <span className="text-sm font-medium text-paper-foreground">
-                      Melhor custo-benefício
-                    </span>
-                  </li>
+                    </li>
+                  ))}
                 </ul>
 
                 <Button variant="cta" size="xl" className="w-full" asChild>
                   <a href="https://projetoregrasdojogo.com.br/finalizar-compra/?add-to-cart=1724" target="_blank" rel="noopener noreferrer">
-                    Garantir Plano Anual
+                    Garantir Assinatura Anual
                   </a>
                 </Button>
 
@@ -144,5 +135,6 @@ export const Pricing = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };

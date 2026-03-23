@@ -1,4 +1,5 @@
 import { Heart, Users, Building, DollarSign, Sparkles } from "lucide-react";
+import { Button } from "@/components/ui/button";
 export const BookSelection = () => {
   const dimensions = [{
     icon: Heart,
@@ -29,9 +30,7 @@ export const BookSelection = () => {
               Como escolhemos os 8 livros do ano?
             </h2>
             <p className="text-xl text-paper-foreground/70 max-w-3xl mx-auto">
-              Cada livro é escolhido para desenvolver uma dimensão específica da sua vida.
-A curadoria é colaborativa, e você também pode indicar leituras.
-
+              Cada livro é escolhido pelo especialista para desenvolver uma dimensão específica da sua vida. Você também pode indicar leituras para os próximos ciclos.
             </p>
           </div>
 
@@ -49,9 +48,9 @@ A curadoria é colaborativa, e você também pode indicar leituras.
           </div>
 
           <div className="pt-6">
-            <p className="text-lg text-paper-foreground/70 max-w-2xl mx-auto">
-              Cada livro existe para desenvolver uma dimensão específica da sua vida.
-            </p>
+            <Button variant="hero" size="xl" onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })} className="shadow-glow cursor-pointer">
+              Quero entrar agora para o Clube
+            </Button>
           </div>
         </div>
       </div>
