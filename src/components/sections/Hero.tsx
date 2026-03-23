@@ -14,8 +14,8 @@ export const Hero = () => {
         initial={{ opacity: 0.5, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 0.8, ease: "easeInOut" }}
-        className="container relative z-10 px-4 py-16 mx-auto text-center w-full"
-      >
+        className="container relative z-10 px-4 py-16 mx-auto text-center w-full">
+        
         <div className="max-w-4xl mx-auto space-y-8">
           <div className="inline-block bg-primary/20 backdrop-blur-md px-3 sm:px-5 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium mb-4 text-primary border border-primary/30">
             Regras do Jogo • Clube de Leitura Guiada
@@ -30,9 +30,9 @@ export const Hero = () => {
               className="relative w-full rounded-2xl overflow-hidden aspect-video"
               style={{
                 boxShadow:
-                  '0 0 30px rgba(251, 191, 36, 0.3), 0 0 60px rgba(245, 192, 69, 0.15), inset 0 0 0 2px rgba(251, 191, 36, 0.4)',
-              }}
-            >
+                '0 0 30px rgba(251, 191, 36, 0.3), 0 0 60px rgba(245, 192, 69, 0.15), inset 0 0 0 2px rgba(251, 191, 36, 0.4)'
+              }}>
+              
               <iframe
                 className="absolute top-0 left-0 w-full h-full"
                 src="https://www.youtube.com/embed/0pUzQjhjDRg?rel=0&fs=0&disablekb=1&iv_load_policy=3&playsinline=1&modestbranding=1&controls=1"
@@ -40,13 +40,13 @@ export const Hero = () => {
                 frameBorder="0"
                 allow="accelerometer; clipboard-write; encrypted-media; gyroscope"
                 referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen={false}
-              />
+                allowFullScreen={false} />
+              
             </div>
           </div>
 
-          <p className="text-xl md:text-2xl text-foreground max-w-2xl mx-auto leading-relaxed text-center">
-            Conheça a metodologia que, ao lado de uma tribo de leitores, tem transformado a forma de ler e aprender de quem faz parte do Clube do Livro Regras do Jogo
+          <p className="text-xl md:text-2xl text-foreground max-w-2xl mx-auto leading-relaxed text-center">Conheça a metodologia que, ao lado de uma tribo de leitores, tem transformado a forma de ler e aprender de quem faz parte do Clube do Livro Regras do Jogo.
+
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
@@ -56,6 +56,6 @@ export const Hero = () => {
           </div>
         </div>
       </motion.div>
-    </LampContainer>
-  );
+    </LampContainer>);
+
 };
