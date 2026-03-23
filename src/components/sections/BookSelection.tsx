@@ -29,9 +29,7 @@ export const BookSelection = () => {
               Como escolhemos os 8 livros do ano?
             </h2>
             <p className="text-xl text-paper-foreground/70 max-w-3xl mx-auto">
-              Cada livro é escolhido para desenvolver uma dimensão específica da sua vida.
-A curadoria é colaborativa, e você também pode indicar leituras.
-
+              Cada livro é escolhido pelo especialista para desenvolver uma dimensão específica da sua vida. Você também pode indicar leituras para os próximos ciclos.
             </p>
           </div>
 
