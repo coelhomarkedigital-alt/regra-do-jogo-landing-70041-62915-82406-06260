@@ -22,7 +22,7 @@ export const Hero = () => {
           </div>
 
           <h1 className="text-2xl md:text-3xl lg:text-5xl font-extrabold text-white leading-tight drop-shadow-glow">
-            Leia <span className="text-primary">1 livro por mês</span>, domine o conteúdo dos livros e nunca mais esqueça, nem deixe de aplicar o que você leu
+            Leia <span className="text-primary">1 livro por mês</span>, domine o conteúdo dos livros e nunca mais esqueça, nem deixe de aplicar o que você leu.
           </h1>
 
           <div className="w-full max-w-[860px] mx-auto pt-4">
