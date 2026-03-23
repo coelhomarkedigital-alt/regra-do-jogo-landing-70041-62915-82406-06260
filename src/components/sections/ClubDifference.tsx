@@ -18,8 +18,8 @@ export const ClubDifference = () => {
   {
     icon: Compass,
     number: "2",
-    title: "Clareza de onde você está na leitura",
-    shortText: "Você sabe exatamente em que ponto está e o que observar agora.",
+    title: "Saiba exatamente o que ler e quando",
+    shortText: "Você recebe um cronograma diário estruturado que elimina a dúvida de por onde começar e garante que você avance com foco em cada leitura.",
     fullDescription: "Além do ritmo, você tem um cronograma semanal: sabe exatamente onde deveria estar no livro e o que observar em cada momento. Sem recomeços constantes. Sem aquela sensação de estar perdido. A leitura vira um processo contínuo."
   },
   {
