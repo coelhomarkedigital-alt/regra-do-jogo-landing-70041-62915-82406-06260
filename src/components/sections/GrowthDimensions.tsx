@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { X, Check } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export const GrowthDimensions = () => {
   const beforeItems = [
