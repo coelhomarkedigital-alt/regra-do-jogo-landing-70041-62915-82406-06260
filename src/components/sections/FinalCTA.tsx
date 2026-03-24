@@ -29,12 +29,12 @@ export const FinalCTA = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6">
             <Button variant="hero" size="xl" asChild className="w-full sm:w-auto shadow-glow">
               <a href="https://projetoregrasdojogo.com.br/finalizar-compra/?add-to-cart=1550" target="_blank" rel="noopener noreferrer">
-                Começar com Plano Mensal
+                Começar com Assinatura Mensal
               </a>
             </Button>
             <Button variant="outline" size="xl" asChild className="w-full sm:w-auto">
               <a href="https://projetoregrasdojogo.com.br/finalizar-compra/?add-to-cart=1724" target="_blank" rel="noopener noreferrer">
-                Garantir Plano Anual
+                Garantir Assinatura Anual
               </a>
             </Button>
           </div>
