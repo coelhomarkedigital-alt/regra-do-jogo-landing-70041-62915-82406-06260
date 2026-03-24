@@ -123,6 +123,11 @@ export const Schedule = () => {
                     <Calendar className="w-5 h-5 text-primary" />
                   </div>
                   <span className="text-lg">{meeting.month} 2026</span>
+                  {meeting.ended && (
+                    <Badge className="bg-primary/15 text-primary border-primary/30 text-xs font-medium">
+                      Gravação disponível
+                    </Badge>
+                  )}
                 </div>
               </AccordionTrigger>
               <AccordionContent className="pb-5 pt-2">
