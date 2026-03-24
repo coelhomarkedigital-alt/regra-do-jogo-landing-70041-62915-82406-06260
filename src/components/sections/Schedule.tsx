@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 import { Calendar } from "lucide-react";
 import {
   Accordion,
@@ -13,14 +14,16 @@ const meetings = [{
   date: "10/01",
   title: "MasterClass de Abertura",
   subtitle: null,
-  guest: null
+  guest: null,
+  ended: true
 }, {
   month: "Fevereiro",
   number: "02",
   date: "07/02",
   title: "Evento Oficial de Abertura do Clube do Livro",
   subtitle: null,
-  guest: null
+  guest: null,
+  ended: true
 }, {
   month: "Março",
   number: "03",
@@ -120,6 +123,11 @@ export const Schedule = () => {
                     <Calendar className="w-5 h-5 text-primary" />
                   </div>
                   <span className="text-lg">{meeting.month} 2026</span>
+                  {meeting.ended && (
+                    <Badge className="bg-primary/15 text-primary border-primary/30 text-xs font-medium">
+                      Gravação disponível
+                    </Badge>
+                  )}
                 </div>
               </AccordionTrigger>
               <AccordionContent className="pb-5 pt-2">
