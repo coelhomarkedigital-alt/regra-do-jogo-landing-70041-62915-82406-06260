@@ -34,7 +34,7 @@ export const FinalCTA = () => {
             </Button>
             <Button variant="outline" size="xl" asChild className="w-full sm:w-auto">
               <a href="https://projetoregrasdojogo.com.br/finalizar-compra/?add-to-cart=1724" target="_blank" rel="noopener noreferrer">
-                Garantir Plano Anual
+                Garantir Assinatura Anual
               </a>
             </Button>
           </div>
