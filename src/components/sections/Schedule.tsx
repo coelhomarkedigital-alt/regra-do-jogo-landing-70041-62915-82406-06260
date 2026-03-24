@@ -14,14 +14,16 @@ const meetings = [{
   date: "10/01",
   title: "MasterClass de Abertura",
   subtitle: null,
-  guest: null
+  guest: null,
+  ended: true
 }, {
   month: "Fevereiro",
   number: "02",
   date: "07/02",
   title: "Evento Oficial de Abertura do Clube do Livro",
   subtitle: null,
-  guest: null
+  guest: null,
+  ended: true
 }, {
   month: "Março",
   number: "03",
