@@ -124,9 +124,14 @@ export const Schedule = () => {
                   </div>
                   <span className="text-lg">{meeting.month} 2026</span>
                   {meeting.ended && (
-                    <Badge className="bg-primary/15 text-primary border-primary/30 text-xs font-medium">
-                      Gravação disponível
-                    </Badge>
+                    <>
+                      <Badge className="bg-muted/40 text-muted-foreground border-muted text-xs font-medium">
+                        Encerrado
+                      </Badge>
+                      <Badge className="bg-primary/15 text-primary border-primary/30 text-xs font-medium">
+                        Gravação disponível
+                      </Badge>
+                    </>
                   )}
                 </div>
               </AccordionTrigger>
