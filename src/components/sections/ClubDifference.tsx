@@ -57,11 +57,11 @@ export const ClubDifference = () => {
               <CardContent className="pt-10 pb-10 px-8">
                 <div className="text-center mb-8 animate-fade-in">
                   <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-accent-foreground mb-3">
-                    O Método de Leitura Aplicada
-                  </h2>
-                  <p className="text-lg md:text-xl text-accent-foreground/80">
-                    4 pilares que transformam qualquer leitura em mudança real de vida.
-                  </p>
+                     O Método LEIA
+                   </h2>
+                   <p className="text-lg md:text-xl text-accent-foreground/80">
+                     Leitura Eficiente, Inteligente e Aplicada - 4 pilares que transformam qualquer leitura em resultado prático na sua vida.
+                   </p>
                 </div>
                 
                 <div className="grid md:grid-cols-2 gap-6">
