@@ -11,6 +11,7 @@ export const ClubDifference = () => {
   {
     icon: Calendar,
     number: "1",
+    label: "L - Leitura",
     title: "Nunca mais abandone um livro no meio",
     shortText: "O cronograma diário cria o ritmo certo para você terminar todo livro que começa, sem culpa e sem pressão.",
     fullDescription: "Dentro do Clube, você recebe uma estrutura clara de leitura: qual livro ler, por que ele foi escolhido e como distribuir a leitura ao longo do mês. O critério começa na curadoria dos livros e o ritmo é definido para evitar abandono e leitura sem continuidade."
@@ -18,6 +19,7 @@ export const ClubDifference = () => {
   {
     icon: Compass,
     number: "2",
+    label: "E - Eficiente",
     title: "Saiba exatamente o que ler e quando",
     shortText: "Você recebe um cronograma diário estruturado que elimina a dúvida de por onde começar e garante que você avance com foco em cada leitura.",
     fullDescription: "Além do ritmo, você tem um cronograma semanal: sabe exatamente onde deveria estar no livro e o que observar em cada momento. Sem recomeços constantes. Sem aquela sensação de estar perdido. A leitura vira um processo contínuo."
@@ -25,6 +27,7 @@ export const ClubDifference = () => {
   {
     icon: Target,
     number: "3",
+    label: "I - Inteligente",
     title: "Transforme o que leu em ação real",
     shortText: "Cada livro é conectado a uma área real da sua vida para você sair da leitura com uma decisão ou mudança concreta.",
     fullDescription: "Nos encontros, a leitura é discutida a partir de uma área concreta da sua vida. Você espelha decisões, situações e desafios reais no conteúdo do livro. Ao final da discussão, você sai com clareza de como aplicar aquelas ideias agora ou nos próximos passos da sua vida."
@@ -32,6 +35,7 @@ export const ClubDifference = () => {
   {
     icon: Brain,
     number: "4",
+    label: "A - Aplicada",
     title: "Nunca mais esqueça o que leu",
     shortText: "Você aprende a reter e reutilizar o conhecimento dos livros meses ou anos depois, quando mais precisar.",
     fullDescription: "Em cada leitura, você aprende a criar conexões próprias com o conteúdo do livro. Não para decorar, mas para lembrar e reutilizar quando precisar. Dentro do Clube, você aprende formas práticas de ancorar as ideias para conseguir acessá-las meses ou anos depois, no momento em que uma decisão aparece. Resolve o problema: \"Li muita coisa, mas não consigo usar nada quando preciso.\""
@@ -53,11 +57,11 @@ export const ClubDifference = () => {
               <CardContent className="pt-10 pb-10 px-8">
                 <div className="text-center mb-8 animate-fade-in">
                   <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-accent-foreground mb-3">
-                    O Método de Leitura Aplicada
-                  </h2>
-                  <p className="text-lg md:text-xl text-accent-foreground/80">
-                    4 pilares que transformam qualquer leitura em mudança real de vida.
-                  </p>
+                     O Método LEIA
+                   </h2>
+                   <p className="text-lg md:text-xl text-accent-foreground/80">
+                     Leitura Eficiente, Inteligente e Aplicada - 4 pilares que transformam qualquer leitura em resultado prático na sua vida.
+                   </p>
                 </div>
                 
                 <div className="grid md:grid-cols-2 gap-6">
@@ -84,7 +88,10 @@ export const ClubDifference = () => {
                                   <diff.icon className="w-5 h-5 text-primary" />
                                 </div>
                                 <span className="text-primary font-bold text-lg">{diff.number}.</span>
-                                <h3 className="text-foreground font-bold text-lg">{diff.title}</h3>
+                                 <div>
+                                   <p className="text-primary/70 text-sm font-semibold">{diff.label}</p>
+                                   <h3 className="text-foreground font-bold text-lg">{diff.title}</h3>
+                                 </div>
                               </div>
                               <p className="text-muted-foreground leading-relaxed">
                                 {diff.fullDescription}
@@ -121,9 +128,10 @@ export const ClubDifference = () => {
                                 </div>
                                 
                                 {/* Title */}
-                                <h3 className="text-foreground font-bold text-xl leading-tight">
-                                  {diff.title}
-                                </h3>
+                                <p className="text-primary/70 text-sm font-semibold">{diff.label}</p>
+                                 <h3 className="text-foreground font-bold text-xl leading-tight">
+                                   {diff.title}
+                                 </h3>
                                 
                                 {/* Short text */}
                                 <p className="text-muted-foreground leading-relaxed">
