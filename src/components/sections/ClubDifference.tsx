@@ -88,7 +88,10 @@ export const ClubDifference = () => {
                                   <diff.icon className="w-5 h-5 text-primary" />
                                 </div>
                                 <span className="text-primary font-bold text-lg">{diff.number}.</span>
-                                <h3 className="text-foreground font-bold text-lg">{diff.title}</h3>
+                                 <div>
+                                   <p className="text-primary/70 text-sm font-semibold">{diff.label}</p>
+                                   <h3 className="text-foreground font-bold text-lg">{diff.title}</h3>
+                                 </div>
                               </div>
                               <p className="text-muted-foreground leading-relaxed">
                                 {diff.fullDescription}
