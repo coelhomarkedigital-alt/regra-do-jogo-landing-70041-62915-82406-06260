@@ -128,9 +128,10 @@ export const ClubDifference = () => {
                                 </div>
                                 
                                 {/* Title */}
-                                <h3 className="text-foreground font-bold text-xl leading-tight">
-                                  {diff.title}
-                                </h3>
+                                <p className="text-primary/70 text-sm font-semibold">{diff.label}</p>
+                                 <h3 className="text-foreground font-bold text-xl leading-tight">
+                                   {diff.title}
+                                 </h3>
                                 
                                 {/* Short text */}
                                 <p className="text-muted-foreground leading-relaxed">
