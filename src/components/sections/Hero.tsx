@@ -26,7 +26,7 @@ export const Hero = () => {
           </h1>
 
           <p className="text-2xl md:text-3xl text-foreground max-w-3xl mx-auto leading-relaxed text-center">
-            Leia 1 livro por mês, <span className="text-primary font-semibold">retenha e aplique</span> o que aprendeu com um método simples que ajuda você a parar de esquecer o que lê.
+            Leia 1 livro por mês, <span className="text-primary font-semibold">retenha e aplique na prática</span> o que aprendeu com um método simples que ajuda você a parar de esquecer o que lê.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
