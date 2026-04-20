@@ -1,5 +1,12 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Users, Star, TrendingUp, Quote } from "lucide-react";
+import { Users, Star, TrendingUp } from "lucide-react";
+import depoimentoMariana1 from "@/assets/depoimento-mariana-1.png";
+import depoimentoMariana2 from "@/assets/depoimento-mariana-2.png";
+import depoimentoAline1 from "@/assets/depoimento-aline-1.png";
+import depoimentoAline2 from "@/assets/depoimento-aline-2.png";
+import depoimentoPaulo from "@/assets/depoimento-paulo.png";
+import depoimentoRommel from "@/assets/depoimento-rommel.png";
+
 export const SocialProof = () => {
   const stats = [{
     icon: Users,
@@ -14,43 +21,37 @@ export const SocialProof = () => {
     value: "87%",
     label: "Criaram o hábito de leitura"
   }];
-  const testimonials = [{
-    name: "Ana Paula Silva",
-    role: "Gerente de Projetos",
-    text: "O Clube me deu o que faltava: estrutura. Agora leio 1 livro por mês com consistência e aplico tudo na minha carreira."
-  }, {
-    name: "Roberto Almeida",
-    role: "Empreendedor",
-    text: "Mais do que os livros, o networking e as discussões mudaram minha forma de pensar negócios. Valeu cada centavo."
-  }, {
-    name: "Juliana Costa",
-    role: "Advogada",
-    text: "Eu sempre comprava livros e não lia. Agora tenho um método e uma comunidade que me mantém engajada. Transformador!"
-  }];
-  return <section className="py-20 bg-background">
+
+  const testimonials = [
+    { name: "Mariana", image: depoimentoMariana1 },
+    { name: "Aline Gomes", image: depoimentoAline1 },
+    { name: "Paulo Eduardo", image: depoimentoPaulo },
+    { name: "Mariana", image: depoimentoMariana2 },
+    { name: "Aline Gomes", image: depoimentoAline2 },
+    { name: "Rommel", image: depoimentoRommel },
+  ];
+
+  return (
+    <section className="py-20 bg-background">
       <div className="container px-4 mx-auto">
         <div className="max-w-6xl mx-auto space-y-16">
           <div className="text-center space-y-4 animate-fade-in">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">Junte-se a centenas de leitores</h2>
-            <p className="text-xl text-muted-foreground">
-              Pessoas reais, resultados reais.
-            </p>
+            <p className="text-xl text-muted-foreground">Pessoas reais, resultados reais.</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {stats.map((stat, index) => <Card key={index} className="bg-gradient-trust shadow-trust hover:shadow-hover transition-all duration-300 hover:-translate-y-2 border-trust/50">
+            {stats.map((stat, index) => (
+              <Card key={index} className="bg-gradient-trust shadow-trust hover:shadow-hover transition-all duration-300 hover:-translate-y-2 border-trust/50">
                 <CardContent className="pt-8 pb-6 text-center space-y-3">
                   <div className="w-16 h-16 mx-auto rounded-full bg-accent/10 flex items-center justify-center">
                     <stat.icon className="w-8 h-8 text-accent" />
                   </div>
-                  <p className="text-4xl md:text-5xl font-bold text-accent">
-                    {stat.value}
-                  </p>
-                  <p className="text-trust-foreground font-medium">
-                    {stat.label}
-                  </p>
+                  <p className="text-4xl md:text-5xl font-bold text-accent">{stat.value}</p>
+                  <p className="text-trust-foreground font-medium">{stat.label}</p>
                 </CardContent>
-              </Card>)}
+              </Card>
+            ))}
           </div>
 
           <div className="space-y-6">
@@ -58,25 +59,27 @@ export const SocialProof = () => {
               O que os membros dizem
             </h3>
             <div className="grid md:grid-cols-3 gap-6">
-              {testimonials.map((testimonial, index) => <Card key={index} className="bg-gradient-trust shadow-trust hover:shadow-hover transition-all duration-300 border-trust/50">
-                  <CardContent className="pt-8 pb-6 px-6 space-y-4">
-                    <Quote className="w-10 h-10 text-accent/20" />
-                    <p className="text-trust-foreground/80 leading-relaxed italic">
-                      "{testimonial.text}"
-                    </p>
-                    <div className="pt-4 border-t border-trust/30">
-                      <p className="font-semibold text-trust-foreground">
-                        {testimonial.name}
-                      </p>
-                      <p className="text-sm text-trust-foreground/70">
-                        {testimonial.role}
-                      </p>
+              {testimonials.map((testimonial, index) => (
+                <Card key={index} className="bg-gradient-trust shadow-trust hover:shadow-hover transition-all duration-300 border-trust/50 overflow-hidden">
+                  <CardContent className="p-4 space-y-3">
+                    <div className="rounded-lg overflow-hidden bg-background/50">
+                      <img
+                        src={testimonial.image}
+                        alt={`Depoimento de ${testimonial.name}`}
+                        className="w-full h-auto object-contain"
+                        loading="lazy"
+                      />
                     </div>
+                    <p className="text-center font-semibold text-trust-foreground pt-2">
+                      {testimonial.name}
+                    </p>
                   </CardContent>
-                </Card>)}
+                </Card>
+              ))}
             </div>
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };

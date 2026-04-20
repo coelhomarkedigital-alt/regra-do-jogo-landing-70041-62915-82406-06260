@@ -1,8 +1,11 @@
 export const VideoSection = () => {
   return (
-    <section className="py-16 bg-black">
+    <section className="py-16 md:py-20 bg-black">
       <div className="container px-4 mx-auto">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-3xl mx-auto space-y-8">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white text-center leading-tight drop-shadow-glow">
+            Como parar de esquecer o que você lê
+          </h2>
           <div
             className="relative w-full rounded-2xl overflow-hidden aspect-video"
             style={{
@@ -13,7 +16,7 @@ export const VideoSection = () => {
             <iframe
               className="absolute top-0 left-0 w-full h-full"
               src="https://www.youtube.com/embed/0pUzQjhjDRg?rel=0&fs=0&disablekb=1&iv_load_policy=3&playsinline=1&modestbranding=1&controls=1"
-              title="Veja como funciona"
+              title="Como parar de esquecer o que você lê"
               frameBorder="0"
               allow="accelerometer; clipboard-write; encrypted-media; gyroscope"
               referrerPolicy="strict-origin-when-cross-origin"
