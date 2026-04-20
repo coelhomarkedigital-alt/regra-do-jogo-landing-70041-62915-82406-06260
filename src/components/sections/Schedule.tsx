@@ -126,7 +126,7 @@ export const Schedule = () => {
                   </div>
                   <span className="text-lg">{meeting.month} 2026</span>
                   {meeting.recorded && (
-                    <Badge className="bg-primary/15 text-primary border-primary/30 text-xs font-medium">
+                    <Badge className="bg-[#6B6B6B] text-white border-[#6B6B6B] hover:bg-primary hover:text-primary-foreground hover:border-primary text-xs font-medium transition-colors">
                       Gravação disponível para membros
                     </Badge>
                   )}
