@@ -25,9 +25,9 @@ export const SocialProof = () => {
   const testimonials = [
     { name: "Mariana", image: depoimentoMariana1 },
     { name: "Aline Gomes", image: depoimentoAline1 },
+    { name: "Aline Gomes", image: depoimentoAline2 },
     { name: "Paulo Eduardo", image: depoimentoPaulo },
     { name: "Mariana", image: depoimentoMariana2 },
-    { name: "Aline Gomes", image: depoimentoAline2 },
     { name: "Rommel", image: depoimentoRommel },
   ];
 

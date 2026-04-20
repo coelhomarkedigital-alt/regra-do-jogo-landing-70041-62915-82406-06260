@@ -35,7 +35,7 @@ export const FloatingCTA = () => {
         className="w-full shadow-cta animate-[pulse_3s_ease-in-out_infinite]"
       >
         <a href="https://projetoregrasdojogo.com.br/finalizar-compra/?add-to-cart=1550" target="_blank" rel="noopener noreferrer">
-          Quero evoluir com o Clube
+          Quero entrar para o clube
           <ArrowUp className="w-5 h-5 ml-2 rotate-90" />
         </a>
       </Button>
