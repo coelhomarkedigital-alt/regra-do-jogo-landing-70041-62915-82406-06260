@@ -32,7 +32,7 @@ export const SocialProof = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-[#FAF2E1]">
       <div className="container px-4 mx-auto">
         <div className="max-w-6xl mx-auto space-y-16">
           <div className="text-center space-y-4 animate-fade-in">
