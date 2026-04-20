@@ -21,12 +21,12 @@ export const Hero = () => {
             Regras do Jogo • Clube de Leitura Guiada
           </div>
 
-          <h1 className="text-2xl md:text-3xl lg:text-5xl font-extrabold text-white leading-tight drop-shadow-glow">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight drop-shadow-glow">
             Você lê. Esquece tudo. E não aplica nada.
           </h1>
 
-          <p className="text-xl md:text-2xl text-foreground max-w-2xl mx-auto leading-relaxed text-center">
-            Leia 1 livro por mês, <span className="text-primary font-semibold">reter e aplicar</span> o que aprendeu com um método simples que ajuda você a parar de esquecer o que lê.
+          <p className="text-2xl md:text-3xl text-foreground max-w-3xl mx-auto leading-relaxed text-center">
+            Leia 1 livro por mês, <span className="text-primary font-semibold">retenha e aplique</span> o que aprendeu com um método simples que ajuda você a parar de esquecer o que lê.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
