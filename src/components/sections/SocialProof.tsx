@@ -32,45 +32,45 @@ export const SocialProof = () => {
   ];
 
   return (
-    <section className="py-20 bg-[#FAF2E1]">
+    <section className="py-24 bg-[#FAF2E1]">
       <div className="container px-4 mx-auto">
-        <div className="max-w-6xl mx-auto space-y-16">
+        <div className="max-w-6xl mx-auto space-y-20">
           <div className="text-center space-y-4 animate-fade-in">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">Junte-se a centenas de leitores</h2>
-            <p className="text-xl text-muted-foreground">Pessoas reais, resultados reais.</p>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#111]">Junte-se a centenas de leitores</h2>
+            <p className="text-xl text-[#555]">Pessoas reais, resultados reais.</p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-10">
             {stats.map((stat, index) => (
-              <Card key={index} className="bg-gradient-trust shadow-trust hover:shadow-hover transition-all duration-300 hover:-translate-y-2 border-trust/50">
+              <Card key={index} className="bg-white border border-black/10 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 rounded-2xl">
                 <CardContent className="pt-8 pb-6 text-center space-y-3">
-                  <div className="w-16 h-16 mx-auto rounded-full bg-accent/10 flex items-center justify-center">
-                    <stat.icon className="w-8 h-8 text-accent" />
+                  <div className="w-16 h-16 mx-auto rounded-full bg-[#C6922E]/10 flex items-center justify-center">
+                    <stat.icon className="w-8 h-8 text-[#C6922E]" />
                   </div>
-                  <p className="text-4xl md:text-5xl font-bold text-accent">{stat.value}</p>
-                  <p className="text-trust-foreground font-medium">{stat.label}</p>
+                  <p className="text-4xl md:text-5xl font-bold text-[#C6922E]">{stat.value}</p>
+                  <p className="text-[#333] font-medium">{stat.label}</p>
                 </CardContent>
               </Card>
             ))}
           </div>
 
-          <div className="space-y-6">
-            <h3 className="text-2xl md:text-3xl font-bold text-center text-foreground">
+          <div className="space-y-8">
+            <h3 className="text-2xl md:text-3xl font-bold text-center text-[#111]">
               O que os membros dizem
             </h3>
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-3 gap-8">
               {testimonials.map((testimonial, index) => (
-                <Card key={index} className="bg-gradient-trust shadow-trust hover:shadow-hover transition-all duration-300 border-trust/50 overflow-hidden">
-                  <CardContent className="p-4 space-y-3">
-                    <div className="rounded-lg overflow-hidden bg-background/50">
+                <Card key={index} className="bg-white border border-black/10 shadow-md hover:shadow-xl transition-all duration-300 rounded-2xl overflow-hidden">
+                  <CardContent className="p-5 space-y-3">
+                    <div className="rounded-xl overflow-hidden bg-[#FAF2E1] flex items-center justify-center">
                       <img
                         src={testimonial.image}
                         alt={`Depoimento de ${testimonial.name}`}
-                        className="w-full h-auto object-contain"
+                        className="w-full h-auto object-contain mx-auto"
                         loading="lazy"
                       />
                     </div>
-                    <p className="text-center font-semibold text-trust-foreground pt-2">
+                    <p className="text-center font-semibold text-[#111] pt-2">
                       {testimonial.name}
                     </p>
                   </CardContent>
