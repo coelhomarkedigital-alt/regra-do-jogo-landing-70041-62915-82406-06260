@@ -21,7 +21,11 @@ export const SocialProof = () => {
       <div className="container px-4 mx-auto">
         <div className="max-w-6xl mx-auto space-y-20">
           <div className="text-center space-y-4 animate-fade-in">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#111]">Pessoas reais já estão aplicando o que aprendem aqui</h2>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#111]">
+              Pessoas reais já estão aplicando
+              <br />
+              o que aprendem aqui
+            </h2>
             <p className="text-xl text-[#555]">Veja o que dizem os nossos membros</p>
           </div>
 
