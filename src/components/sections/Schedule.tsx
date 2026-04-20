@@ -15,7 +15,7 @@ const meetings = [{
   title: "MasterClass de Abertura",
   subtitle: null,
   guest: null,
-  ended: true
+  recorded: true
 }, {
   month: "Fevereiro",
   number: "02",
@@ -23,21 +23,23 @@ const meetings = [{
   title: "Evento Oficial de Abertura do Clube do Livro",
   subtitle: null,
   guest: null,
-  ended: true
+  recorded: true
 }, {
   month: "Março",
   number: "03",
   date: "14/03",
   title: '"O Óbvio que Ignoramos" - Jacob Petry',
   subtitle: "Como simples atitudes podem gerar sucesso consistente.",
-  guest: null
+  guest: null,
+  recorded: true
 }, {
   month: "Abril",
   number: "04",
   date: "11/04",
   title: '"Dar e Receber" - Adam Grant (com Marcella Mourão)',
   subtitle: "Uma abordagem revolucionária sobre sucesso, generosidade e influência.",
-  guest: null
+  guest: null,
+  recorded: true
 }, {
   month: "Maio",
   number: "05",
