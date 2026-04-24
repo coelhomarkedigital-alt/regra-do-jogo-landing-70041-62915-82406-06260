@@ -43,7 +43,7 @@ export const Hero = () => {
             />
           </div>
 
-          <p className="text-xl md:text-2xl text-foreground max-w-3xl mx-auto leading-relaxed text-center">
+          <p className="text-base md:text-lg text-foreground max-w-3xl mx-auto leading-relaxed text-center">
             Conheça a metodologia que, ao lado de uma tribo de leitores, tem transformado a forma de ler e aprender de quem faz parte do Clube do Livro Regras do Jogo.
           </p>
 
