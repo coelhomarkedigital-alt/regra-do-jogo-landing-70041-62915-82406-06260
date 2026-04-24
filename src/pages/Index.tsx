@@ -1,5 +1,5 @@
 import { Hero } from "@/components/sections/Hero";
-import { VideoSection } from "@/components/sections/VideoSection";
+
 import { Button } from "@/components/ui/button";
 import { SolutionIntegrated } from "@/components/sections/SolutionIntegrated";
 import { ClubDifference } from "@/components/sections/ClubDifference";
@@ -26,7 +26,6 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Hero />
-      <VideoSection />
       <section className="py-10 bg-black">
         <div className="text-center px-4">
           <Button variant="cta" size="xl" asChild className="shadow-cta">

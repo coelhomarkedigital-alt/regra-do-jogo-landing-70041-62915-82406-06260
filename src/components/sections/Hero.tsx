@@ -25,13 +25,31 @@ export const Hero = () => {
             Leia <span className="text-primary">1 livro por mês</span>, domine o conteúdo dos livros e nunca mais esqueça, nem deixe de aplicar o que você leu.
           </h1>
 
+          <div
+            className="relative w-full max-w-3xl mx-auto rounded-2xl overflow-hidden aspect-video"
+            style={{
+              boxShadow:
+                '0 0 30px rgba(251, 191, 36, 0.3), 0 0 60px rgba(245, 192, 69, 0.15), inset 0 0 0 2px rgba(251, 191, 36, 0.4)',
+            }}
+          >
+            <iframe
+              className="absolute top-0 left-0 w-full h-full"
+              src="https://www.youtube.com/embed/0pUzQjhjDRg?rel=0&fs=0&disablekb=1&iv_load_policy=3&playsinline=1&modestbranding=1&controls=1"
+              title="Como parar de esquecer o que você lê"
+              frameBorder="0"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen={false}
+            />
+          </div>
+
           <p className="text-xl md:text-2xl text-foreground max-w-3xl mx-auto leading-relaxed text-center">
             Conheça a metodologia que, ao lado de uma tribo de leitores, tem transformado a forma de ler e aprender de quem faz parte do Clube do Livro Regras do Jogo.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
             <Button variant="hero" size="xl" onClick={scrollToPricing} className="w-full sm:w-auto shadow-glow cursor-pointer">
-              Quero fazer parte da tribo
+              Quero aprender a ler com método
             </Button>
           </div>
         </div>
