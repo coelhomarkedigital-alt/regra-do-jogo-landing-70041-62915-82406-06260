@@ -21,7 +21,7 @@ export const Hero = () => {
             Regras do Jogo • Clube de Leitura Guiada
           </div>
 
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight drop-shadow-glow">
+          <h1 className="text-2xl md:text-4xl lg:text-5xl font-extrabold text-white leading-tight drop-shadow-glow">
             Leia <span className="text-primary">1 livro por mês</span>, domine o conteúdo dos livros e nunca mais esqueça, nem deixe de aplicar o que você leu.
           </h1>
 
