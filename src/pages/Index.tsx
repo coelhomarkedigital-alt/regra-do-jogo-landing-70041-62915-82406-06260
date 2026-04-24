@@ -26,7 +26,6 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Hero />
-      <VideoSection />
       <section className="py-10 bg-black">
         <div className="text-center px-4">
           <Button variant="cta" size="xl" asChild className="shadow-cta">
