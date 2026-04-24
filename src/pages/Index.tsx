@@ -26,15 +26,6 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Hero />
-      <section className="py-10 bg-black">
-        <div className="text-center px-4">
-          <Button variant="cta" size="xl" asChild className="shadow-cta">
-            <a href="https://projetoregrasdojogo.com.br/finalizar-compra/?add-to-cart=1550" target="_blank" rel="noopener noreferrer">
-              Quero aprender a ler com método
-            </a>
-          </Button>
-        </div>
-      </section>
       <SolutionIntegrated />
       <HowItWorksForWho />
       <ClubDifference />
